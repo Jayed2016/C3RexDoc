@@ -28,12 +28,12 @@ StatePause --> |"Resume<br> <br>Action:Set state (Run)<br>Action:Toggle state"| 
 TransitionPause2Run --> StateRun
 
 subgraph State
+StatePause
+end
+subgraph State
 StateRun
 end
 
-subgraph State
-StatePause
-end
 ```
 
 [Sample capx](https://onedrive.live.com/redir?resid=7497FD5EC94476E!536&authkey=!AHOh24sxVxcT6VQ&ithint=file%2c.capx)
