@@ -24,9 +24,9 @@ None
 ```mermaid
 graph TB
 
-StateRun["Run"] --> |"Pause<br> <br>Action:Set pause state (Pause)<br>Action:Toggle pause"| TransitionRun2Pause["Run --> Pause<br>----<br>Save timescale,<br>Set timescale to 0<br> <br>Condition:On pause"]
+StateRun["Run"] --> |"Pause<br> <br>Action:Set state (Pause)<br>Action:Toggle state"| TransitionRun2Pause["Run --> Pause<br>(Save timescale,Set timescale to 0) <br>Condition:On pause"]
 TransitionRun2Pause --> StatePause["Pause"]
-StatePause --> |"Resume<br> <br>Action:Set pause state (Run)<br>Action:Toggle pause"| TransitionPause2Run["Pause --> Run<br>----<br>Restore timescale<br> <br>Condition:On resume"]
+StatePause --> |"Resume<br> <br>Action:Set state (Run)<br>Action:Toggle state"| TransitionPause2Run["Pause --> Run<br>(Restore timescale)<br>Condition:On resume"]
 TransitionPause2Run --> StateRun
 ```
 
@@ -34,8 +34,8 @@ TransitionPause2Run --> StateRun
 
 - State : Run
   - Event : go to state Pause
-    - `Action:Toggle pause`, or 
-    - `Action:Set pause state` with parameter `State` to `Pause`
+    - `Action:Toggle state`, or 
+    - `Action:Set state` with parameter `State` to `Pause`
   - State Transition : Run to Pause
     1. Store current timescale
        - `Expression:PreTimescale`
@@ -43,8 +43,8 @@ TransitionPause2Run --> StateRun
     3. Trigger `Condition:On pause`
 - State : Pause
   - Event : go to state Run
-    - `Action:Toggle pause`, or 
-    - `Action:Set pause state` with parameter `State` to `Run`
+    - `Action:Toggle state`, or 
+    - `Action:Set state` with parameter `State` to `Run`
   - State Transition : Pause to Run
     1. Restore timescale to `Expression:PreTimescale`
     2. Trigger `Condition:On resume`
