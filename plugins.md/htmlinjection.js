@@ -16,7 +16,7 @@ var ContentGA = `
 `;
 function injectGoogleAnalytics(content)
 {
-    if (content.indexOf("ga('create', 'UA-88123342-1', 'auto');") !== (-1))
+    if (content.indexOf("ga('create', 'UA-97103262-1', 'auto');") !== (-1))
         return;
     
     var start = content.indexOf("</head>");
