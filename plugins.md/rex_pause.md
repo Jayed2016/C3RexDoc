@@ -6,9 +6,7 @@ Pause/resume system by setting [timescale](https://www.scirra.com/tutorials/67/d
 
 ## Links
 
-- [Plugin](https://rexrainbow.github.io/C2RexDoc/repo/rex_pause.7z)
-- [ACE table](https://rexrainbow.github.io/C2RexDoc/c2rexpluginsACE/plugin_rex_pause.html)
-- [Discussion thread](https://www.scirra.com/forum/plugin-pause-behavior-pause_t64888)
+- [Plugin](https://rexrainbow.github.io/C3RexDoc/repo/rex_pause.c3addon)
 
 
 ----
