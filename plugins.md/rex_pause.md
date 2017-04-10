@@ -28,6 +28,14 @@ StateRun["Run"] --> |"Pause<br> <br>Action:Set state (Pause)<br>Action:Toggle st
 TransitionRun2Pause --> StatePause["Pause"]
 StatePause --> |"Resume<br> <br>Action:Set state (Run)<br>Action:Toggle state"| TransitionPause2Run["Pause --> Run<br>(Restore timescale)<br>Condition:On resume"]
 TransitionPause2Run --> StateRun
+
+subgraph State
+StateRun
+end
+
+subgraph State
+StatePause
+end
 ```
 
 [Sample capx](https://onedrive.live.com/redir?resid=7497FD5EC94476E!536&authkey=!AHOh24sxVxcT6VQ&ithint=file%2c.capx)
