@@ -36,7 +36,7 @@ end
 
 ```
 
-[Sample capx](https://onedrive.live.com/redir?resid=7497FD5EC94476E!536&authkey=!AHOh24sxVxcT6VQ&ithint=file%2c.capx)
+[Sample capx](https://1drv.ms/u/s!Am5HlOzVf0kHlwFG8r0RwUxhHd5M)
 
 - State : Run
   - Event : go to state Pause
