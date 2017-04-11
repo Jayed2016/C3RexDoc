@@ -11,6 +11,7 @@ Plugin maker of construct 2/3 game engine.
 
 - [Source code of my plugins](https://github.com/rexrainbow/C3Plugins) on github
 - [Chat channel](https://discord.gg/wu8XGZc) on discord
+- [Samples](https://1drv.ms/f/s!Am5HlOzVf0kHln6HyNf-YNiP9444) on one-driver
 
 ## License
 
