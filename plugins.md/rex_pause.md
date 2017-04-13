@@ -4,6 +4,8 @@
 
 Pause/resume system by setting [timescale](https://www.scirra.com/tutorials/67/delta-time-and-framerate-independence#h2a5).
 
+Icon: [Icons8](https://icons8.com/)
+
 ## Links
 
 - [Plugin](https://rexrainbow.github.io/C3RexDoc/repo/rex_pause.c3addon)
