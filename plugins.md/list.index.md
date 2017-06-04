@@ -6,8 +6,9 @@
 4. *plugin*: [rex_board_squaretx](rex_board_squaretx.html)
 5. *plugin*: [rex_csv](rex_csv.html)
 6. *plugin*: [rex_date](rex_date.html)
-7. *plugin*: [rex_gfsm](rex_gfsm.html)
-8. *behavior*: [rex_moveTo](rex_moveto.html)
-9. *plugin*: [rex_nickname](rex_nickname.html)
-10. *plugin*: [rex_pause](rex_pause.html)
+7. *behavior*: [rex_fsm](rex_fsm.html)
+8. *plugin*: [rex_gfsm](rex_gfsm.html)
+9. *behavior*: [rex_moveTo](rex_moveto.html)
+10. *plugin*: [rex_nickname](rex_nickname.html)
+11. *plugin*: [rex_pause](rex_pause.html)
 
