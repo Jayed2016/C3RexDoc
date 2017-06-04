@@ -8,7 +8,8 @@
 6. *plugin*: [rex_date](rex_date.html)
 7. *behavior*: [rex_fsm](rex_fsm.html)
 8. *plugin*: [rex_gfsm](rex_gfsm.html)
-9. *behavior*: [rex_moveTo](rex_moveto.html)
-10. *plugin*: [rex_nickname](rex_nickname.html)
-11. *plugin*: [rex_pause](rex_pause.html)
+9. *plugin*: [rex_jsshell](rex_jsshell.html)
+10. *behavior*: [rex_moveTo](rex_moveto.html)
+11. *plugin*: [rex_nickname](rex_nickname.html)
+12. *plugin*: [rex_pause](rex_pause.html)
 
