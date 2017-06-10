@@ -5,4 +5,5 @@
 - [Logic](logic.index.html)
 - [Date & time](date.index.html)
 - [Movement behaviors](movement.index.html)
+- [Input](input.index.html)
 - [Board](board.index.html)

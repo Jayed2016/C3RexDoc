@@ -12,4 +12,5 @@
 10. *behavior*: [rex_moveTo](rex_moveto.html)
 11. *plugin*: [rex_nickname](rex_nickname.html)
 12. *plugin*: [rex_pause](rex_pause.html)
+13. *plugin*: [rex_touchwrap](rex_touchwrap.html)
 
