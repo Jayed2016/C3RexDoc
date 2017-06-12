@@ -23,7 +23,7 @@ None
 ```mermaid
 graph TB
 Start["Rotate start<br>----<br>Action:Rotate to angle<br>Action:Rotate by delta angle<br>Action:Rotate to object<br>Action:Rotate toward to position"] --> Moving((+Every tick<br>-Set angle))
-Moving --> |Reaching target| OnHitTarget["Condition:On hit target angle"]
+Moving --> |Reaching target| OnHitTarget["Condition:On reached target angle"]
 ```
 
 ### Rotate start
@@ -38,7 +38,7 @@ Target angle is `Expression:TargetAngle`
 
 ### Reach target
 
-- `Condition:On hit target angle`
+- `Condition:On reached target angle`
 
 ### Stop
 
