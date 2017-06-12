@@ -8,4 +8,5 @@
 
 
 - [Pause/resume](rex_pause.html)
+- [Comment](rex_comment.html)
 
