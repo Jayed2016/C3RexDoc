@@ -12,3 +12,9 @@
 ### Platformer
 
 - [Move to](rex_platform_moveto.html)
+
+###AI
+
+- [Boids](rex_boids)
+
+
