@@ -44,7 +44,7 @@ addAlignment --> hasForce
 addSeparation --> hasForce
 addForce --> hasForce
 
-hasForce --> expForce["Move forward, or rotate instance<br>----<br>>Polar axis: Expression:ForceAngle, Expression:ForceMagnitude<br>Orthogonal axis: Expression:ForceDx, Expression:ForceDy"]
+hasForce --> expForce["Move forward, or rotate instance<br>----<br>Polar axis: Expression:ForceAngle, Expression:ForceMagnitude<br>Orthogonal axis: Expression:ForceDx, Expression:ForceDy"]
 ```
 
 [Sample capx](https://1drv.ms/u/s!Am5HlOzVf0kHl1nPGusnlzKJvb7m)
