@@ -1,5 +1,11 @@
 # [Categories](categories.index.html) > [System](system.index.html) > rex_nickname
 
+## Deprecated
+
+This plugin could be replaced by `system action: create object by name`, `system condition: pick last created`.
+
+----
+
 ## Introduction
 
 Create instance by string.

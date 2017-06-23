@@ -1,5 +1,9 @@
 # [Categories](categories.index.html) > [System](system.index.html) > rex_bnickname
 
+## Deprecated
+
+This plugin could be replaced by `system action: create object by name`, `system condition: pick last created`.
+
 ## Introduction
 
 Assign a nickname of this object.
