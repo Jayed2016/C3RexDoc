@@ -19,7 +19,8 @@
 17. *behavior*: [rex_platform_moveto](rex_platform_moveto.html)
 18. *behavior*: [rex_pushoutsolid](rex_pushoutsolid.html)
 19. *behavior*: [rex_rotateto](rex_rotateto.html)
-20. *plugin*: [rex_touchwrap](rex_touchwrap.html)
+20. *behavior*: [rex_text_scrolling](rex_text_scrolling.html)
+21. *plugin*: [rex_touchwrap](rex_touchwrap.html)
 
 
 ## Deprecated
