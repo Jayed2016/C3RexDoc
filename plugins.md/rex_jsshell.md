@@ -54,7 +54,8 @@ end
 
 
 1. Load javascript
-   - `Action:Load API`
+   - `Action:Load API` ([Sample capx](https://1drv.ms/u/s!Am5HlOzVf0kHl3IEWZzt2xzl3U50))
+   - Official Ajax plugin: `Action: Request project file`
    - Official browser plugin: `Action:Execute Javascript`  ([Sample capx](https://1drv.ms/u/s!Am5HlOzVf0kHlzOu4I6Bu6Nemujg))
 2. `Action:Set function name`
 3. Add parameters
