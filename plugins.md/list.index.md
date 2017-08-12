@@ -21,7 +21,8 @@
 19. *behavior*: [rex_pushoutsolid](rex_pushoutsolid.html)
 20. *behavior*: [rex_rotateto](rex_rotateto.html)
 21. *behavior*: [rex_text_scrolling](rex_text_scrolling.html)
-22. *plugin*: [rex_touchwrap](rex_touchwrap.html)
+22. *plugin*: [rex_timeline](rex_timeline.html)
+23. *plugin*: [rex_touchwrap](rex_touchwrap.html)
 
 
 ## Deprecated
