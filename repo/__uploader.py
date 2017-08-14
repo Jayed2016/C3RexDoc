@@ -12,7 +12,7 @@ def zipFolder(source_folder, out_file_path):
     for root, dirs, files in os.walk(source_folder):
         for f in files:
             source_path = op.join(root, f)
-            target_path = source_path.split(target_root)[1]
+            target_path = source_path.replace(source_folder, "")
             source_list.append( source_path )
             target_list.append( target_path )
 
