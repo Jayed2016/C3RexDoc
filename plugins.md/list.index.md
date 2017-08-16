@@ -17,13 +17,14 @@
 15. *plugin*: [rex_jsshell](rex_jsshell.html)
 16. *behavior*: [rex_moveTo](rex_moveto.html)
 17. *plugin*: [rex_ngio_authentication](rex_ngio_authentication.html)
-18. *plugin*: [rex_pause](rex_pause.html)
-19. *behavior*: [rex_platform_moveto](rex_platform_moveto.html)
-20. *behavior*: [rex_pushoutsolid](rex_pushoutsolid.html)
-21. *behavior*: [rex_rotateto](rex_rotateto.html)
-22. *behavior*: [rex_text_scrolling](rex_text_scrolling.html)
-23. *plugin*: [rex_timeline](rex_timeline.html)
-24. *plugin*: [rex_touchwrap](rex_touchwrap.html)
+18. *plugin*: [rex_ngio_scoreboard](rex_ngio_scoreboard.html)
+19. *plugin*: [rex_pause](rex_pause.html)
+20. *behavior*: [rex_platform_moveto](rex_platform_moveto.html)
+21. *behavior*: [rex_pushoutsolid](rex_pushoutsolid.html)
+22. *behavior*: [rex_rotateto](rex_rotateto.html)
+23. *behavior*: [rex_text_scrolling](rex_text_scrolling.html)
+24. *plugin*: [rex_timeline](rex_timeline.html)
+25. *plugin*: [rex_touchwrap](rex_touchwrap.html)
 
 
 ## Deprecated
