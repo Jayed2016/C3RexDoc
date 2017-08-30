@@ -34,6 +34,8 @@ def main():
         print category + ":" + pluginName
         zipFolder(arg, op.join(outFolder , pluginName+".c3addon"))
 
+    import indexGen       
+
 # -----------------------------------------------------------------------------  
 try:
     main()
