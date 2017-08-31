@@ -29,6 +29,7 @@
 - [rex_platform_moveto.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_platform_moveto.c3addon)  
 - [rex_prompt_wrap.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_prompt_wrap.c3addon)  
 - [rex_pushoutsolid.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_pushoutsolid.c3addon)  
+- [rex_randomgen.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_randomgen.c3addon)  
 - [rex_rotateto.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_rotateto.c3addon)  
 - [rex_shakeMod.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_shakeMod.c3addon)  
 - [rex_text_scrolling.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_text_scrolling.c3addon)  
