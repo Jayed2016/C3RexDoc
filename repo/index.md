@@ -11,6 +11,7 @@
 - [rex_csv2array.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_csv2array.c3addon)  
 - [rex_date.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_date.c3addon)  
 - [rex_firebase_apiV3.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_firebase_apiV3.c3addon)  
+- [rex_firebase_authentication.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_firebase_authentication.c3addon)  
 - [rex_fsm.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_fsm.c3addon)  
 - [rex_gfsm.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_gfsm.c3addon)  
 - [rex_hash.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_hash.c3addon)  
