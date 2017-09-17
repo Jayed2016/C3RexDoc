@@ -26,6 +26,7 @@
 - [rex_nickname.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_nickname.c3addon)  
 - [rex_patterngen.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_patterngen.c3addon)  
 - [rex_pause.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_pause.c3addon)  
+- [rex_pause_dt.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_pause_dt.c3addon)  
 - [rex_pinoffsetxy.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_pinoffsetxy.c3addon)  
 - [rex_platform_moveto.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_platform_moveto.c3addon)  
 - [rex_prompt_wrap.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_prompt_wrap.c3addon)  
