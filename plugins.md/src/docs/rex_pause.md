@@ -17,17 +17,13 @@ None
 ```mermaid
 graph TB
 
-StateRun["Run"] --> |"Action:Set state (Pause)<br>Action:Toggle state"| TransitionRun2Pause["Run --> Pause<br>(Save timescale,Set timescale to 0) <br>Condition:On pause"]
-TransitionRun2Pause --> StatePause["Pause"]
+StateRun("Run") --> |"Action:Set state (Pause)<br>Action:Toggle state"| TransitionRun2Pause["Run --> Pause<br>(Save timescale,Set timescale to 0) <br>Condition:On pause"]
+TransitionRun2Pause --> StatePause("Pause")
 StatePause --> |"Action:Set state (Run)<br>Action:Toggle state"| TransitionPause2Run["Pause --> Run<br>(Restore timescale)<br>Condition:On resume"]
 TransitionPause2Run --> StateRun
 
-subgraph State
-StatePause
-end
-subgraph State
-StateRun
-end
+style StateRun fill:#FFF8DC,stroke:#A52A2A
+style StatePause fill:#FFF8DC,stroke:#A52A2A
 
 ```
 
