@@ -1,0 +1,1579 @@
+{
+    "docs": [
+        {
+            "location": "/index.html", 
+            "text": "About me\n\n\nPlugin maker of construct 2,3 game engine.\n\n\n\n\nProfile page\n on Scirra\n\n\nTODO\n on trello\n\n\n\n\nLinks\n\n\n\n\nSource code of my plugins\n on github\n\n\nChat channel\n on discord\n\n\nSamples\n on one-driver\n\n\n\n\nLicense\n\n\nAll my plugins are \nMIT License\n.", 
+            "title": "Home"
+        }, 
+        {
+            "location": "/index.html#about-me", 
+            "text": "Plugin maker of construct 2,3 game engine.   Profile page  on Scirra  TODO  on trello", 
+            "title": "About me"
+        }, 
+        {
+            "location": "/index.html#links", 
+            "text": "Source code of my plugins  on github  Chat channel  on discord  Samples  on one-driver", 
+            "title": "Links"
+        }, 
+        {
+            "location": "/index.html#license", 
+            "text": "All my plugins are  MIT License .", 
+            "title": "License"
+        }, 
+        {
+            "location": "/rex_pause/index.html", 
+            "text": "Introduction\n\n\nPause/resume system by setting \ntimescale\n.\n\n\nIcon: \nIcons8\n\n\nLinks\n\n\n\n\nPlugin\n\n\n\n\nDependence\n\n\nNone\n\n\nUsage\n\n\ngraph TB\n\nStateRun(\nRun\n) --\n |\nAction:Set state (Pause)\nbr\nAction:Toggle state\n| TransitionRun2Pause[\nRun --\n Pause\nbr\n(Save timescale,Set timescale to 0) \nbr\nCondition:On pause\n]\nTransitionRun2Pause --\n StatePause(\nPause\n)\nStatePause --\n |\nAction:Set state (Run)\nbr\nAction:Toggle state\n| TransitionPause2Run[\nPause --\n Run\nbr\n(Restore timescale)\nbr\nCondition:On resume\n]\nTransitionPause2Run --\n StateRun\n\nstyle StateRun fill:#CCFF00,stroke:#A52A2A\nstyle StatePause fill:#CCFF00,stroke:#A52A2A\nstyle TransitionRun2Pause stroke-dasharray: 5, 5\nstyle TransitionPause2Run stroke-dasharray: 5, 5\n\n\n\nSample capx\n\n\n\n\nState : Run\n\n\nEvent : go to state Pause\n\n\nAction:Toggle state\n, or \n\n\nAction:Set state\n with parameter \nState\n to \nPause\n\n\n\n\n\n\nState Transition : Run to Pause\n\n\nStore current timescale\n\n\nExpression:PreTimescale\n\n\n\n\n\n\nSet timescale to \n0\n\n\nTrigger \nCondition:On pause\n\n\n\n\n\n\n\n\n\n\nState : Pause\n\n\nEvent : go to state Run\n\n\nAction:Toggle state\n, or \n\n\nAction:Set state\n with parameter \nState\n to \nRun\n\n\n\n\n\n\nState Transition : Pause to Run\n\n\nRestore timescale to \nExpression:PreTimescale\n\n\nTrigger \nCondition:On resume", 
+            "title": "Pause/resume"
+        }, 
+        {
+            "location": "/rex_pause/index.html#introduction", 
+            "text": "Pause/resume system by setting  timescale .  Icon:  Icons8", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/rex_pause/index.html#links", 
+            "text": "Plugin", 
+            "title": "Links"
+        }, 
+        {
+            "location": "/rex_pause/index.html#dependence", 
+            "text": "None", 
+            "title": "Dependence"
+        }, 
+        {
+            "location": "/rex_pause/index.html#usage", 
+            "text": "graph TB\n\nStateRun( Run ) --  | Action:Set state (Pause) br Action:Toggle state | TransitionRun2Pause[ Run --  Pause br (Save timescale,Set timescale to 0)  br Condition:On pause ]\nTransitionRun2Pause --  StatePause( Pause )\nStatePause --  | Action:Set state (Run) br Action:Toggle state | TransitionPause2Run[ Pause --  Run br (Restore timescale) br Condition:On resume ]\nTransitionPause2Run --  StateRun\n\nstyle StateRun fill:#CCFF00,stroke:#A52A2A\nstyle StatePause fill:#CCFF00,stroke:#A52A2A\nstyle TransitionRun2Pause stroke-dasharray: 5, 5\nstyle TransitionPause2Run stroke-dasharray: 5, 5  Sample capx   State : Run  Event : go to state Pause  Action:Toggle state , or   Action:Set state  with parameter  State  to  Pause    State Transition : Run to Pause  Store current timescale  Expression:PreTimescale    Set timescale to  0  Trigger  Condition:On pause      State : Pause  Event : go to state Run  Action:Toggle state , or   Action:Set state  with parameter  State  to  Run    State Transition : Pause to Run  Restore timescale to  Expression:PreTimescale  Trigger  Condition:On resume", 
+            "title": "Usage"
+        }, 
+        {
+            "location": "/rex_comment/index.html", 
+            "text": "Introduction\n\n\nDo nothing, only show comments in actions or conditions.\n\n\nIcon: \nIcons8\n\n\nLinks\n\n\n\n\nPlugin\n\n\n\n\nDependence\n\n\nNone\n\n\nUsage\n\n\nSample capx\n\n\n\n\nAction:Add comment\n, or \nCondition:Add comment", 
+            "title": "Comment"
+        }, 
+        {
+            "location": "/rex_comment/index.html#introduction", 
+            "text": "Do nothing, only show comments in actions or conditions.  Icon:  Icons8", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/rex_comment/index.html#links", 
+            "text": "Plugin", 
+            "title": "Links"
+        }, 
+        {
+            "location": "/rex_comment/index.html#dependence", 
+            "text": "None", 
+            "title": "Dependence"
+        }, 
+        {
+            "location": "/rex_comment/index.html#usage", 
+            "text": "Sample capx   Action:Add comment , or  Condition:Add comment", 
+            "title": "Usage"
+        }, 
+        {
+            "location": "/rex_csv/index.html", 
+            "text": "Introduction\n\n\nRead 2d table from \ncsv\n string.\n\n\nIcon: \nIcons8\n\n\nLinks\n\n\n\n\nPlugin\n\n\n\n\nDependence\n\n\nNone\n\n\nUsage\n\n\nWrite\n\n\nSample capx\n\n\nLoad table\n\n\n\n\n\n\nAction:Load table\n\n\n\n\nDelimiter : property \nDelimiter\n or \nAction:Set delimiter\n\n\nExpression:Delimiter\n\n\n\n\n\n\nFirst row : \n\n\nFirst column : empty\n\n\nOther columns : column keys\n\n\n\n\n\n\n\n\nOther rows : \n\n\n\n\nFirst column : row key\n\n\nOther columns : data\n\n\n\n\n\n\n\n\nFor example, table :\n\n\n\n\n\n\n\n\n\n\na\n\n\nb\n\n\n\n\n\n\n\n\n\n\nc\n\n\n10\n\n\n20\n\n\n\n\n\n\nd\n\n\n30\n\n\n40\n\n\n\n\n\n\n\n\nexported csv string :\n\n\n,a,b\n\n\nc,\n10\n,\n20\n\n\nd,\n30\n,\n40\n\n\n\n\n\n2d table in JSON (\nExpression:TableToString\n)\n\n\n{\n\n  \na\n:{\n\n    \nc\n:\n10\n,\n\n    \nd\n:\n30\n\n  \n},\n\n  \nb\n:{\n\n    \nc\n:\n20\n,\n\n    \nd\n:\n40\n\n  \n}\n\n\n}\n\n\n\n\n\n\n\n\n\n\n\n\n\nLoad multiple tables  (\nSample capx\n)\n\n\n\n\nAction:Turn page\n\n\nDefault page name : \n_\n\n\n\n\n\n\nAction:Load table\n\n\n\n\n\n\n\n\nData type\n\n\nSample capx\n\n\nProperty \nEval mode\n\n\n\n\n\n\nNo\n : string\n\n\n\n\nConvert column or row to number type after load table\n\n\nAction:Convert row\n\n\nAction:Convert col\n\n\n\n\n\n\n\n\n\n\n\n\nYes\n :  parse value by \neval\n function of javascrpt\n\n\n\n\nnumber: \n10\n\n\nstring: \n'hi'\n\n\njavascript function: \nMath.random()\n\n\n\n\nFor example, \n\n\n,Name,HP,MP\n\n\nchar\n1\n,\naaa\n,\n100\n,\n20\n\n\nchar\n2\n,\nbbb\n,\n80\n,\n30\n\n\n\n\n\nError message will display on console when eval failed.\n\n\n\n\n\n\nSet cell\n\n\n\n\nAction:Set value\n, \nAction:Add to\n  (\nSample capx\n)\n\n\nAction:Set value at page\n, \nAction:Add at page\n\n\nAction:Clear\n, to clean all cells\n\n\n\n\nAppend column or row\n\n\n\n\nAction:Append a column\n\n\nAction:Append a row\n\n\n\n\nRemove column or row\n\n\n\n\nAction:Remove a column\n\n\nParameter \nCol\n\n\nString : column name\n\n\nNumber : index of column\n\n\n\n\n\n\n\n\n\n\nAction:Remove a row\n\n\nParameter \nRow\n\n\nString : Row name\n\n\nNumber : index of row\n\n\n\n\n\n\n\n\n\n\n\n\nSort\n\n\nSample capx\n\n\n\n\nAction:Sort items in col\n\n\nAction:Sort items in row\n\n\n\n\nRead\n\n\nRead cell\n\n\n\n\n\n\nExpression:At(col, Row)\n, \nExpression:At(Col, Row, Page)\n\n\n\n\n\n\nParameter \ncol\n or \nrow\n\n\n\n\nString : column/row name\n\n\nNumber : index of column/row\n\n\n\n\nFor example\n\n\n\n\n\n\n\n\n\n\na\n\n\nb\n\n\n\n\n\n\n\n\n\n\nc\n\n\n10\n\n\n20\n\n\n\n\n\n\nd\n\n\n30\n\n\n40\n\n\n\n\n\n\n\n\nExpression:At(\"b\", \"d\") = Expression:At(1, 1) = 40 \n\n\n\n\n\n\nPage, column, row of the last \nExpression:At\n  \n\n\n\n\nExpression:AtPage\n\n\nExpression:AtCol\n\n\nExpression:AtRow\n\n\n\n\n\n\n\n\n\n\n\n\nRetrieve cells\n\n\ngraph TB\n\nCondForEachPage[\nCondition:For each page\nbr\n \nbr\nExpression:CurPage\n]\n\nsubgraph Col - Row\nCondForEachCol[\nCondition:For each col\nbr\n \nbr\nExpression:CurCol\n] --- CondForEachRowInCol[\nCondition:For each row in col\nbr\n \nbr\nExpression:CurRow\nbr\nExpression:CurValue\n]\nend\n\nsubgraph Row - Col\nCondForEachRow[\nCondition:For each row\nbr\n \nbr\nExpression:CurRow\n] --- CondForEachColInRow[\nCondition:For each col in row\nbr\n \nbr\nExpression:CurCol\nbr\nExpression:CurValue\n]\nend\n\nCondForEachPage --- CondForEachCol\nCondForEachPage --- CondForEachRow\n\n\n\n\n\nRetrieve pages\n\n\nCondition:For each page\n\n\nExpression:CurPage\n\n\n\n\n\n\n\n\n\n\nRetrieve columns\n\n\nCondition:For each col\n\n\nExpression:CurCol\n\n\nCondition:For each row in col\n\n\nExpression:CurRow\n\n\nExpression:CurValue\n\n\n\n\n\n\n\n\n\n\nSystem condition: For\n, from 0 to \nExpression:ColCnt\n -1\n\n\n\n\n\n\nRetrieve rows\n\n\nCondition:For each row\n\n\nExpression:CurRow\n\n\nCondition:For each col in row\n\n\nExpression:CurCol\n\n\nExpression:CurValue\n\n\n\n\n\n\n\n\n\n\nSystem condition: For\n, from 0 to \nExpression:RowCnt\n -1\n\n\n\n\n\n\n\n\nPrevious/next column or row\n\n\nSample capx\n\n\n\n\nPrevious/ next column\n\n\nExpression:PreviousCol\n\n\nExpression:NextCol\n\n\n\n\n\n\nPrevious/ next row\n\n\nExpression:PreviousRow\n\n\nExpression:NextRow\n\n\n\n\n\n\n\n\nIs existed\n\n\n\n\nHas column or row\n\n\nCondition:Has col\n\n\nCondition:Has row\n\n\nCondition:Cell is valid\n\n\n\n\n\n\nData in column or row\n\n\nCondition:Data in col\n\n\nCondition:Data in row\n\n\n\n\n\n\nQuery\n\n\nLoad csv to \nrex_taffydb\n to query rows.\n\n\n\n\n\n\n\n\nAmount of column or row\n\n\n\n\nExpression:ColCnt\n\n\nExpression:RowCnt\n\n\n\n\nRead csv string\n\n\nSample capx\n\n\n\n\nExpression:TableToCSV\n\n\n\n\n\n\nSave \n load\n\n\n\n\nIt supports official saving \n loading feature.\n\n\nManual save \n load\n\n\nSave \n load a table\n\n\nExpression:TableToString\n -\n \nAction:Load one table\n\n\n\n\n\n\nSave \n load all tables\n\n\nExpression:AllTalbesToString\n -\n \nAction:Load all tables\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDebug panel\n\n\n\n\nDump cells in a column \nCol\n at \nPage\n\n\nSet cell value at respond cell", 
+            "title": "2D tables"
+        }, 
+        {
+            "location": "/rex_csv/index.html#introduction", 
+            "text": "Read 2d table from  csv  string.  Icon:  Icons8", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/rex_csv/index.html#links", 
+            "text": "Plugin", 
+            "title": "Links"
+        }, 
+        {
+            "location": "/rex_csv/index.html#dependence", 
+            "text": "None", 
+            "title": "Dependence"
+        }, 
+        {
+            "location": "/rex_csv/index.html#usage", 
+            "text": "", 
+            "title": "Usage"
+        }, 
+        {
+            "location": "/rex_csv/index.html#write", 
+            "text": "Sample capx", 
+            "title": "Write"
+        }, 
+        {
+            "location": "/rex_csv/index.html#load-table", 
+            "text": "Action:Load table   Delimiter : property  Delimiter  or  Action:Set delimiter  Expression:Delimiter    First row :   First column : empty  Other columns : column keys     Other rows :    First column : row key  Other columns : data     For example, table :      a  b      c  10  20    d  30  40     exported csv string :  ,a,b  c, 10 , 20  d, 30 , 40   2d table in JSON ( Expression:TableToString )  { \n   a :{ \n     c : 10 , \n     d : 30 \n   }, \n   b :{ \n     c : 20 , \n     d : 40 \n   }  }       Load multiple tables  ( Sample capx )   Action:Turn page  Default page name :  _    Action:Load table", 
+            "title": "Load table"
+        }, 
+        {
+            "location": "/rex_csv/index.html#data-type", 
+            "text": "Sample capx  Property  Eval mode    No  : string   Convert column or row to number type after load table  Action:Convert row  Action:Convert col       Yes  :  parse value by  eval  function of javascrpt   number:  10  string:  'hi'  javascript function:  Math.random()   For example,   ,Name,HP,MP  char 1 , aaa , 100 , 20  char 2 , bbb , 80 , 30   Error message will display on console when eval failed.", 
+            "title": "Data type"
+        }, 
+        {
+            "location": "/rex_csv/index.html#set-cell", 
+            "text": "Action:Set value ,  Action:Add to   ( Sample capx )  Action:Set value at page ,  Action:Add at page  Action:Clear , to clean all cells", 
+            "title": "Set cell"
+        }, 
+        {
+            "location": "/rex_csv/index.html#append-column-or-row", 
+            "text": "Action:Append a column  Action:Append a row", 
+            "title": "Append column or row"
+        }, 
+        {
+            "location": "/rex_csv/index.html#remove-column-or-row", 
+            "text": "Action:Remove a column  Parameter  Col  String : column name  Number : index of column      Action:Remove a row  Parameter  Row  String : Row name  Number : index of row", 
+            "title": "Remove column or row"
+        }, 
+        {
+            "location": "/rex_csv/index.html#sort", 
+            "text": "Sample capx   Action:Sort items in col  Action:Sort items in row", 
+            "title": "Sort"
+        }, 
+        {
+            "location": "/rex_csv/index.html#read", 
+            "text": "", 
+            "title": "Read"
+        }, 
+        {
+            "location": "/rex_csv/index.html#read-cell", 
+            "text": "Expression:At(col, Row) ,  Expression:At(Col, Row, Page)    Parameter  col  or  row   String : column/row name  Number : index of column/row   For example      a  b      c  10  20    d  30  40     Expression:At(\"b\", \"d\") = Expression:At(1, 1) = 40     Page, column, row of the last  Expression:At      Expression:AtPage  Expression:AtCol  Expression:AtRow", 
+            "title": "Read cell"
+        }, 
+        {
+            "location": "/rex_csv/index.html#retrieve-cells", 
+            "text": "graph TB\n\nCondForEachPage[ Condition:For each page br   br Expression:CurPage ]\n\nsubgraph Col - Row\nCondForEachCol[ Condition:For each col br   br Expression:CurCol ] --- CondForEachRowInCol[ Condition:For each row in col br   br Expression:CurRow br Expression:CurValue ]\nend\n\nsubgraph Row - Col\nCondForEachRow[ Condition:For each row br   br Expression:CurRow ] --- CondForEachColInRow[ Condition:For each col in row br   br Expression:CurCol br Expression:CurValue ]\nend\n\nCondForEachPage --- CondForEachCol\nCondForEachPage --- CondForEachRow   Retrieve pages  Condition:For each page  Expression:CurPage      Retrieve columns  Condition:For each col  Expression:CurCol  Condition:For each row in col  Expression:CurRow  Expression:CurValue      System condition: For , from 0 to  Expression:ColCnt  -1    Retrieve rows  Condition:For each row  Expression:CurRow  Condition:For each col in row  Expression:CurCol  Expression:CurValue      System condition: For , from 0 to  Expression:RowCnt  -1", 
+            "title": "Retrieve cells"
+        }, 
+        {
+            "location": "/rex_csv/index.html#previousnext-column-or-row", 
+            "text": "Sample capx   Previous/ next column  Expression:PreviousCol  Expression:NextCol    Previous/ next row  Expression:PreviousRow  Expression:NextRow", 
+            "title": "Previous/next column or row"
+        }, 
+        {
+            "location": "/rex_csv/index.html#is-existed", 
+            "text": "Has column or row  Condition:Has col  Condition:Has row  Condition:Cell is valid    Data in column or row  Condition:Data in col  Condition:Data in row    Query  Load csv to  rex_taffydb  to query rows.", 
+            "title": "Is existed"
+        }, 
+        {
+            "location": "/rex_csv/index.html#amount-of-column-or-row", 
+            "text": "Expression:ColCnt  Expression:RowCnt", 
+            "title": "Amount of column or row"
+        }, 
+        {
+            "location": "/rex_csv/index.html#read-csv-string", 
+            "text": "Sample capx   Expression:TableToCSV", 
+            "title": "Read csv string"
+        }, 
+        {
+            "location": "/rex_csv/index.html#save-load", 
+            "text": "It supports official saving   loading feature.  Manual save   load  Save   load a table  Expression:TableToString  -   Action:Load one table    Save   load all tables  Expression:AllTalbesToString  -   Action:Load all tables", 
+            "title": "Save &amp; load"
+        }, 
+        {
+            "location": "/rex_csv/index.html#debug-panel", 
+            "text": "Dump cells in a column  Col  at  Page  Set cell value at respond cell", 
+            "title": "Debug panel"
+        }, 
+        {
+            "location": "/rex_csv2array/index.html", 
+            "text": "Introduction\n\n\nLoad content of official array object from \ncsv\n string.\n\n\nIcon: \nIcons8\n\n\nLinks\n\n\n\n\nPlugin\n\n\n\n\nDependence\n\n\nNone\n\n\nUsage\n\n\nLoad to array\n\n\nSample capx\n\n\n\n\nAction:Put csv data into array\n\n\nDelimiter : property \nDelimiter\n or \nAction:Set delimiter\n\n\nExpression:Delimiter\n\n\n\n\n\n\n\n\nFormat of csv :\n\n\ndata00,data01,data02,data03,...\ndata10,data11,data12,data13,...\ndata20,data21,data22,data23,...\n...\n\n\n\n\n\n\n\n\n\n\n\n\nData type\n\n\nProperty \nEval mode\n\n\n\n\nNo\n : string\n\n\nYes\n :  parse value by \neval\n function of javascrpt\n\n\nnumber: \n10\n\n\nstring: \n'hi'\n\n\njavascript function: \nMath.random()\n\n\n\n\n\n\n\n\nRetrieve cells\n\n\ngraph TB\n\nCondForEachCell[\nCondition:For each cell\n] --\n ExpCell[\n(Expression:CurX, Expression:CurY) = Expression:CurValue\nbr\n \nbr\nExpression:Width\nbr\nExpression:Height\n]\n\n\n\n\n\nCondition:For each cell\n\n\n(\nExpression:CurX\n, \nExpression:CurY\n) = \nExpression:CurValue\n\n\nProperty \nEval mode\n\n\n\n\n\n\nExpression:Width\n, width of csv cells\n\n\nExpression:Height\n, height of csv cells\n\n\n\n\n\n\n\n\nMore examples\n\n\n\n\nSplit string", 
+            "title": "CSV to official array object"
+        }, 
+        {
+            "location": "/rex_csv2array/index.html#introduction", 
+            "text": "Load content of official array object from  csv  string.  Icon:  Icons8", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/rex_csv2array/index.html#links", 
+            "text": "Plugin", 
+            "title": "Links"
+        }, 
+        {
+            "location": "/rex_csv2array/index.html#dependence", 
+            "text": "None", 
+            "title": "Dependence"
+        }, 
+        {
+            "location": "/rex_csv2array/index.html#usage", 
+            "text": "", 
+            "title": "Usage"
+        }, 
+        {
+            "location": "/rex_csv2array/index.html#load-to-array", 
+            "text": "Sample capx   Action:Put csv data into array  Delimiter : property  Delimiter  or  Action:Set delimiter  Expression:Delimiter     Format of csv :  data00,data01,data02,data03,...\ndata10,data11,data12,data13,...\ndata20,data21,data22,data23,...\n...", 
+            "title": "Load to array"
+        }, 
+        {
+            "location": "/rex_csv2array/index.html#data-type", 
+            "text": "Property  Eval mode   No  : string  Yes  :  parse value by  eval  function of javascrpt  number:  10  string:  'hi'  javascript function:  Math.random()", 
+            "title": "Data type"
+        }, 
+        {
+            "location": "/rex_csv2array/index.html#retrieve-cells", 
+            "text": "graph TB\n\nCondForEachCell[ Condition:For each cell ] --  ExpCell[ (Expression:CurX, Expression:CurY) = Expression:CurValue br   br Expression:Width br Expression:Height ]   Condition:For each cell  ( Expression:CurX ,  Expression:CurY ) =  Expression:CurValue  Property  Eval mode    Expression:Width , width of csv cells  Expression:Height , height of csv cells", 
+            "title": "Retrieve cells"
+        }, 
+        {
+            "location": "/rex_csv2array/index.html#more-examples", 
+            "text": "Split string", 
+            "title": "More examples"
+        }, 
+        {
+            "location": "/rex_hash/index.html", 
+            "text": "Introduction\n\n\nManipulate \nJSON\n data.\n\n\nIcon: \nIcons8\n\n\nLinks\n\n\n\n\nPlugin\n\n\n\n\nDependence\n\n\nNone\n\n\nUsage\n\n\nLoad\n\n\nAction:Load JSON\n\n\nContent\n\n\nExpression:AsJSON\n\n\nDictionary\n\n\nWrite\n\n\n\n\nAction:Set value\n\n\nAction:Add to\n  (\nSample capx\n)\n\n\nAction:Set JSON\n\n\nAction:Remove key\n\n\nAction:Clean all\n\n\nAction:Merge\n, to merge another JSON  (\nSample capx\n)\n\n\n\n\nParameter \nKey\n is a string with dot notation. For example, content is\n\n\n{\n\n  \na\n:\n10\n,\n\n  \nb\n:{\n\n    \nc\n:\n30\n\n  \n},\n\n  \nd\n:\n \n40\n\n\n}\n\n\n\n\n\nSet \nroot.b.c\n by key \nb.c\n.\n\n\nNew object will be created if not exists.\n\n\nRead\n\n\nRead a value\n\n\n\n\nExpression:At( keys )\n, keys in a string with dot notation\n\n\nExpression:At( \n )\n, returns root\n\n\nExpression:At( keys , defaultValue )\n, return \ndefaultValue\n if keys is not existed\n\n\nExpression:AtKeys( key0, key1, ... )\n, keys in parameters\n\n\n\n\nFor example get value at \nroot.b.c\n :\n\n\nExpression:At(\n \nb.c\n \n),\n\n\nExpression:AtKeys(\n \nb\n,\n \nc\n \n)\n\n\n\n\n\n\n\nCondition:Key exists\n, returns true if key is existed\n\n\nExpression:RandomKeyAt\n, returns a random key in object\n\n\n\n\nRetrieve keys in object\n\n\ngraph TB\n\nCondForEaachItem[\nCondition:For each key\n] --- ExpCurItem[\nExpression:CurKey\nbr\nExpression:CurValue\nbr\nExpression:Loopindex\n]\n\n\n\n\n\nCondition:For each key\n  \nSample capx\n\n\nExpression:CurKey\n\n\nExpression:CurValue( keys )\n, child in current item\n\n\n\n\n\n\nExpression:Loopindex\n, loop index of current for each\n\n\n\n\n\n\nAction:Pick keys\n, put all keys in object into an official array.  \nSample capx\n\n\nExpression:ItemCnt\n, amount of keys in object\n\n\n0\n : this object is a number or a string\n\n\n-1\n : object is not existed\n\n\n\n\n\n\n\n\nArray\n\n\nWrite\n\n\n\n\nInitial an array\n\n\nAction:Set JSON\n with parameter \nJSON\n to \n[]\n\n\n\n\n\n\nPush\n\n\nAction:Push value\n\n\nAction:Push JSON\n  \nSample capx\n\n\n\n\n\n\nInsert\n\n\nAction:Insert value\n\n\nAction:Insert JSON\n\n\n\n\n\n\nRemove\n\n\nAction:Remove key\n\n\n\n\n\n\nArray length\n\n\nExpression:ItemCnt\n\n\n\n\n\n\nOrder\n\n\nAction:Sort\n  \nSample capx\n\n\nAction:Shuffle\n  \nSample capx\n\n\n\n\n\n\n\n\nRead\n\n\nRead a value\n\n\n\n\nExpression:At( keys )\n, keys in a string with dot notation\n\n\nExpression:AtKeys( key0, key1, ... )\n\n\nExpression:Pop\n, pop the last item\n\n\nExpression:Pop(keys, index)\n, pop item at index\n\n\n\n\n\n\n\n\nRetrieve keys in array\n\n\n\n\nCondition:For each key\n  \nSample capx\n\n\nExpression:CurKey\n\n\nExpression:CurValue( keys )\n, child in current item\n\n\n\n\n\n\nExpression:Loopindex\n, loop index of current for each\n\n\n\n\n\n\nSystem condition:For\n, from \n0\n  to \nExpression:ItemCnt - 1\n\n\n\n\n\n\nSave\nLoad\n\n\nThis plugin support official save/load system.", 
+            "title": "JSON plugin"
+        }, 
+        {
+            "location": "/rex_hash/index.html#introduction", 
+            "text": "Manipulate  JSON  data.  Icon:  Icons8", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/rex_hash/index.html#links", 
+            "text": "Plugin", 
+            "title": "Links"
+        }, 
+        {
+            "location": "/rex_hash/index.html#dependence", 
+            "text": "None", 
+            "title": "Dependence"
+        }, 
+        {
+            "location": "/rex_hash/index.html#usage", 
+            "text": "", 
+            "title": "Usage"
+        }, 
+        {
+            "location": "/rex_hash/index.html#load", 
+            "text": "Action:Load JSON", 
+            "title": "Load"
+        }, 
+        {
+            "location": "/rex_hash/index.html#content", 
+            "text": "Expression:AsJSON", 
+            "title": "Content"
+        }, 
+        {
+            "location": "/rex_hash/index.html#dictionary", 
+            "text": "", 
+            "title": "Dictionary"
+        }, 
+        {
+            "location": "/rex_hash/index.html#write", 
+            "text": "Action:Set value  Action:Add to   ( Sample capx )  Action:Set JSON  Action:Remove key  Action:Clean all  Action:Merge , to merge another JSON  ( Sample capx )   Parameter  Key  is a string with dot notation. For example, content is  { \n   a : 10 , \n   b :{ \n     c : 30 \n   }, \n   d :   40  }   Set  root.b.c  by key  b.c .  New object will be created if not exists.", 
+            "title": "Write"
+        }, 
+        {
+            "location": "/rex_hash/index.html#read", 
+            "text": "", 
+            "title": "Read"
+        }, 
+        {
+            "location": "/rex_hash/index.html#read-a-value", 
+            "text": "Expression:At( keys ) , keys in a string with dot notation  Expression:At(   ) , returns root  Expression:At( keys , defaultValue ) , return  defaultValue  if keys is not existed  Expression:AtKeys( key0, key1, ... ) , keys in parameters   For example get value at  root.b.c  :  Expression:At(   b.c   ),  Expression:AtKeys(   b ,   c   )    Condition:Key exists , returns true if key is existed  Expression:RandomKeyAt , returns a random key in object", 
+            "title": "Read a value"
+        }, 
+        {
+            "location": "/rex_hash/index.html#retrieve-keys-in-object", 
+            "text": "graph TB\n\nCondForEaachItem[ Condition:For each key ] --- ExpCurItem[ Expression:CurKey br Expression:CurValue br Expression:Loopindex ]   Condition:For each key    Sample capx  Expression:CurKey  Expression:CurValue( keys ) , child in current item    Expression:Loopindex , loop index of current for each    Action:Pick keys , put all keys in object into an official array.   Sample capx  Expression:ItemCnt , amount of keys in object  0  : this object is a number or a string  -1  : object is not existed", 
+            "title": "Retrieve keys in object"
+        }, 
+        {
+            "location": "/rex_hash/index.html#array", 
+            "text": "", 
+            "title": "Array"
+        }, 
+        {
+            "location": "/rex_hash/index.html#write_1", 
+            "text": "Initial an array  Action:Set JSON  with parameter  JSON  to  []    Push  Action:Push value  Action:Push JSON    Sample capx    Insert  Action:Insert value  Action:Insert JSON    Remove  Action:Remove key    Array length  Expression:ItemCnt    Order  Action:Sort    Sample capx  Action:Shuffle    Sample capx", 
+            "title": "Write"
+        }, 
+        {
+            "location": "/rex_hash/index.html#read_1", 
+            "text": "", 
+            "title": "Read"
+        }, 
+        {
+            "location": "/rex_hash/index.html#read-a-value_1", 
+            "text": "Expression:At( keys ) , keys in a string with dot notation  Expression:AtKeys( key0, key1, ... )  Expression:Pop , pop the last item  Expression:Pop(keys, index) , pop item at index", 
+            "title": "Read a value"
+        }, 
+        {
+            "location": "/rex_hash/index.html#retrieve-keys-in-array", 
+            "text": "Condition:For each key    Sample capx  Expression:CurKey  Expression:CurValue( keys ) , child in current item    Expression:Loopindex , loop index of current for each    System condition:For , from  0   to  Expression:ItemCnt - 1", 
+            "title": "Retrieve keys in array"
+        }, 
+        {
+            "location": "/rex_hash/index.html#saveload", 
+            "text": "This plugin support official save/load system.", 
+            "title": "Save&amp;Load"
+        }, 
+        {
+            "location": "/rex_bhash/index.html", 
+            "text": "Introduction\n\n\nManipulate \nJSON\n data.\n\n\nIcon: \nIcons8\n\n\nLinks\n\n\n\n\nPlugin\n\n\n\n\nDependence\n\n\nNone\n\n\nUsage\n\n\nThe features are the same as \nrex_hash plugin\n.", 
+            "title": "JSON behavior"
+        }, 
+        {
+            "location": "/rex_bhash/index.html#introduction", 
+            "text": "Manipulate  JSON  data.  Icon:  Icons8", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/rex_bhash/index.html#links", 
+            "text": "Plugin", 
+            "title": "Links"
+        }, 
+        {
+            "location": "/rex_bhash/index.html#dependence", 
+            "text": "None", 
+            "title": "Dependence"
+        }, 
+        {
+            "location": "/rex_bhash/index.html#usage", 
+            "text": "The features are the same as  rex_hash plugin .", 
+            "title": "Usage"
+        }, 
+        {
+            "location": "/rex_gfsm/index.html", 
+            "text": "Introduction\n\n\nDescribe \nfinite state machine\n.\n\n\nIcon: \nIcons8\n\n\nLinks\n\n\n\n\nPlugin\n\n\n\n\nDependence\n\n\nNone\n\n\nUsage\n\n\nSample capx\n\n\nFlow chart\n\n\ngraph TB\n\nsubgraph Go to next state\nsubgraph Transfer logic\nRequest[\nAction:Request\n]  --\n CondOnTransferLogic[\nCondition:On transfer logic(CurState)\n]\nCondOnTransferLogic --\n SetNextState[\nSubevent:\nbr\nAction:Set next state\n]\nend\n\nGoToState[\nAction:Go to state\n]\n\nend\n\nSetNextState --\n CondOnStateChanged[\nCondition:On state changed\nbr\n----\nbr\nPreState --\n CurState\n]\nGoToState[\nAction:Go to state\n] --\n CondOnStateChanged\n\nsubgraph State changing action\nCondOnStateChanged --\n HasCondOnTransfer{\nHas\nbr\nCondition:On transfer\nbr\nin event sheet\n}\nHasCondOnTransfer --\n |Yes| CondOnTransfer[\nCondition:On transfer\nbr\n----\nbr\nPreState --\n CurState\n]\nHasCondOnTransfer --\n |No| HasCondOnExit{\nHas\nbr\nCondition:On exit\nbr\nin event sheet\n}\n\nsubgraph On exit\nHasCondOnExit --\n |Yes| CondOnExit[\nCondition:On exit\nbr\n----\nbr\nPreState\n]\nHasCondOnExit --\n |No| CondOndefaultExit[\nCondition:On default exit\n]\nend\n\nCondOnExit --\n HasCondOnEnter{\nHas\nbr\nCondition:On enter\nbr\nin event sheet\n}\nCondOndefaultExit --\n HasCondOnEnter\n\nsubgraph On enter\nHasCondOnEnter --\n |Yes| CondOnEnter[\nCondition:On enter\nbr\n----\nbr\nCurState\n]\nHasCondOnEnter --\n |No| CondOndefaultEnter[\nCondition:On default enter\n]\nend\n\nend\n\n\n\nGo to next state\n\n\n\n\nAction:Request\n, get and go to next state by event. Style of \nbehavior tree\n.\n\n\nAction:Request\n, go to next state which determined by\n\n\nCondition:On transfer logic(Curstate)\n \n\n\nset next state by \nAction:Set next state\n\n\nState will not change if \nAction:Set next state\n does not invoke.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAction:Go to state\n, go to next state directly.\n\n\n\n\nState changing actions\n\n\nAdd actions under these conditions, which will be triggered when state is changed from \nExpression:PreState\n to \nExpression:CurState\n\n\n\n\nCondition:On state changed\n \n\n\nIf \nCondition:On transfer\n is in event sheet,\n\n\nCondition:On state changed\n \n\n\nElse\n\n\nIf \nCondition:On exit\n is in event sheet,\n\n\nCondition:On exit\n\n\nElse \nCondition:On default exit\n\n\n\n\n\n\nIf \nCondition:On enter\n is in event sheet,\n\n\nCondition:On enter\n\n\nElse \nCondition:On default enter\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWarning\n\n\nDon't change state (\nAction:Request\n or \nAction:Go to state\n) under these conditions directly.\n\nInserts a \nSystem action: wait (0)\n above \nAction:Request\n or \nAction:Go to state\n, which could suspend remaining actions until next tick.\n\n\n\n\nInitial state\n\n\nSet initial state in property \nInitial state\n.\n\n\nDebug\n\n\nDump current state by \nExpression:CurState\n under \nCondition:On state changed\n, to track the state changing.", 
+            "title": "FSM plugin"
+        }, 
+        {
+            "location": "/rex_gfsm/index.html#introduction", 
+            "text": "Describe  finite state machine .  Icon:  Icons8", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/rex_gfsm/index.html#links", 
+            "text": "Plugin", 
+            "title": "Links"
+        }, 
+        {
+            "location": "/rex_gfsm/index.html#dependence", 
+            "text": "None", 
+            "title": "Dependence"
+        }, 
+        {
+            "location": "/rex_gfsm/index.html#usage", 
+            "text": "Sample capx", 
+            "title": "Usage"
+        }, 
+        {
+            "location": "/rex_gfsm/index.html#flow-chart", 
+            "text": "graph TB\n\nsubgraph Go to next state\nsubgraph Transfer logic\nRequest[ Action:Request ]  --  CondOnTransferLogic[ Condition:On transfer logic(CurState) ]\nCondOnTransferLogic --  SetNextState[ Subevent: br Action:Set next state ]\nend\n\nGoToState[ Action:Go to state ]\n\nend\n\nSetNextState --  CondOnStateChanged[ Condition:On state changed br ---- br PreState --  CurState ]\nGoToState[ Action:Go to state ] --  CondOnStateChanged\n\nsubgraph State changing action\nCondOnStateChanged --  HasCondOnTransfer{ Has br Condition:On transfer br in event sheet }\nHasCondOnTransfer --  |Yes| CondOnTransfer[ Condition:On transfer br ---- br PreState --  CurState ]\nHasCondOnTransfer --  |No| HasCondOnExit{ Has br Condition:On exit br in event sheet }\n\nsubgraph On exit\nHasCondOnExit --  |Yes| CondOnExit[ Condition:On exit br ---- br PreState ]\nHasCondOnExit --  |No| CondOndefaultExit[ Condition:On default exit ]\nend\n\nCondOnExit --  HasCondOnEnter{ Has br Condition:On enter br in event sheet }\nCondOndefaultExit --  HasCondOnEnter\n\nsubgraph On enter\nHasCondOnEnter --  |Yes| CondOnEnter[ Condition:On enter br ---- br CurState ]\nHasCondOnEnter --  |No| CondOndefaultEnter[ Condition:On default enter ]\nend\n\nend", 
+            "title": "Flow chart"
+        }, 
+        {
+            "location": "/rex_gfsm/index.html#go-to-next-state", 
+            "text": "Action:Request , get and go to next state by event. Style of  behavior tree .  Action:Request , go to next state which determined by  Condition:On transfer logic(Curstate)    set next state by  Action:Set next state  State will not change if  Action:Set next state  does not invoke.        Action:Go to state , go to next state directly.", 
+            "title": "Go to next state"
+        }, 
+        {
+            "location": "/rex_gfsm/index.html#state-changing-actions", 
+            "text": "Add actions under these conditions, which will be triggered when state is changed from  Expression:PreState  to  Expression:CurState   Condition:On state changed    If  Condition:On transfer  is in event sheet,  Condition:On state changed    Else  If  Condition:On exit  is in event sheet,  Condition:On exit  Else  Condition:On default exit    If  Condition:On enter  is in event sheet,  Condition:On enter  Else  Condition:On default enter          Warning  Don't change state ( Action:Request  or  Action:Go to state ) under these conditions directly. \nInserts a  System action: wait (0)  above  Action:Request  or  Action:Go to state , which could suspend remaining actions until next tick.", 
+            "title": "State changing actions"
+        }, 
+        {
+            "location": "/rex_gfsm/index.html#initial-state", 
+            "text": "Set initial state in property  Initial state .", 
+            "title": "Initial state"
+        }, 
+        {
+            "location": "/rex_gfsm/index.html#debug", 
+            "text": "Dump current state by  Expression:CurState  under  Condition:On state changed , to track the state changing.", 
+            "title": "Debug"
+        }, 
+        {
+            "location": "/rex_fsm/index.html", 
+            "text": "Introduction\n\n\nDescribe \nfinite state machine\n.\n\n\nIcon: \nIcons8\n\n\nLinks\n\n\n\n\nPlugin\n\n\n\n\nDependence\n\n\nNone\n\n\nUsage\n\n\nSample capx\n\n\nThe features are the same as \nrex_gfsm plugin\n.", 
+            "title": "FSM behavior"
+        }, 
+        {
+            "location": "/rex_fsm/index.html#introduction", 
+            "text": "Describe  finite state machine .  Icon:  Icons8", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/rex_fsm/index.html#links", 
+            "text": "Plugin", 
+            "title": "Links"
+        }, 
+        {
+            "location": "/rex_fsm/index.html#dependence", 
+            "text": "None", 
+            "title": "Dependence"
+        }, 
+        {
+            "location": "/rex_fsm/index.html#usage", 
+            "text": "Sample capx  The features are the same as  rex_gfsm plugin .", 
+            "title": "Usage"
+        }, 
+        {
+            "location": "/rex_jsshell/index.html", 
+            "text": "Introduction\n\n\nInvoke javascript function.\n\n\nIcon: \nIcons8\n\n\nLinks\n\n\n\n\nPlugin\n\n\n\n\nDependence\n\n\nNone\n\n\nUsage\n\n\nInvoke function by actions\n\n\ngraph TB\n\nLoadJSCode[\nAction:Load API\n] --\n SetFnName[\nAction:Set function name\n]\nSetFnName --\n AddParam[\nAdd parameters\nbr\n----\nbr\nAction:Add value\nbr\nAction:Add boolean\nbr\nAction:Add null\nbr\nAction:Add JSON\nbr\nAction:Add callback\nbr\nAction:Add C2 function callback\nbr\nAction:Add object\n]\nAddParam --\n Invoke[\nAction:Invoke\n]\nInvoke --\n ReturnValue[\nReturn value\nbr\n----\nbr\nExpression:ReturnValue\nbr\nExpression:Prop\n]\n\nExecJS[\nAction:Execute Javascript\nbr\n(Official browser plugin)\n] --\n SetFnName\n\nInvoke --\n |\nAction:Add callback\n| Callback[\nCondition:Callback\nbr\nExpression:Param\n]\nInvoke --\n |\nAction:Add C2 function callback\n| C2FnCallback[\nOfficial function object\nbr\n----\nbr\nCondition:On function\nbr\nExpression:Param\n]\n\nsubgraph Load javascript\nLoadJSCode\nExecJS\nend\n\nsubgraph Invoke javascript function\nSetFnName\nAddParam\nInvoke\nReturnValue\nCallback\nC2FnCallback\nend\n\n\n\n\n\nLoad javascript\n\n\nAction:Load API\n (\nSample capx\n)\n\n\nOfficial Ajax plugin: \nAction: Request project file\n\n\nOfficial browser plugin: \nAction:Execute Javascript\n  (\nSample capx\n)\n\n\n\n\n\n\nAction:Set function name\n\n\nAdd parameters\n\n\nAction:Add value\n\n\nAction:Add boolean\n\n\nAction:Add null\n\n\nAction:Add JSON\n\n\nAction:Add callback\n\n\nAction:Add C2 function callback\n\n\nAction:Add object\n\n\n\n\n\n\nAction:Invoke\n\n\nReturn value\n\n\nExpression:ReturnValue\n\n\nExpression:ReturnValue(key)\n, to get property of return value\n\n\nExpression:ReturnValue(key, defaultValue)\n\n\nExpression:Prop(key)\n\n\n\n\n\n\nStore return object to variable  (\nSample capx\n)\n\n\nExpression:Prop(key)\n\n\nExpression:Prop(key, defaultValue)\n\n\n\n\n\n\n\n\n\n\nCallback\n\n\nCondition:Callback\n, from callback parameter (\nAction:Add callback\n)\n\n\nExpression:Param(n)\n, to get nth parameter of callback\n\n\nExpression:Param(n, key)\n, to get property of nth parameter of callback\n\n\nExpression:Param(n, key, defaultValue)\n\n\n\n\n\n\nCondition:On function\n of official function object, from C2 function callback (\nAction:Add C2 function callback\n)  (\nSample capx\n)\n\n\nExpression:Param(n)\n, to get nth parameter of callback\n\n\n\n\n\n\n\n\n\n\n\n\nInvoke function by expression\n\n\nSample capx\n\n\n\n\nExpression:Call(functionName, parameter0, parameter1, ...)\n\n\nParameter\n\n\nNumber, or string: \nExpression:ValueParam\n\n\nBoolean: \nExpression:BooleanParam\n\n\nNull: \nExpression:NullParam\n\n\nJSON: \nExpression:JSONParam\n\n\nCallback: \nExpression:CallbackParam\n\n\nC2 callback: \nExpression:C2FnParam\n\n\nObject: \nExpression:ObjectParam\n\n\n\n\n\n\n\n\n\n\n\n\nCreate instance\n\n\ngraph TB\n\nSetFnName[\nAction:Set object type\n] --\n AddParam[\nAdd parameters\nbr\n----\nbr\nAction:Add value\nbr\nAction:Add boolean\nbr\nAction:Add null\nbr\nAction:Add JSON\nbr\nAction:Add callback\nbr\nAdd C2 function callback\nbr\nAction:Add object\n]\nAddParam --\n CreateInstance[\nAction:New instance\nbr\nExpression:Prop\n]\n\n\n\nSample capx\n\n\n\n\nAction:Set object type\n\n\nAdd parameters\n\n\nAction:Add value\n\n\nAction:Add boolean\n\n\nAction:Add null\n\n\nAction:Add JSON\n\n\nAction:Add callback\n\n\nAction:Add C2 function callback\n\n\nAction:Add object\n\n\n\n\n\n\nAction:Newe instance\n\n\nExpression:Prop(key)\n\n\nExpression:Prop(key, defaultValue)\n\n\n\n\n\n\n\n\nMore examples\n\n\n\n\nA simple test of deepstream.io's client\n\n\nDeepstream.io\n\n\nDeepstreamHub", 
+            "title": "Invoke Javascript function"
+        }, 
+        {
+            "location": "/rex_jsshell/index.html#introduction", 
+            "text": "Invoke javascript function.  Icon:  Icons8", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/rex_jsshell/index.html#links", 
+            "text": "Plugin", 
+            "title": "Links"
+        }, 
+        {
+            "location": "/rex_jsshell/index.html#dependence", 
+            "text": "None", 
+            "title": "Dependence"
+        }, 
+        {
+            "location": "/rex_jsshell/index.html#usage", 
+            "text": "", 
+            "title": "Usage"
+        }, 
+        {
+            "location": "/rex_jsshell/index.html#invoke-function-by-actions", 
+            "text": "graph TB\n\nLoadJSCode[ Action:Load API ] --  SetFnName[ Action:Set function name ]\nSetFnName --  AddParam[ Add parameters br ---- br Action:Add value br Action:Add boolean br Action:Add null br Action:Add JSON br Action:Add callback br Action:Add C2 function callback br Action:Add object ]\nAddParam --  Invoke[ Action:Invoke ]\nInvoke --  ReturnValue[ Return value br ---- br Expression:ReturnValue br Expression:Prop ]\n\nExecJS[ Action:Execute Javascript br (Official browser plugin) ] --  SetFnName\n\nInvoke --  | Action:Add callback | Callback[ Condition:Callback br Expression:Param ]\nInvoke --  | Action:Add C2 function callback | C2FnCallback[ Official function object br ---- br Condition:On function br Expression:Param ]\n\nsubgraph Load javascript\nLoadJSCode\nExecJS\nend\n\nsubgraph Invoke javascript function\nSetFnName\nAddParam\nInvoke\nReturnValue\nCallback\nC2FnCallback\nend   Load javascript  Action:Load API  ( Sample capx )  Official Ajax plugin:  Action: Request project file  Official browser plugin:  Action:Execute Javascript   ( Sample capx )    Action:Set function name  Add parameters  Action:Add value  Action:Add boolean  Action:Add null  Action:Add JSON  Action:Add callback  Action:Add C2 function callback  Action:Add object    Action:Invoke  Return value  Expression:ReturnValue  Expression:ReturnValue(key) , to get property of return value  Expression:ReturnValue(key, defaultValue)  Expression:Prop(key)    Store return object to variable  ( Sample capx )  Expression:Prop(key)  Expression:Prop(key, defaultValue)      Callback  Condition:Callback , from callback parameter ( Action:Add callback )  Expression:Param(n) , to get nth parameter of callback  Expression:Param(n, key) , to get property of nth parameter of callback  Expression:Param(n, key, defaultValue)    Condition:On function  of official function object, from C2 function callback ( Action:Add C2 function callback )  ( Sample capx )  Expression:Param(n) , to get nth parameter of callback", 
+            "title": "Invoke function by actions"
+        }, 
+        {
+            "location": "/rex_jsshell/index.html#invoke-function-by-expression", 
+            "text": "Sample capx   Expression:Call(functionName, parameter0, parameter1, ...)  Parameter  Number, or string:  Expression:ValueParam  Boolean:  Expression:BooleanParam  Null:  Expression:NullParam  JSON:  Expression:JSONParam  Callback:  Expression:CallbackParam  C2 callback:  Expression:C2FnParam  Object:  Expression:ObjectParam", 
+            "title": "Invoke function by expression"
+        }, 
+        {
+            "location": "/rex_jsshell/index.html#create-instance", 
+            "text": "graph TB\n\nSetFnName[ Action:Set object type ] --  AddParam[ Add parameters br ---- br Action:Add value br Action:Add boolean br Action:Add null br Action:Add JSON br Action:Add callback br Add C2 function callback br Action:Add object ]\nAddParam --  CreateInstance[ Action:New instance br Expression:Prop ]  Sample capx   Action:Set object type  Add parameters  Action:Add value  Action:Add boolean  Action:Add null  Action:Add JSON  Action:Add callback  Action:Add C2 function callback  Action:Add object    Action:Newe instance  Expression:Prop(key)  Expression:Prop(key, defaultValue)", 
+            "title": "Create instance"
+        }, 
+        {
+            "location": "/rex_jsshell/index.html#more-examples", 
+            "text": "A simple test of deepstream.io's client  Deepstream.io  DeepstreamHub", 
+            "title": "More examples"
+        }, 
+        {
+            "location": "/rex_date/index.html", 
+            "text": "Introduction\n\n\nGet system date and time.\n\n\nIcon: \nIcons8\n\n\nLinks\n\n\n\n\nPlugin\n\n\n\n\nDependence\n\n\nNone\n\n\nUsage\n\n\nGet date\n\n\ngraph TB\n\nExpCurTimestamp[\nExpression:UnixTimestamp\nbr\nExpression:UnixTimestamp(year, month, day)\n] --\n TimeStamp\n\nTimeStamp[\nTimestamp (ms)\n] --\n ExpDate[\nExpression:Year(timestamp)\nbr\nExpression:Month(timestamp)\nbr\nExpression:Date(timestamp)\nbr\nExpression:Day(timestamp)\nbr\nbr\nExpression:Hours(timestamp)\nbr\nExpression:Minutes(timestamp)\nbr\nExpression:Seconds(timestamp)\nbr\nExpression:Milliseconds(timestamp)\n]\nTimeStamp --\n ExpLocalExpression[\nExpression:LocalExpression(unixtimestamp)\n]\n\n\n\n\n\n\nSample capx\n\n\n\n\n\n\nExpression:UnixTimestamp\n, to get current timestamp\n\n\n\n\nExpression:UnixTimestamp(year, month, day)\n, to get timestamp at year/month/day\n\n\nExpression:UnixTimestamp(year, month, day, hours, minutes, seconds)\n, to get timestamp at year/month/day/hours/minutes/seconds\n\n\n\n\n\n\n\n\nGet date\n\n\n\n\nExpression:Year(timestamp)\n\n\nExpression:Month(timestamp)\n\n\nExpression:Date(timestamp)\n\n\nExpression:Day(timestamp)\n\n\nExpression:Hours(timestamp)\n\n\nExpression:Minutes(timestamp)\n\n\nExpression:Seconds(timestamp)\n\n\nExpression:Milliseconds(timestamp)\n\n\nExpression:LocalExpression(unixtimestamp)\n, to get  local date expression string  (\nSample capx\n)\n\n\n\n\n\n\n\n\nGet current date (\nsample capx\n)\n\n\n\n\nExpression:Year\n\n\nExpression:Month\n\n\nExpression:Date\n\n\nExpression:Day\n\n\nExpression:Hours\n\n\nExpression:Minutes\n\n\nExpression:Seconds\n\n\nExpression:Milliseconds\n\n\nExpression:LocalExpression\n\n\n\n\n\n\n\n\n\n\nNote\n\n\nIt is recommended using \nrex_momentjs\n to get formatted date string.\n\n\n\n\nGet delta time\n\n\nSample capx\n\n\nSubtract two timestamp (\nExpression:UnixTimestamp\n)\n\n\n\n\nEscaped time\n\n\ngraph TB\n\nStart[\nAction:Start\nbr\n----\nbr\nT0 = current timestamp\n] --\n ExpEscapedTime[\nExpression:Timer\nbr\n----\nbr\nT1 = current timestamp,\nbr\nEscaped time = (T1 - T0)/1000\n]\n\n\n\nSample capx\n\n\n\n\n\n\nAction:Start\n, to start a timer\n\n\n\n\n\n\nExpression:Timer\n, to get escaped time, in seconds\n\n\n\n\nControl\n\n\nAction:Pause\n\n\nAction:Resume", 
+            "title": "Javascript built-in date object"
+        }, 
+        {
+            "location": "/rex_date/index.html#introduction", 
+            "text": "Get system date and time.  Icon:  Icons8", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/rex_date/index.html#links", 
+            "text": "Plugin", 
+            "title": "Links"
+        }, 
+        {
+            "location": "/rex_date/index.html#dependence", 
+            "text": "None", 
+            "title": "Dependence"
+        }, 
+        {
+            "location": "/rex_date/index.html#usage", 
+            "text": "", 
+            "title": "Usage"
+        }, 
+        {
+            "location": "/rex_date/index.html#get-date", 
+            "text": "graph TB\n\nExpCurTimestamp[ Expression:UnixTimestamp br Expression:UnixTimestamp(year, month, day) ] --  TimeStamp\n\nTimeStamp[ Timestamp (ms) ] --  ExpDate[ Expression:Year(timestamp) br Expression:Month(timestamp) br Expression:Date(timestamp) br Expression:Day(timestamp) br br Expression:Hours(timestamp) br Expression:Minutes(timestamp) br Expression:Seconds(timestamp) br Expression:Milliseconds(timestamp) ]\nTimeStamp --  ExpLocalExpression[ Expression:LocalExpression(unixtimestamp) ]  Sample capx    Expression:UnixTimestamp , to get current timestamp   Expression:UnixTimestamp(year, month, day) , to get timestamp at year/month/day  Expression:UnixTimestamp(year, month, day, hours, minutes, seconds) , to get timestamp at year/month/day/hours/minutes/seconds     Get date   Expression:Year(timestamp)  Expression:Month(timestamp)  Expression:Date(timestamp)  Expression:Day(timestamp)  Expression:Hours(timestamp)  Expression:Minutes(timestamp)  Expression:Seconds(timestamp)  Expression:Milliseconds(timestamp)  Expression:LocalExpression(unixtimestamp) , to get  local date expression string  ( Sample capx )     Get current date ( sample capx )   Expression:Year  Expression:Month  Expression:Date  Expression:Day  Expression:Hours  Expression:Minutes  Expression:Seconds  Expression:Milliseconds  Expression:LocalExpression      Note  It is recommended using  rex_momentjs  to get formatted date string.", 
+            "title": "Get date"
+        }, 
+        {
+            "location": "/rex_date/index.html#get-delta-time", 
+            "text": "Sample capx  Subtract two timestamp ( Expression:UnixTimestamp )", 
+            "title": "Get delta time"
+        }, 
+        {
+            "location": "/rex_date/index.html#escaped-time", 
+            "text": "graph TB\n\nStart[ Action:Start br ---- br T0 = current timestamp ] --  ExpEscapedTime[ Expression:Timer br ---- br T1 = current timestamp, br Escaped time = (T1 - T0)/1000 ]  Sample capx    Action:Start , to start a timer    Expression:Timer , to get escaped time, in seconds   Control  Action:Pause  Action:Resume", 
+            "title": "Escaped time"
+        }, 
+        {
+            "location": "/rex_timeline/index.html", 
+            "text": "Introduction\n\n\nRun function when time-out. It is also a base plugin for my timer-related plugins or behaviors.\n\n\nIcon: \nIcons8\n\n\nLinks\n\n\n\n\nPlugin\n\n\n\n\nDependence\n\n\n\n\nFunction object for callback, optional\n\n\nOfficial function plugin\n, or \n\n\nrex_function2 plugin\n\n\n\n\n\n\n\n\nUsage\n\n\nTimeline\n\n\n\n\nUpdate timeline - property \nGame time\n\n\nYes\n : update timeline by engine time = \nsystem time\n * \ntimescale\n\n\nReal-time\n : update timeline by \nsystem time\n\n\nTimeline will not stop when \ntimescale = 0\n\n\n\n\n\n\nNo\n : update timeline by \nAction:Push timeline forward\n, or \nAction:Push timeline to\n  (\nsample capx\n)\n\n\n\n\n\n\nTimers on this timeline\n\n\nAction:Pause timeline\n, to pause all timers registed on this timeline\n\n\nAction:Resume timeline\n\n\nAction:Clean\n, to remove all timers registed on this timeline\n\n\n\n\n\n\nExpression:TimeLineTime\n, returns current time of timeline.\n\n\n\n\n\n\nTimer\n\n\ngraph TB\n\nActCreateTimer[\nAction:Create timer\n] --\n TimerIDLE((\nIdle\n))\nTimerIDLE --\n |\nAction:Start ||\nbr\nAction:Resume\n| TimerRun((Run))\nTimerRun --\n |\nAction:Stop ||\nbr\nAction:Pause\n| TimerIDLE\nTimerRun --\n |Every tick| IsTimeOut{Timeout}\nIsTimeOut --\n |Yes| CondOnFunction[\nFunction Condition:On function\n]\nIsTimeOut --\n |No| TimerRun\nCondOnFunction --\n Restart{\nRepeat ||\nbr\nAction:Start ||\nbr\nAction:Start triggered timer\n}\nRestart --\n |Yes| TimerRun\nRestart --\n |No| TimerIDLE\n\nsubgraph Timer\nTimerIDLE\nTimerRun\nIsTimeOut\nend\n\nstyle TimerIDLE fill:#CCFF00,stroke:#A52A2A\nstyle TimerRun fill:#CCFF00,stroke:#A52A2A\n\n\n\nSample capx\n\n\n\n\n\n\nAction:Create timer\n, to create a timer and its callback\n\n\n\n\nCallback object\n\n\nOfficial function plugin\n or    \nrex_function2 plugin\n\n\nAction:Setup callback\n, to assign callback object manually  (\nsample capx\n)\n\n\n\n\n\n\nParameter \nName\n, \nParameter\n: function name and parameters of callback\n\n\n\n\n\n\n\n\nAction:Start\n\n\n\n\nParameter \nRepeat\n : restart timer repeatedly. Set \n0\n to repeat timer infinity\n\n\n\n\n\n\n\n\nEvery tick\n\n\n\n\nTime\n\n\nExpression:TimerDelayTime\n\n\nExpression:TimerRemainder\n, \nExpression:TimerRemainderPercent\n\n\nExpression:TimerElapsed\n. \nExpression:TimerElapsedPercent\n\n\n\n\n\n\nTimer control\n\n\nAction:Pause\n, \nAction:Resume\n\n\nAction:Stop\n\n\nCondition:Is timer running\n\n\n\n\n\n\n\n\n\n\n\n\nTimeout\n\n\n\n\nTrigger \nCondition:On function\n of callback object\n\n\nExpression:TriggeredTimerName\n\n\nAction:Start triggered timer\n\n\nAction:Delete triggered timer\n\n\nAction:Set parameters\n, to change parameters of callback for next invoking\n\n\n\n\n\n\nStop and delete timer\n\n\nAction:Delete\n\n\nAction:Delete triggered timer\n\n\n\n\n\n\n\n\n\n\n\n\nMore samples\n\n\n\n\nRevive", 
+            "title": "Timeline"
+        }, 
+        {
+            "location": "/rex_timeline/index.html#introduction", 
+            "text": "Run function when time-out. It is also a base plugin for my timer-related plugins or behaviors.  Icon:  Icons8", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/rex_timeline/index.html#links", 
+            "text": "Plugin", 
+            "title": "Links"
+        }, 
+        {
+            "location": "/rex_timeline/index.html#dependence", 
+            "text": "Function object for callback, optional  Official function plugin , or   rex_function2 plugin", 
+            "title": "Dependence"
+        }, 
+        {
+            "location": "/rex_timeline/index.html#usage", 
+            "text": "", 
+            "title": "Usage"
+        }, 
+        {
+            "location": "/rex_timeline/index.html#timeline", 
+            "text": "Update timeline - property  Game time  Yes  : update timeline by engine time =  system time  *  timescale  Real-time  : update timeline by  system time  Timeline will not stop when  timescale = 0    No  : update timeline by  Action:Push timeline forward , or  Action:Push timeline to   ( sample capx )    Timers on this timeline  Action:Pause timeline , to pause all timers registed on this timeline  Action:Resume timeline  Action:Clean , to remove all timers registed on this timeline    Expression:TimeLineTime , returns current time of timeline.", 
+            "title": "Timeline"
+        }, 
+        {
+            "location": "/rex_timeline/index.html#timer", 
+            "text": "graph TB\n\nActCreateTimer[ Action:Create timer ] --  TimerIDLE(( Idle ))\nTimerIDLE --  | Action:Start || br Action:Resume | TimerRun((Run))\nTimerRun --  | Action:Stop || br Action:Pause | TimerIDLE\nTimerRun --  |Every tick| IsTimeOut{Timeout}\nIsTimeOut --  |Yes| CondOnFunction[ Function Condition:On function ]\nIsTimeOut --  |No| TimerRun\nCondOnFunction --  Restart{ Repeat || br Action:Start || br Action:Start triggered timer }\nRestart --  |Yes| TimerRun\nRestart --  |No| TimerIDLE\n\nsubgraph Timer\nTimerIDLE\nTimerRun\nIsTimeOut\nend\n\nstyle TimerIDLE fill:#CCFF00,stroke:#A52A2A\nstyle TimerRun fill:#CCFF00,stroke:#A52A2A  Sample capx    Action:Create timer , to create a timer and its callback   Callback object  Official function plugin  or     rex_function2 plugin  Action:Setup callback , to assign callback object manually  ( sample capx )    Parameter  Name ,  Parameter : function name and parameters of callback     Action:Start   Parameter  Repeat  : restart timer repeatedly. Set  0  to repeat timer infinity     Every tick   Time  Expression:TimerDelayTime  Expression:TimerRemainder ,  Expression:TimerRemainderPercent  Expression:TimerElapsed .  Expression:TimerElapsedPercent    Timer control  Action:Pause ,  Action:Resume  Action:Stop  Condition:Is timer running       Timeout   Trigger  Condition:On function  of callback object  Expression:TriggeredTimerName  Action:Start triggered timer  Action:Delete triggered timer  Action:Set parameters , to change parameters of callback for next invoking    Stop and delete timer  Action:Delete  Action:Delete triggered timer", 
+            "title": "Timer"
+        }, 
+        {
+            "location": "/rex_timeline/index.html#more-samples", 
+            "text": "Revive", 
+            "title": "More samples"
+        }, 
+        {
+            "location": "/rex_text_scrolling/index.html", 
+            "text": "Introduction\n\n\nScroll content of text.\n\n\nIcon: \nIcons8\n\n\nLinks\n\n\n\n\nPlugin\n\n\n\n\nDependence\n\n\n\n\nOne of these plugins\n\n\nofficial text\n\n\nofficial sprite font\n\n\nrex_tagtext\n\n\nrex_bbcodetext\n\n\nspritefont+\n\n\n\n\n\n\n\n\nUsage\n\n\ngraph TB\n\nActSetContent[\nAction:Set content\nbr\nAction:Append content\n] --\n |Percentage| ActScrollByPercentage[\nAction:To percentage\n]\n\nActSetContent --\n |Line| ActScrollByLines[\nAction:Next line\nbr\nAction:Previous line\nbr\nAction:To line\n]\n\nActSetContent --\n |Page| ActScrollByPages[\nAction:Next page\nbr\nAction:Previous page\nbr\nAction:To page\nbr\nCondition:Last page\n]\n\n\n\n\n\nPut this behavior under\n\n\nofficial text\n\n\nofficial sprite font\n\n\nrex_tagtext\n\n\nrex_bbcodetext\n\n\nspritefont+\n\n\n\n\n\n\nSet content\n\n\nAction:Set content\n\n\nAction:Append content\n\n\nExpression:Text\n : content of text\n\n\nExpression:Lines\n : string from start line to end line\n\n\n\n\n\n\n\n\nScroll to\n\n\n\n\nPercentage  (\nSample capx\n)\n\n\nAction:To percentage\n\n\n\n\n\n\nLine  (\nSample capx\n)\n\n\nAction:Next line\n\n\nAction:Previous line\n\n\nAction:Tto line\n\n\n\n\n\n\nPage  (\nSample capx\n)\n\n\nAction:Next page\n\n\nSample capx\n : \nTyping\n text page by page\n\n\n\n\n\n\nAction:Previous page\n\n\nAction:To page\n\n\nCondition:Last page\n\n\n\n\n\n\n\n\n\n\n\n\nProperties\n\n\n\n\nLines count\n\n\nExpression:TotalCnt\n : total lines\n\n\nExpression:VisibleCnt\n : visible lines in a page\n\n\n\n\n\n\nLine index\n\n\nExpression:CurrIndex\n : index of current visible line\n\n\nExpression:CurrLastIndex\n : index of current last visible line\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWarning\n\n\nDon't set text in text object directly.", 
+            "title": "Scrolling"
+        }, 
+        {
+            "location": "/rex_text_scrolling/index.html#introduction", 
+            "text": "Scroll content of text.  Icon:  Icons8", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/rex_text_scrolling/index.html#links", 
+            "text": "Plugin", 
+            "title": "Links"
+        }, 
+        {
+            "location": "/rex_text_scrolling/index.html#dependence", 
+            "text": "One of these plugins  official text  official sprite font  rex_tagtext  rex_bbcodetext  spritefont+", 
+            "title": "Dependence"
+        }, 
+        {
+            "location": "/rex_text_scrolling/index.html#usage", 
+            "text": "graph TB\n\nActSetContent[ Action:Set content br Action:Append content ] --  |Percentage| ActScrollByPercentage[ Action:To percentage ]\n\nActSetContent --  |Line| ActScrollByLines[ Action:Next line br Action:Previous line br Action:To line ]\n\nActSetContent --  |Page| ActScrollByPages[ Action:Next page br Action:Previous page br Action:To page br Condition:Last page ]   Put this behavior under  official text  official sprite font  rex_tagtext  rex_bbcodetext  spritefont+    Set content  Action:Set content  Action:Append content  Expression:Text  : content of text  Expression:Lines  : string from start line to end line     Scroll to   Percentage  ( Sample capx )  Action:To percentage    Line  ( Sample capx )  Action:Next line  Action:Previous line  Action:Tto line    Page  ( Sample capx )  Action:Next page  Sample capx  :  Typing  text page by page    Action:Previous page  Action:To page  Condition:Last page       Properties   Lines count  Expression:TotalCnt  : total lines  Expression:VisibleCnt  : visible lines in a page    Line index  Expression:CurrIndex  : index of current visible line  Expression:CurrLastIndex  : index of current last visible line        Warning  Don't set text in text object directly.", 
+            "title": "Usage"
+        }, 
+        {
+            "location": "/rex_moveto/index.html", 
+            "text": "Introduction\n\n\nMove object to specific position.\n\n\nIcon: \nIcons8\n\n\nLinks\n\n\n\n\nPlugin\n\n\n\n\nDependence\n\n\nNone\n\n\nUsage\n\n\ngraph TB\nStart[\nMoving start\nbr\n----\nbr\nAction:Move to position\nbr\nAction:Move to object\nbr\nAction:Move to distance-angle\nbr\n...\n] --\n Moving((+Every tick\nbr\n-Set position))\nMoving --\n |Reaching target| OnHitTarget[\nCondition:On reached target position\n]\nMoving --\n |\nStop by solid = Yes\nbr\nCollide with solid\n| OnHitSolid[\nCondition:On stop by solid\n]\n\n\n\nMove start\n\n\nSample capx\n\n\n\n\nAction:Move to position\n\n\nAction:Move to delta XY\n\n\nAction:Move to object\n \n\n\nAction:Move to distance-angle\n\n\n\n\nTarget position is (\nExpression:TargetX\n , \nExpression:TargetY\n).\n\n\nReach target\n\n\n\n\nCondition:On reached target position\n\n\n\n\nStop\n\n\n\n\nAction:Stop\n\n\n\n\nPause\n\n\n\n\nAction:Set activated\n and set parameter  \nState\n to \nDisabled\n\n\n\n\nResume\n\n\n\n\nAction:Set activated\n and set parameter  \nState\n to \nEnabled\n\n\n\n\nStopped by solid object\n\n\nSample capx\n\n\nStop moving\u00a0 when colliding any solid object\n\n\n\n\nSet property \nStop by solid\n\u00a0 to \nYes\n, or  \nAction:Stop by solid\n\n\nTrigger \nCondition:On stopped by solid\n when stopped by solid object\n\n\n\n\nContinue mode\n\n\n\n\nSet property \nContinued mode\n to \nYes\n \n\n\nMoving action under \nCondition:On hit target position\n will move forward immediately using remaining delta time\n\n\n\n\n\n\n\n\nMoving angle\n\n\n\n\nExpression:MovingAngle\n :  angle from previous position to current position.\n\n\nExpression:MovingAngleStart\n : angle from moving-start position to target position.\n\n\n\n\n\n\nWaypoints\n\n\nAdd \ncommand queue behavior\n to pend target positions to make a series of waypoints.", 
+            "title": "Move to"
+        }, 
+        {
+            "location": "/rex_moveto/index.html#introduction", 
+            "text": "Move object to specific position.  Icon:  Icons8", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/rex_moveto/index.html#links", 
+            "text": "Plugin", 
+            "title": "Links"
+        }, 
+        {
+            "location": "/rex_moveto/index.html#dependence", 
+            "text": "None", 
+            "title": "Dependence"
+        }, 
+        {
+            "location": "/rex_moveto/index.html#usage", 
+            "text": "graph TB\nStart[ Moving start br ---- br Action:Move to position br Action:Move to object br Action:Move to distance-angle br ... ] --  Moving((+Every tick br -Set position))\nMoving --  |Reaching target| OnHitTarget[ Condition:On reached target position ]\nMoving --  | Stop by solid = Yes br Collide with solid | OnHitSolid[ Condition:On stop by solid ]", 
+            "title": "Usage"
+        }, 
+        {
+            "location": "/rex_moveto/index.html#move-start", 
+            "text": "Sample capx   Action:Move to position  Action:Move to delta XY  Action:Move to object    Action:Move to distance-angle   Target position is ( Expression:TargetX  ,  Expression:TargetY ).", 
+            "title": "Move start"
+        }, 
+        {
+            "location": "/rex_moveto/index.html#reach-target", 
+            "text": "Condition:On reached target position", 
+            "title": "Reach target"
+        }, 
+        {
+            "location": "/rex_moveto/index.html#stop", 
+            "text": "Action:Stop", 
+            "title": "Stop"
+        }, 
+        {
+            "location": "/rex_moveto/index.html#pause", 
+            "text": "Action:Set activated  and set parameter   State  to  Disabled", 
+            "title": "Pause"
+        }, 
+        {
+            "location": "/rex_moveto/index.html#resume", 
+            "text": "Action:Set activated  and set parameter   State  to  Enabled", 
+            "title": "Resume"
+        }, 
+        {
+            "location": "/rex_moveto/index.html#stopped-by-solid-object", 
+            "text": "Sample capx  Stop moving\u00a0 when colliding any solid object   Set property  Stop by solid \u00a0 to  Yes , or   Action:Stop by solid  Trigger  Condition:On stopped by solid  when stopped by solid object", 
+            "title": "Stopped by solid object"
+        }, 
+        {
+            "location": "/rex_moveto/index.html#continue-mode", 
+            "text": "Set property  Continued mode  to  Yes    Moving action under  Condition:On hit target position  will move forward immediately using remaining delta time", 
+            "title": "Continue mode"
+        }, 
+        {
+            "location": "/rex_moveto/index.html#moving-angle", 
+            "text": "Expression:MovingAngle  :  angle from previous position to current position.  Expression:MovingAngleStart  : angle from moving-start position to target position.", 
+            "title": "Moving angle"
+        }, 
+        {
+            "location": "/rex_moveto/index.html#waypoints", 
+            "text": "Add  command queue behavior  to pend target positions to make a series of waypoints.", 
+            "title": "Waypoints"
+        }, 
+        {
+            "location": "/rex_boundary/index.html", 
+            "text": "Introduction\n\n\nClamp or wrap position.\n\n\nIcon: \nIcons8\n\n\nLinks\n\n\n\n\nPlugin\n\n\n\n\nDependence\n\n\nNone\n\n\nUsage\n\n\ngraph TB\n\nEveryTick((Every tick)) --\n InBoundaries{\nIn boundaries\n}\nInBoundaries --\n |Yes| EveryTick\nInBoundaries --\n |No| PropertyMode{\nProperty:\nbr\nMode\n}\nPropertyMode --\n |Clamp| ClampPos[\nClamp at this boundary\n]\nPropertyMode --\n |Wrap| WrapPos[\nWarp to opposite boundary\n]\nPropertyMode --\n |Mod wrap| WrapMod[\nWarp to opposite boundary with offset\n]\n\nClampPos --\n EveryTick\nWrapPos --\n EveryTick\nWrapMod --\n EveryTick\n\n\n\nSample capx\n\n\nSet boundaries\n\n\n\n\n\n\nHorizontal\n\n\n\n\nEnable\n\n\nSet property \nHorizontal\n to \nYes\n, or\n\n\nAction:Horizontal boundary enable\n\n\nExpression:HorizontalEnable\n\n\n\n\n\n\nBoundaries\n\n\nProperty \nLeft\n, property \nRight\n, or\n\n\nAction:Set horizontal boundary\n, or\n\n\nAction:Set horizontal boundary to\n\n\nPin boundaries on an object\n\n\n\n\n\n\nExpression:LeftBound\n, \nExpression:RightBound\n\n\n\n\n\n\n\n\n\n\n\n\nVertical\n\n\n\n\nEnable\n\n\nSet property \nVertical\n to \nYes\n, or\n\n\nAction:Vertical boundary enable\n\n\nExpression:VerticalEnable\n\n\n\n\n\n\nBoundaries\n\n\nProperty \nTop\n, property \nBottom\n, or\n\n\nAction:Set vertical boundary\n, or\n\n\nAction:Set vertical boundary to\n\n\nPin boundaries on an object\n\n\n\n\n\n\nExpression:TopBound\n, \nExpression:BottomBound\n\n\n\n\n\n\n\n\n\n\n\n\nMode\n\n\nWhen position is out of boundary\n\n\n\n\nProperty \nMode\n\n\nClamp\n : clamp position in the boundary\n\n\nProperty \nAlign\n\n\nBoundaries\n : align boundaries box of this object to reached boundary\n\n\nOrigin\n : set position to reached boundaries\n\n\n\n\n\n\n\n\n\n\nWrap\n\n\nProperty \nAlign\n\n\nBoundaries\n : align boundaries box of this object to \nopposite\n boundary\n\n\nThis behavior is similar with [official wrap behavior]      (\nhttps://www.scirra.com/manual/105/wrap\n)\n\n\n\n\n\n\nOrigin\n : set position to \nopposite\n boundary\n\n\n\n\n\n\n\n\n\n\nMode wrap\n  (\nsample capx\n)\n\n\nProperty \nAlign\n\n\nBoundaries\n : \nnot supported\n\n\nOrigin\n : set position to \nopposite\n boundary with an offset to keep the moving   distance\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTriggers\n\n\nCondition:On hit any boundary\n\n\nCondition:Is hit boundary\n\n\nHorizontal\n\n\nCondition:On hit left boundary\n\n\nCondition:On hit right boundary\n\n\n\n\n\n\nVertical\n\n\nCondition:On hit top boundary\n\n\nCondition:On hit bottom boundary\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPosition and percentage\n\n\ngraph TB\n\nX --\n |Expression:HorPercent| Percentage[\nPercentage\nbr\n0..1\n]\nPercentage --\n |Expression:HorPercent2PosX| X\n\nPercentage --\n |Expression:HorScale| Value\n\n\n\ngraph TB\n\nY --\n |Expression:VerPercent| Percentage[\nPercentage\nbr\n0..1\n]\nPercentage --\n |Expression:HorPercent2PosY| Y\n\nPercentage --\n |Expression:VerScale| Value\n\n\n\nPosition \n percentage\n\n\n\n\nExpression:HorPercent\n : ( inst.X - left ) / ( right - left )\n\n\nExpression:HorScale\n : map \nExpression:HorPercent\n to another value\n\n\n\n\n\n\nExpression:VerPercent\n : ( inst.Y - top ) / ( bottom - top )\n\n\nExpression:VerScale\n : map \nExpression:VerPercent\n to another value\n\n\n\n\n\n\n\n\nPercentage \n position\n\n\nSample capx\n\n\n\n\nExpression:HorPercent2PosX\n : percentage \n X  \n\n\nExpression:HorPercent2PosY\n : percentage \n Y", 
+            "title": "Clamp or wrap"
+        }, 
+        {
+            "location": "/rex_boundary/index.html#introduction", 
+            "text": "Clamp or wrap position.  Icon:  Icons8", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/rex_boundary/index.html#links", 
+            "text": "Plugin", 
+            "title": "Links"
+        }, 
+        {
+            "location": "/rex_boundary/index.html#dependence", 
+            "text": "None", 
+            "title": "Dependence"
+        }, 
+        {
+            "location": "/rex_boundary/index.html#usage", 
+            "text": "graph TB\n\nEveryTick((Every tick)) --  InBoundaries{ In boundaries }\nInBoundaries --  |Yes| EveryTick\nInBoundaries --  |No| PropertyMode{ Property: br Mode }\nPropertyMode --  |Clamp| ClampPos[ Clamp at this boundary ]\nPropertyMode --  |Wrap| WrapPos[ Warp to opposite boundary ]\nPropertyMode --  |Mod wrap| WrapMod[ Warp to opposite boundary with offset ]\n\nClampPos --  EveryTick\nWrapPos --  EveryTick\nWrapMod --  EveryTick  Sample capx", 
+            "title": "Usage"
+        }, 
+        {
+            "location": "/rex_boundary/index.html#set-boundaries", 
+            "text": "Horizontal   Enable  Set property  Horizontal  to  Yes , or  Action:Horizontal boundary enable  Expression:HorizontalEnable    Boundaries  Property  Left , property  Right , or  Action:Set horizontal boundary , or  Action:Set horizontal boundary to  Pin boundaries on an object    Expression:LeftBound ,  Expression:RightBound       Vertical   Enable  Set property  Vertical  to  Yes , or  Action:Vertical boundary enable  Expression:VerticalEnable    Boundaries  Property  Top , property  Bottom , or  Action:Set vertical boundary , or  Action:Set vertical boundary to  Pin boundaries on an object    Expression:TopBound ,  Expression:BottomBound", 
+            "title": "Set boundaries"
+        }, 
+        {
+            "location": "/rex_boundary/index.html#mode", 
+            "text": "When position is out of boundary   Property  Mode  Clamp  : clamp position in the boundary  Property  Align  Boundaries  : align boundaries box of this object to reached boundary  Origin  : set position to reached boundaries      Wrap  Property  Align  Boundaries  : align boundaries box of this object to  opposite  boundary  This behavior is similar with [official wrap behavior]      ( https://www.scirra.com/manual/105/wrap )    Origin  : set position to  opposite  boundary      Mode wrap   ( sample capx )  Property  Align  Boundaries  :  not supported  Origin  : set position to  opposite  boundary with an offset to keep the moving   distance        Triggers  Condition:On hit any boundary  Condition:Is hit boundary  Horizontal  Condition:On hit left boundary  Condition:On hit right boundary    Vertical  Condition:On hit top boundary  Condition:On hit bottom boundary", 
+            "title": "Mode"
+        }, 
+        {
+            "location": "/rex_boundary/index.html#position-and-percentage", 
+            "text": "graph TB\n\nX --  |Expression:HorPercent| Percentage[ Percentage br 0..1 ]\nPercentage --  |Expression:HorPercent2PosX| X\n\nPercentage --  |Expression:HorScale| Value  graph TB\n\nY --  |Expression:VerPercent| Percentage[ Percentage br 0..1 ]\nPercentage --  |Expression:HorPercent2PosY| Y\n\nPercentage --  |Expression:VerScale| Value", 
+            "title": "Position and percentage"
+        }, 
+        {
+            "location": "/rex_boundary/index.html#position-percentage", 
+            "text": "Expression:HorPercent  : ( inst.X - left ) / ( right - left )  Expression:HorScale  : map  Expression:HorPercent  to another value    Expression:VerPercent  : ( inst.Y - top ) / ( bottom - top )  Expression:VerScale  : map  Expression:VerPercent  to another value", 
+            "title": "Position --&gt; percentage"
+        }, 
+        {
+            "location": "/rex_boundary/index.html#percentage-position", 
+            "text": "Sample capx   Expression:HorPercent2PosX  : percentage   X    Expression:HorPercent2PosY  : percentage   Y", 
+            "title": "Percentage --&gt; position"
+        }, 
+        {
+            "location": "/rex_pushoutsolid/index.html", 
+            "text": "Introduction\n\n\nPush object out from solid object.\n\n\nIcon: \nIcons8\n\n\nLinks\n\n\n\n\nPlugin\n\n\n\n\nDependence\n\n\nNone\n\n\nUsage\n\n\nObstacles\n\n\n\n\nProperty \nObstacles\n\n\nSolids\n : instance with \nofficial solid behavior\n.  (\nsample capx\n)\n\n\nCustom\n : \nAction:Add obstacle\n\n\nAction:Clear obstacles\n\n\n\n\n\n\n\n\n\n\n\n\nPush out\n\n\n\n\nProperty \nActivated\n\n\nYes\n : push out nearest every tick\n\n\nNo\n  (\nsample capx\n)\n\n\nAction:Push out nearest\n\n\nAction:Push out at angle\n\n\nAction:Push out toward position", 
+            "title": "Push out solid"
+        }, 
+        {
+            "location": "/rex_pushoutsolid/index.html#introduction", 
+            "text": "Push object out from solid object.  Icon:  Icons8", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/rex_pushoutsolid/index.html#links", 
+            "text": "Plugin", 
+            "title": "Links"
+        }, 
+        {
+            "location": "/rex_pushoutsolid/index.html#dependence", 
+            "text": "None", 
+            "title": "Dependence"
+        }, 
+        {
+            "location": "/rex_pushoutsolid/index.html#usage", 
+            "text": "", 
+            "title": "Usage"
+        }, 
+        {
+            "location": "/rex_pushoutsolid/index.html#obstacles", 
+            "text": "Property  Obstacles  Solids  : instance with  official solid behavior .  ( sample capx )  Custom  :  Action:Add obstacle  Action:Clear obstacles", 
+            "title": "Obstacles"
+        }, 
+        {
+            "location": "/rex_pushoutsolid/index.html#push-out", 
+            "text": "Property  Activated  Yes  : push out nearest every tick  No   ( sample capx )  Action:Push out nearest  Action:Push out at angle  Action:Push out toward position", 
+            "title": "Push out"
+        }, 
+        {
+            "location": "/rex_rotateto/index.html", 
+            "text": "Introduction\n\n\nSpin object to specific angle.\n\n\nIcon: \nIcons8\n\n\nLinks\n\n\n\n\nPlugin\n\n\n\n\nDependence\n\n\nNone\n\n\nUsage\n\n\ngraph TB\nStart[\nRotate start\nbr\n----\nbr\nAction:Rotate to angle\nbr\nAction:Rotate by delta angle\nbr\nAction:Rotate to object\nbr\nAction:Rotate toward to position\n] --\n Moving((+Every tick\nbr\n-Set angle))\nMoving --\n |Reaching target| OnHitTarget[\nCondition:On reached target angle\n]\n\n\n\nRotate start\n\n\nSample capx\n\n\n\n\nAction:Rotate to angle\n\n\nAction:Rotate by delta angle\n\n\nAction:Rotate to object\n \n\n\nAction:Rotate toward to position\n\n\n\n\nTarget angle is \nExpression:TargetAngle\n\n\nReach target\n\n\n\n\nCondition:On reached target angle\n\n\n\n\nStop\n\n\n\n\nAction:Stop\n\n\n\n\nPause\n\n\n\n\nAction:Set enabled\n and set parameter  \nState\n to \nDisabled\n\n\n\n\nResume\n\n\n\n\nAction:Set enabled\n and set parameter  \nState\n to \nEnabled", 
+            "title": "Rotate to"
+        }, 
+        {
+            "location": "/rex_rotateto/index.html#introduction", 
+            "text": "Spin object to specific angle.  Icon:  Icons8", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/rex_rotateto/index.html#links", 
+            "text": "Plugin", 
+            "title": "Links"
+        }, 
+        {
+            "location": "/rex_rotateto/index.html#dependence", 
+            "text": "None", 
+            "title": "Dependence"
+        }, 
+        {
+            "location": "/rex_rotateto/index.html#usage", 
+            "text": "graph TB\nStart[ Rotate start br ---- br Action:Rotate to angle br Action:Rotate by delta angle br Action:Rotate to object br Action:Rotate toward to position ] --  Moving((+Every tick br -Set angle))\nMoving --  |Reaching target| OnHitTarget[ Condition:On reached target angle ]", 
+            "title": "Usage"
+        }, 
+        {
+            "location": "/rex_rotateto/index.html#rotate-start", 
+            "text": "Sample capx   Action:Rotate to angle  Action:Rotate by delta angle  Action:Rotate to object    Action:Rotate toward to position   Target angle is  Expression:TargetAngle", 
+            "title": "Rotate start"
+        }, 
+        {
+            "location": "/rex_rotateto/index.html#reach-target", 
+            "text": "Condition:On reached target angle", 
+            "title": "Reach target"
+        }, 
+        {
+            "location": "/rex_rotateto/index.html#stop", 
+            "text": "Action:Stop", 
+            "title": "Stop"
+        }, 
+        {
+            "location": "/rex_rotateto/index.html#pause", 
+            "text": "Action:Set enabled  and set parameter   State  to  Disabled", 
+            "title": "Pause"
+        }, 
+        {
+            "location": "/rex_rotateto/index.html#resume", 
+            "text": "Action:Set enabled  and set parameter   State  to  Enabled", 
+            "title": "Resume"
+        }, 
+        {
+            "location": "/rex_platform_moveto/index.html", 
+            "text": "Introduction\n\n\nMove platformer to specific position.\n\n\nIcon: \nIcons8\n\n\nLinks\n\n\n\n\nPlugin\n\n\n\n\nDependence\n\n\n\n\nOfficial platform behavior\n\n\n\n\nUsage\n\n\nPrepare\n\n\nPut this behavior under \nofficial platform behavior\n.\n\n\nMove to target\n\n\ngraph TB\n\nStart[\nMoving start\nbr\n----\nbr\nAction:Move to X\nbr\nAction:Move to object\nbr\nAction:Move to delta X\nbr\nAction:Move to distance\n] --\n Moving((+Every tick\nbr\n-Action:Simulate control\nbr\nOfficial platform behavior\n))\nMoving --\n |Reaching target| OnHitTarget[\nCondition:On hit target position\n]\n\n\n\nSample capx\n\n\nCall One of these action to move platformer to target position by \nAction:Simulate control\n of \nofficial platform behavior\n.\n\n\n\n\nAction:Move to X\n\n\nAction:Move to object\n\n\nAction:Move to delta X\n\n\nAction:Move to distance\n\n\n\n\nTarget position is (\nExpression:TargetX\n , \nExpression:TargetY\n).\n\n\nReach target\n\n\n\n\nCondition:On hit target position\n\n\n\n\nStop\n\n\n\n\nAction:Stop", 
+            "title": "Move to"
+        }, 
+        {
+            "location": "/rex_platform_moveto/index.html#introduction", 
+            "text": "Move platformer to specific position.  Icon:  Icons8", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/rex_platform_moveto/index.html#links", 
+            "text": "Plugin", 
+            "title": "Links"
+        }, 
+        {
+            "location": "/rex_platform_moveto/index.html#dependence", 
+            "text": "Official platform behavior", 
+            "title": "Dependence"
+        }, 
+        {
+            "location": "/rex_platform_moveto/index.html#usage", 
+            "text": "", 
+            "title": "Usage"
+        }, 
+        {
+            "location": "/rex_platform_moveto/index.html#prepare", 
+            "text": "Put this behavior under  official platform behavior .", 
+            "title": "Prepare"
+        }, 
+        {
+            "location": "/rex_platform_moveto/index.html#move-to-target", 
+            "text": "graph TB\n\nStart[ Moving start br ---- br Action:Move to X br Action:Move to object br Action:Move to delta X br Action:Move to distance ] --  Moving((+Every tick br -Action:Simulate control br Official platform behavior ))\nMoving --  |Reaching target| OnHitTarget[ Condition:On hit target position ]  Sample capx  Call One of these action to move platformer to target position by  Action:Simulate control  of  official platform behavior .   Action:Move to X  Action:Move to object  Action:Move to delta X  Action:Move to distance   Target position is ( Expression:TargetX  ,  Expression:TargetY ).", 
+            "title": "Move to target"
+        }, 
+        {
+            "location": "/rex_platform_moveto/index.html#reach-target", 
+            "text": "Condition:On hit target position", 
+            "title": "Reach target"
+        }, 
+        {
+            "location": "/rex_platform_moveto/index.html#stop", 
+            "text": "Action:Stop", 
+            "title": "Stop"
+        }, 
+        {
+            "location": "/rex_boids/index.html", 
+            "text": "Introduction\n\n\nCalculate steer force by flocking algorithm.\n\n\n\n\nCohesion: stay close to the centre of the flock\n\n\nAlignment: head in the same direction of the flock\n\n\nSeparation: avoid collisions with flock\n\n\n\n\nThis behavior would \nNOT\n change any property of instance. It only calculates \nsteer force\n for reference.\n\n\nIcon: \nIcons8\n\n\nLinks\n\n\n\n\nPlugin\n\n\n\n\nDependence\n\n\nNone\n\n\nUsage\n\n\ngraph TB\n\neveryTick[\nEvery tick\n] --\n cleanForce\ncleanForce[\nAction:Clean\n] --\n pickNeighbors0[\nPick neighbors\nbr\n(Official Line-of-sight)\n]\npickNeighbors0 --\n addCohesion[\nAction:Cohesion\n]\ncleanForce --\n pickNeighbors1[\nPick neighbors\nbr\n(Official Line-of-sight)\n]\npickNeighbors1 --\n addAlignment[\nAction:Alignment\n]\ncleanForce --\n pickNeighbors2[\nPick neighbors\nbr\n(Official Line-of-sight)\n]\npickNeighbors2 --\n addSeparation[\nAction:Separation\nbr\n(Avoid obstacles)\n]\ncleanForce--\n addForce[\nAction:Apply force towards position\nbr\nAction:Apply force at angle\n]\n\naddCohesion --\n hasForce[\nCondition:Has force\n]\naddAlignment --\n hasForce\naddSeparation --\n hasForce\naddForce --\n hasForce\n\nhasForce --\n expForce[\nMove forward, or rotate instance\nbr\n----\nbr\nPolar axis: Expression:ForceAngle, Expression:ForceMagnitude\nbr\nOrthogonal axis: Expression:ForceDx, Expression:ForceDy\n]\n\n\n\nSample capx\n\n\n\n\nAction:Clean\n, to clean steer force to 0\n\n\nPick \nNeighbors\n parameter by \nofficial line-of-sight behavior\n\n\nAction:Cohesion\n\n\nAction:Alignment\n\n\nAction:Separation\n\n\nAvoid obstacles\n\n\n\n\n\n\nApply steer force, optional\n\n\nAction:Apply force towards position\n\n\nAction:Apply force at angle\n\n\nCondition:Has force\n, return true if force is not 0\n\n\nPolar axis: \nExpression:ForceAngle\n, \nExpression:ForceMagnitude\n\n\nOrthogonal axis: \nExpression:ForceDx\n, \nExpression:ForceDy", 
+            "title": "Boids"
+        }, 
+        {
+            "location": "/rex_boids/index.html#introduction", 
+            "text": "Calculate steer force by flocking algorithm.   Cohesion: stay close to the centre of the flock  Alignment: head in the same direction of the flock  Separation: avoid collisions with flock   This behavior would  NOT  change any property of instance. It only calculates  steer force  for reference.  Icon:  Icons8", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/rex_boids/index.html#links", 
+            "text": "Plugin", 
+            "title": "Links"
+        }, 
+        {
+            "location": "/rex_boids/index.html#dependence", 
+            "text": "None", 
+            "title": "Dependence"
+        }, 
+        {
+            "location": "/rex_boids/index.html#usage", 
+            "text": "graph TB\n\neveryTick[ Every tick ] --  cleanForce\ncleanForce[ Action:Clean ] --  pickNeighbors0[ Pick neighbors br (Official Line-of-sight) ]\npickNeighbors0 --  addCohesion[ Action:Cohesion ]\ncleanForce --  pickNeighbors1[ Pick neighbors br (Official Line-of-sight) ]\npickNeighbors1 --  addAlignment[ Action:Alignment ]\ncleanForce --  pickNeighbors2[ Pick neighbors br (Official Line-of-sight) ]\npickNeighbors2 --  addSeparation[ Action:Separation br (Avoid obstacles) ]\ncleanForce--  addForce[ Action:Apply force towards position br Action:Apply force at angle ]\n\naddCohesion --  hasForce[ Condition:Has force ]\naddAlignment --  hasForce\naddSeparation --  hasForce\naddForce --  hasForce\n\nhasForce --  expForce[ Move forward, or rotate instance br ---- br Polar axis: Expression:ForceAngle, Expression:ForceMagnitude br Orthogonal axis: Expression:ForceDx, Expression:ForceDy ]  Sample capx   Action:Clean , to clean steer force to 0  Pick  Neighbors  parameter by  official line-of-sight behavior  Action:Cohesion  Action:Alignment  Action:Separation  Avoid obstacles    Apply steer force, optional  Action:Apply force towards position  Action:Apply force at angle  Condition:Has force , return true if force is not 0  Polar axis:  Expression:ForceAngle ,  Expression:ForceMagnitude  Orthogonal axis:  Expression:ForceDx ,  Expression:ForceDy", 
+            "title": "Usage"
+        }, 
+        {
+            "location": "/rex_touchwrap/index.html", 
+            "text": "Introduction\n\n\nBased object for my touch related plugins or behaviors.\n\n\nIcon: \nIcons8\n\n\nLinks\n\n\n\n\nPlugin\n\n\n\n\nDependence\n\n\nNone\n\n\nUsage\n\n\nJust put this plugin into project. The usage of this object is the same as \nofficial touch object\n.\n\n\nEnable or disable touch detecting\n\n\n\n\nAction:Set enable\n\n\nIt also affects my touch related plugins or behaviors.", 
+            "title": "Touch wrap"
+        }, 
+        {
+            "location": "/rex_touchwrap/index.html#introduction", 
+            "text": "Based object for my touch related plugins or behaviors.  Icon:  Icons8", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/rex_touchwrap/index.html#links", 
+            "text": "Plugin", 
+            "title": "Links"
+        }, 
+        {
+            "location": "/rex_touchwrap/index.html#dependence", 
+            "text": "None", 
+            "title": "Dependence"
+        }, 
+        {
+            "location": "/rex_touchwrap/index.html#usage", 
+            "text": "Just put this plugin into project. The usage of this object is the same as  official touch object .", 
+            "title": "Usage"
+        }, 
+        {
+            "location": "/rex_touchwrap/index.html#enable-or-disable-touch-detecting", 
+            "text": "Action:Set enable  It also affects my touch related plugins or behaviors.", 
+            "title": "Enable or disable touch detecting"
+        }, 
+        {
+            "location": "/rex_button/index.html", 
+            "text": "Introduction\n\n\nGet \ntouch end\n event.\n\n\nIcon: \nIcons8\n\n\nLinks\n\n\n\n\nPlugin\n\n\n\n\nDependence\n\n\n\n\nrex_touchwrap plugin\n\n\n\n\nUsage\n\n\ngraph TB\n\nStateOFF[\nOFF\n] --\n PropertyActivated{\nProperty:\nbr\nActivated\n}\nPropertyActivated --\n |Yes| StateActive\nPropertyActivated --\n |No| StateInactive\n\nStateActive[\nACTIVE\nbr\n----\nbr\nCondition:On activated\n] --\n |\nOn touch start \nbr\nEnabled\n| PropertyClickMode{\nProperty:\nbr\nClick mode\n}\n\nPropertyClickMode --\n |Released| StateClickDetecting[\nCLICK DETECTING\nbr\n----\nbr\nCondition:On click detecting start\n]\nStateClickDetecting --\n |On touch end| StateClicked[\nCLICKED\nbr\n----\nbr\nCondition:On clicked\n]\nStateClickDetecting --\n |\nNOT is in touch\nbr\nAction:Cancel click detecting\nbr\nAction:Activate\n| StateActive\n\nPropertyClickMode --\n |Pressed| StateClicked\nStateClicked --\n |Action:Activate| StateActive\nStateClicked --\n PropertyActivatedAfterClicked{\nProperty:\nbr\nActivated after Clicked\n}\nPropertyActivatedAfterClicked --\n |Yes| StateActive\n\nStateInactive[\nINACTIVE\nbr\n----\nbr\nCondition:On inactivated\n] --\n |Action:Activate| StateActive\nStateActive --\n |Action:Deactivate| StateInactive\nStateClickDetecting --\n |Action:Deactivate| StateInactive\nStateClicked --\n |Action:Deactivate| StateInactive\n\n\n\n\nSample capx\n\n\nFinite-state machine\n\n\n\n\nState \nOFF\n\n\nProperty \nActivated\n\n\nYes\n : go to state \nACTIVE\n\n\nNo\n : go to state \nINACTIVE\n\n\n\n\n\n\n\n\n\n\nState \nACTIVE\n\n\nTrigger \nCondition:On activated\n\n\nEvents\n\n\nOn touch start\n and \nenabled\n\n\nEnabled\n\n\nThe \ntop-most\n (z-index) button sprite\n\n\nButton sprite is \nvisible\n, and layer is \nvisible\n, if property \nVisible   checking\n     set to \nYes\n\n\n\n\n\n\nProperty \nClick mode\n = \nPressed\n : go to state \nCLICKED\n\n\nProperty \nClick mode\n = \nReleased\n : go to state \nCLICK DETECTING\n\n\n\n\n\n\nAction:Deactivate\n : go to state \nINACTIVE\n\n\nAction:Deactivate in layer\n  : go to state \nINACTIVE\n, if button sprite is in layer\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nState \nCLICK DETECTING\n\n\nTrigger \nCondition:On click detecting start\n\n\nEvents\n\n\nOn touch end\n : go to state \nCLICKED\n\n\nNot Is in touch\n ,  or \nAction:Cancel click detecting\n, or \nAction:Activate\n : go to state \nACTIVE\n\n\nTrigger \nCondition:On click cancel\n\n\n\n\n\n\nAction:Deactivate\n : go to state \nINACTIVE\n\n\nAction:Deactivate in layer\n  : go to state \nINACTIVE\n if button sprite is in layer\n\n\nTrigger \nCondition:On click cancel\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nState \nCLICKED\n\n\nTrigger \nCondition:On clicked\n\n\nEvents\n\n\nProperty \nActivated after Clicked\n = \nYes\n : go to state \nACTIVE\n\n\nAction:Activate\n : go to state \nACTIVE\n\n\nAction:Deactivate\n : go to state \nINACTIVE\n\n\nAction:Deactivate in layer\n  : go to state \nINACTIVE\n if button sprite is in layer\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nState \nINACTIVE\n\n\nTrigger \nCondition:On inactivated\n\n\nEvents\n\n\nAction:Activate\n : go to state \nACTIVE\n\n\nAction:Activate in layer\n : go to state \nACTIVE\n, if button sprite is in layer\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nExpression:CurState\n , \nExpression:PreState\n\n\nOFF\n\n\nINACTIVE\n\n\nACTIVE\n\n\nCLICK DETECTING\n\n\nCLICKED\n\n\n\n\n\n\n\n\nRolling over\n\n\n\n\nCondition:On rolling in\n : \nNot Is in touch\n \n \nIs in touch\n\n\nCondition:On rolling out\n : \nIs in touch\n \n \nNot Is in touch\n\n\n\n\nManual trigger\n\n\n\n\n\n\nAction:Manual trigger\n\n\n\n\nOn clicked\n\n\nOn click cancel\n\n\nOn click detecting start\n\n\nOn activated\n\n\nOn inactivated\n\n\nOn rolling in\n\n\nOn rolling out\n\n\n\n\n\n\n\n\n\n\nAnimation of each state\n\n\n\n\nAction:Set display of states\n\n\nState\n\n\nNormal\n\n\nClick\n\n\nINACTIVE\n\n\nRolling-in\n\n\n\n\n\n\nParameter type of each state\n\n\nstring : animation name\n\n\n : ignore\n\n\n\n\n\n\nnumber : frame index", 
+            "title": "Button"
+        }, 
+        {
+            "location": "/rex_button/index.html#introduction", 
+            "text": "Get  touch end  event.  Icon:  Icons8", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/rex_button/index.html#links", 
+            "text": "Plugin", 
+            "title": "Links"
+        }, 
+        {
+            "location": "/rex_button/index.html#dependence", 
+            "text": "rex_touchwrap plugin", 
+            "title": "Dependence"
+        }, 
+        {
+            "location": "/rex_button/index.html#usage", 
+            "text": "graph TB\n\nStateOFF[ OFF ] --  PropertyActivated{ Property: br Activated }\nPropertyActivated --  |Yes| StateActive\nPropertyActivated --  |No| StateInactive\n\nStateActive[ ACTIVE br ---- br Condition:On activated ] --  | On touch start  br Enabled | PropertyClickMode{ Property: br Click mode }\n\nPropertyClickMode --  |Released| StateClickDetecting[ CLICK DETECTING br ---- br Condition:On click detecting start ]\nStateClickDetecting --  |On touch end| StateClicked[ CLICKED br ---- br Condition:On clicked ]\nStateClickDetecting --  | NOT is in touch br Action:Cancel click detecting br Action:Activate | StateActive\n\nPropertyClickMode --  |Pressed| StateClicked\nStateClicked --  |Action:Activate| StateActive\nStateClicked --  PropertyActivatedAfterClicked{ Property: br Activated after Clicked }\nPropertyActivatedAfterClicked --  |Yes| StateActive\n\nStateInactive[ INACTIVE br ---- br Condition:On inactivated ] --  |Action:Activate| StateActive\nStateActive --  |Action:Deactivate| StateInactive\nStateClickDetecting --  |Action:Deactivate| StateInactive\nStateClicked --  |Action:Deactivate| StateInactive  Sample capx", 
+            "title": "Usage"
+        }, 
+        {
+            "location": "/rex_button/index.html#finite-state-machine", 
+            "text": "State  OFF  Property  Activated  Yes  : go to state  ACTIVE  No  : go to state  INACTIVE      State  ACTIVE  Trigger  Condition:On activated  Events  On touch start  and  enabled  Enabled  The  top-most  (z-index) button sprite  Button sprite is  visible , and layer is  visible , if property  Visible   checking      set to  Yes    Property  Click mode  =  Pressed  : go to state  CLICKED  Property  Click mode  =  Released  : go to state  CLICK DETECTING    Action:Deactivate  : go to state  INACTIVE  Action:Deactivate in layer   : go to state  INACTIVE , if button sprite is in layer        State  CLICK DETECTING  Trigger  Condition:On click detecting start  Events  On touch end  : go to state  CLICKED  Not Is in touch  ,  or  Action:Cancel click detecting , or  Action:Activate  : go to state  ACTIVE  Trigger  Condition:On click cancel    Action:Deactivate  : go to state  INACTIVE  Action:Deactivate in layer   : go to state  INACTIVE  if button sprite is in layer  Trigger  Condition:On click cancel        State  CLICKED  Trigger  Condition:On clicked  Events  Property  Activated after Clicked  =  Yes  : go to state  ACTIVE  Action:Activate  : go to state  ACTIVE  Action:Deactivate  : go to state  INACTIVE  Action:Deactivate in layer   : go to state  INACTIVE  if button sprite is in layer        State  INACTIVE  Trigger  Condition:On inactivated  Events  Action:Activate  : go to state  ACTIVE  Action:Activate in layer  : go to state  ACTIVE , if button sprite is in layer        Expression:CurState  ,  Expression:PreState  OFF  INACTIVE  ACTIVE  CLICK DETECTING  CLICKED", 
+            "title": "Finite-state machine"
+        }, 
+        {
+            "location": "/rex_button/index.html#rolling-over", 
+            "text": "Condition:On rolling in  :  Not Is in touch     Is in touch  Condition:On rolling out  :  Is in touch     Not Is in touch", 
+            "title": "Rolling over"
+        }, 
+        {
+            "location": "/rex_button/index.html#manual-trigger", 
+            "text": "Action:Manual trigger   On clicked  On click cancel  On click detecting start  On activated  On inactivated  On rolling in  On rolling out", 
+            "title": "Manual trigger"
+        }, 
+        {
+            "location": "/rex_button/index.html#animation-of-each-state", 
+            "text": "Action:Set display of states  State  Normal  Click  INACTIVE  Rolling-in    Parameter type of each state  string : animation name   : ignore    number : frame index", 
+            "title": "Animation of each state"
+        }, 
+        {
+            "location": "/rex_board/index.html", 
+            "text": "Introduction\n\n\nStore the logical position of chess, based plugin of my board-series plugins/behaviors.\n\n\nIcon: \nIcons8\n\n\nLinks\n\n\n\n\nPlugin\n\n\n\n\nDependence\n\n\n\n\nrex_board_squareTx\n\n\nrex_board_hexTx\n\n\n\n\nUsage\n\n\nConfigure board\n\n\nSample capx\n\n\nSetup layout\n\n\nPuts one of board-layout plugin into project. Each board object should have a board-layout object.\n\n\n\n\nrex_board_squareTx\n : orthogonal/isometric/staggered layout\n\n\nrex_board_hexTx\n : hexagonal layout\n\n\n\n\ngraph LR\nBoard --- SquareTx\nBoard --- HexTx\n\n\n\n\n\nAction:Setup layout\n to assign board-layout object manually\n\n\n\n\nSize\n\n\n\n\nProperty \nWidth\n and \nHeight\n , or \nAction:Set board width\n, \nAction:Set board height\n\n\nCurrent size \nExpression:BoardWidth\n, \nExpression:BoardHeight\n\n\n\n\n\n\n\n\nLogical position\n\n\nEach chess or tile has a logical position \n(x,y,z)\n. Each logical position only could have one instance (chess or tile).\n\n\n\n\nx , y : number\n\n\nindex x is start from 0 to \nboard.width\n-1\n\n\nindex y is start from 0 to \nboard.height\n-1\n\n\n\n\n\n\nz : number or string\n\n\nz=0 is a tile\n. It will be referenced at other plugins or behaviors.\n\n\nothers are chess.\n\n\n\n\n\n\n\n\nCreate chess\n\n\n\n\nAction:Create tile\n\n\nAction:Create chess\n\n\nAction:Create chess above tile\n, or\n\n\nAction:Fill tiles\n, to fill all tiles on board\n\n\n\n\nCreated instances will be placed at the right position directly.\n\n\n\n\nCheck the properties \nX at (0,0)\n, \nY at (0,0)\n in layout plugin (\nrex_board_squareTx\n, or \nrex_board_hexTx\n), if the created chess does not appear.\n\n\n\n\nAdd tiles\n\n\n\n\nAction:Add tile\n\n\nAction:Add chess\n, or \nAction:Add chess by UID\n\n\n\n\nThese actions would not change the physical position of instance.\n\n\nRemove/Destroy chess\n\n\n\n\nRemove chess automatically, after instance destroyed\n\n\nRemove chess without destroying instance\n\n\nAction:Remove chess\n\n\nAction:Remove chess by UID\n\n\n\n\n\n\nRemove chess and destroy instance\n\n\nAction:Destroy chess\n\n\n\n\n\n\n\n\nClean board\n\n\nAction:Reset board\n\n\nRetrieve cells\n\n\nSample capx\n\n\ngraph TB\nCndForEachCell[Condition:For each cell\nbr\n  \nbr\nExpression:CurLX, Expression:CurLY] --- CndForEachLZ[Condition:For each LZ at LXY\nbr\n \nbr\nExpression:CurLZ]\n\n\n\n\n\nCondition:For each cell\n \n\n\n( \nExpression:CurLX\n, \nExpression:CurLY\n ) \n\n\n\n\n\n\nCondition:For each LZ at LXY\n\n\nExpression:CurLZ\n\n\n\n\n\n\n\n\nOn the board\n\n\n\n\nCondition:On the board\n, returns true if the chess instance is on the board.\n\n\n\n\nMaximum or minimum of logic X, logic Y of all chess\n\n\n\n\nMaximum LXY : (\nExpression:MaxLX\n, \nExpression:MaxLY\n)\n\n\nMinimum LXY : (\nExpression:MinLX\n, \nExpression:MinLY\n)\n\n\n\n\n\n\nMove chess\n\n\nMove logical position of chess\n\n\n\n\nAction:Move chess\n\n\nAction:Move chess by UID\n\n\nAction:Move chess to xyz\n\n\nAction:Move chess to xyz by UID\n\n\nAction:Move chess to z\n\n\n\n\nSwap chess\n\n\nSwap  logical position of two chess\n\n\n\n\nAction:Swap chess by UID\n\n\n\n\nKicked chess\n\n\nThe chess will be kicked after chess created/added/moved, since each logical position only could have one chess. \n\n\nCondition:On chess kicked\n will be triggered when chess kicking, to pick kicked chess. \nMostly, the kicking should not happened, therefore this condition might be used for debugging during development stage.\n\nTo avoid kicking, user could assign z-index of each chess by its uid. For example, \n\n\n#\n+chess.uid\n\n\n\n\n\nSo that all z-index of chess will be different.\n\n\nLogical overlapping\n\n\n\n\n\n\nCondition:Is overlapping\n, returns true if chess are overlapping with the same logical (x,y) position. The z index of these chess will be different. \n\n\n\n\n\n\nTrigger \nCondition:On chess kicked\n, if the z-index of these chess are the same, see previous section.\n\n\n\n\n\n\n\n\nEmpty cell\n\n\n\n\nCondition:Is empty\n\n\nCondition:Is occupied\n\n\n\n\nIf a logical position is not in the board, these two conditions will return false.\n\n\nGet empty cell\n\n\ngraph TB\nCndHasAnyEmpty[\nCondition:Has any empty cell, or\nbr\nCondition:Has any empty cell on tiles\n] --- Subevent[Expression:EmptyLX, Expression:EmptyLY]\n\nCndPickAnyEmpty[\nCondition:Pick an empty cell, or\nbr\nCondition:Pick an empty cell on tiles\n] --- Subevent\n\n\n\nSample capx\n , \nSample capx (on tiles)\n\n\n\n\n\n\nCondition:Has any empty cell\n, \nCondition:Has any empty cell on tiles\n\n\n\n\nLXY of first empty cell : (\nExpression:EmptyLX\n , \nExpression:EmptyLY\n)\n\n\n\n\n\n\n\n\nCondition:Pick an empty cell\n, \nCondition:Pick an empty cell on tiles\n\n\n\n\nLXY of a random empty cell : (\nExpression:EmptyLX\n , \nExpression:EmptyLY\n)\n\n\n\n\n\n\n\n\nThere has another way to pick an empty cell, see the section of \nExamples\n in \nrex_chess\n.\n\n\n\n\nPick chess\n\n\nPick all chess\n\n\n\n\nPick all chess\n\n\nCondition:Pick all chess\n, \nAction:Pick all chess\n\n\n\n\n\n\nPick specific type of chess\n\n\nCondition:Pick chess\n,\u00a0\nAction:Pick chess\n\n\n\n\n\n\n\n\nPick chess according to logical position\n\n\n\n\nPick a chess at specific LXYZ\n\n\nCondition:Pick chess at Logic X,Y,Z\n,\u00a0 \nAction:Pick chess at Logic X,Y,Z\n\n\n\n\n\n\nPick all chess at specific LX, LY, or LZ\n\n\nCondition:Pick chess at LX\n,\u00a0 \nAction:Pick chess at LX\n\n\nCondition:Pick chess at LY\n,\u00a0 \nAction:Pick chess at LY\n\n\nCondition:Pick chess at LZ\n,\u00a0 \nAction:Pick chess at LZ\n\n\n\n\n\n\nPick chess at specific LXY\n\n\nCondition:Pick chess at Logic X,Y\n,\u00a0 \nAction:Pick chess at Logic X,Y\n\n\nCondition:Pick chess inside a square\n, \nAction:Pick chess inside a square\n\n\n\n\n\n\n\n\nPick chess above tiles\n\n\n\n\nPick chess above based tile.\n\n\nCondition:Pick chess above tile\n,\u00a0 \nAction:Pick chess above tile\n\n\nCondition:Pick chess above tile UID\n, \nAction:Pick chess above tile UID\n\n\nParameter \nUID\n\n\nnumber, for single chess\n\n\n\n\nJSON string, for multiple chess. For example,\n\n\n[300,301,302,303]\n\n\n\n\n\nfrom \ninstance group plugin\n's \nExpression:GroupToString\n \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPick neighbor chess\n\n\nSample capx\n\n\n\n\nCondition:Pick neighbor chess\n,\u00a0\nAction:Pick neighbor chess\n\n\nParameter \nDirection\n\n\n(-1) : all directions\n\n\nDirection code: expressions of layout object (\nrex_board_squareTx\n, or \nrex_board_hexTx\n)\n\n\n\n\n\n\n\n\n\n\nExpression:DIR2UID\n, get the UID of neighbor chess by origin chess and direction\n\n\nCondition:Are neighbors (UID)\n, returns true if two chess are neighbor.\n\n\n\n\n\n\nPhysical or logical position\n\n\ngraph LR\nUID --\n |\n(Expression:UID2PX,\nbr\n Expression:UID2PY)\n| PXY\nUID --\n |\n(Expression:UID2LX,\nbr\n Expression:UID2LY,\nbr\n Expression:UID2LZ)\n| LXYZ\nLXYZ --\n |\nExpression:LXYZ2UID\n| UID\nLXYZ --\n |\n(Expression:LXYZ2PX,\nbr\n Expression:LXYZ2PY)\n| PXY\nPXY --\n |\n(Expression:PXY2LX,\nbr\n Expression:PXY2LY)\n| LXYZ\n\n\n\nLogical position and chess UID\n\n\n\n\nUID \n LX, LY, LZ\n\n\nExpression:UID2LX\n \n\n\nExpression:UID2LY\n \n\n\nExpression:UID2LZ\n\n\n\n\n\n\nLXYZ \n UID\n\n\nExpression:LXYZ2UID\n\n\n\n\n\n\n\n\nZ-index\n\n\n\n\nUID, LZ \n UID\n\n\nExpression:LZ2UID\n, get the chess at a z-index above a chess. i.e. the same logical (x,y) but different z-index.\n\n\n\n\n\n\nLXY/UID \n amount of chess at LXY\n\n\nExpression:LXY2ZCn\n, \nExpression:UID2ZCnt\n\n\n\n\n\n\n\n\nGet physical position\n\n\n\n\nLXY/LXYZ/UID \n PX, PY\n\n\nExpression:LXY2PX\n\n\nExpression:LXY2PY\n \n\n\nExpression:LXYZ2PX\n\n\nExpression:LXYZ2PY\n\n\nExpression:UID2PX\n\n\nExpression:UID2PY\n\n\n\n\n\n\nPXY \n Align PX, Align PY\n\n\nExpression:PXY2NearestPX\n\n\nExpression:PXY2NearestPY\n\n\n\n\n\n\nCondition:Point is in board\n, returns true if the physical position is inside board.\n\n\n\n\nPhysical position to logical position\n\n\n\n\nPXY \n LX, LY\n\n\nExpression:PXY2LX\n\n\nExpression:PXY2LY\n \n\n\n\n\n\n\n\n\n\n\nWrap\n\n\nSample capx\n\n\n\n\nSet property \nWrap\n to \nYes\n, or \nAction:Set wrap mode\n\n\nThe leftmost tile will become the neighbor of rightmost tile\n\n\n\n\n\n\n\n\n\n\nString symbol chess\n\n\nSample capx\n\nA chess is an instance, or replaced by a \nunique string symbol\n to reduce the amount of instances.\n\n\n\n\nCall \nAction:Add chess by UID\n to add a string symbol into this board. \n\n\n\n\n\n\nWarning\n\n\nDon't uses symbol string which composed by number characters ( \"0\" - \"9\" ) only, these kinds of string will be used in C2 engine for UID table of instances.\n\n\n\n\n\n\nAlthough string symbol is not a real instance, it still could use these expressions\n\n\nGet LXYZ by ( \nExpression:UID2LX\n , \nExpression:UID2LY\n , \nExpression:UID2LZ\n )\n\n\nGet string symbol at LXYZ by \nExpression:LXYZ2UID\n, or \nExpression:LZ2UID\n\n\nGet ideal PXY by ( \nExpression:UID2PX\n, \nExpression:UID2PY\n )\n\n\nGet string symbol at PXYby \nExpression:PXY2UID\n\n\n\n\n\n\n\n\n\n\nInfinity board\n\n\nSample capx\n\n\nSet property \nInfinity\n to \nYes\n\n\n\n\nThere is no boundary (board width or board height), chess could be placed at any logic position.\n\n\nWrap\n mode is ignored\n\n\nSome actions or conditions are not supported like \nAction:Fill tiles\n.\n\n\n\n\n\n\nSave \n load\n\n\nIt supports official saving \n loading feature.", 
+            "title": "Board"
+        }, 
+        {
+            "location": "/rex_board/index.html#introduction", 
+            "text": "Store the logical position of chess, based plugin of my board-series plugins/behaviors.  Icon:  Icons8", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/rex_board/index.html#links", 
+            "text": "Plugin", 
+            "title": "Links"
+        }, 
+        {
+            "location": "/rex_board/index.html#dependence", 
+            "text": "rex_board_squareTx  rex_board_hexTx", 
+            "title": "Dependence"
+        }, 
+        {
+            "location": "/rex_board/index.html#usage", 
+            "text": "", 
+            "title": "Usage"
+        }, 
+        {
+            "location": "/rex_board/index.html#configure-board", 
+            "text": "Sample capx", 
+            "title": "Configure board"
+        }, 
+        {
+            "location": "/rex_board/index.html#setup-layout", 
+            "text": "Puts one of board-layout plugin into project. Each board object should have a board-layout object.   rex_board_squareTx  : orthogonal/isometric/staggered layout  rex_board_hexTx  : hexagonal layout   graph LR\nBoard --- SquareTx\nBoard --- HexTx   Action:Setup layout  to assign board-layout object manually", 
+            "title": "Setup layout"
+        }, 
+        {
+            "location": "/rex_board/index.html#size", 
+            "text": "Property  Width  and  Height  , or  Action:Set board width ,  Action:Set board height  Current size  Expression:BoardWidth ,  Expression:BoardHeight", 
+            "title": "Size"
+        }, 
+        {
+            "location": "/rex_board/index.html#logical-position", 
+            "text": "Each chess or tile has a logical position  (x,y,z) . Each logical position only could have one instance (chess or tile).   x , y : number  index x is start from 0 to  board.width -1  index y is start from 0 to  board.height -1    z : number or string  z=0 is a tile . It will be referenced at other plugins or behaviors.  others are chess.", 
+            "title": "Logical position"
+        }, 
+        {
+            "location": "/rex_board/index.html#create-chess", 
+            "text": "Action:Create tile  Action:Create chess  Action:Create chess above tile , or  Action:Fill tiles , to fill all tiles on board   Created instances will be placed at the right position directly.   Check the properties  X at (0,0) ,  Y at (0,0)  in layout plugin ( rex_board_squareTx , or  rex_board_hexTx ), if the created chess does not appear.", 
+            "title": "Create chess"
+        }, 
+        {
+            "location": "/rex_board/index.html#add-tiles", 
+            "text": "Action:Add tile  Action:Add chess , or  Action:Add chess by UID   These actions would not change the physical position of instance.", 
+            "title": "Add tiles"
+        }, 
+        {
+            "location": "/rex_board/index.html#removedestroy-chess", 
+            "text": "Remove chess automatically, after instance destroyed  Remove chess without destroying instance  Action:Remove chess  Action:Remove chess by UID    Remove chess and destroy instance  Action:Destroy chess", 
+            "title": "Remove/Destroy chess"
+        }, 
+        {
+            "location": "/rex_board/index.html#clean-board", 
+            "text": "Action:Reset board", 
+            "title": "Clean board"
+        }, 
+        {
+            "location": "/rex_board/index.html#retrieve-cells", 
+            "text": "Sample capx  graph TB\nCndForEachCell[Condition:For each cell br    br Expression:CurLX, Expression:CurLY] --- CndForEachLZ[Condition:For each LZ at LXY br   br Expression:CurLZ]   Condition:For each cell    (  Expression:CurLX ,  Expression:CurLY  )     Condition:For each LZ at LXY  Expression:CurLZ", 
+            "title": "Retrieve cells"
+        }, 
+        {
+            "location": "/rex_board/index.html#on-the-board", 
+            "text": "Condition:On the board , returns true if the chess instance is on the board.", 
+            "title": "On the board"
+        }, 
+        {
+            "location": "/rex_board/index.html#maximum-or-minimum-of-logic-x-logic-y-of-all-chess", 
+            "text": "Maximum LXY : ( Expression:MaxLX ,  Expression:MaxLY )  Minimum LXY : ( Expression:MinLX ,  Expression:MinLY )", 
+            "title": "Maximum or minimum of logic X, logic Y of all chess"
+        }, 
+        {
+            "location": "/rex_board/index.html#move-chess", 
+            "text": "Move logical position of chess   Action:Move chess  Action:Move chess by UID  Action:Move chess to xyz  Action:Move chess to xyz by UID  Action:Move chess to z", 
+            "title": "Move chess"
+        }, 
+        {
+            "location": "/rex_board/index.html#swap-chess", 
+            "text": "Swap  logical position of two chess   Action:Swap chess by UID", 
+            "title": "Swap chess"
+        }, 
+        {
+            "location": "/rex_board/index.html#kicked-chess", 
+            "text": "The chess will be kicked after chess created/added/moved, since each logical position only could have one chess.   Condition:On chess kicked  will be triggered when chess kicking, to pick kicked chess. \nMostly, the kicking should not happened, therefore this condition might be used for debugging during development stage. \nTo avoid kicking, user could assign z-index of each chess by its uid. For example,   # +chess.uid   So that all z-index of chess will be different.", 
+            "title": "Kicked chess"
+        }, 
+        {
+            "location": "/rex_board/index.html#logical-overlapping", 
+            "text": "Condition:Is overlapping , returns true if chess are overlapping with the same logical (x,y) position. The z index of these chess will be different.     Trigger  Condition:On chess kicked , if the z-index of these chess are the same, see previous section.", 
+            "title": "Logical overlapping"
+        }, 
+        {
+            "location": "/rex_board/index.html#empty-cell", 
+            "text": "Condition:Is empty  Condition:Is occupied   If a logical position is not in the board, these two conditions will return false.", 
+            "title": "Empty cell"
+        }, 
+        {
+            "location": "/rex_board/index.html#get-empty-cell", 
+            "text": "graph TB\nCndHasAnyEmpty[ Condition:Has any empty cell, or br Condition:Has any empty cell on tiles ] --- Subevent[Expression:EmptyLX, Expression:EmptyLY]\n\nCndPickAnyEmpty[ Condition:Pick an empty cell, or br Condition:Pick an empty cell on tiles ] --- Subevent  Sample capx  ,  Sample capx (on tiles)    Condition:Has any empty cell ,  Condition:Has any empty cell on tiles   LXY of first empty cell : ( Expression:EmptyLX  ,  Expression:EmptyLY )     Condition:Pick an empty cell ,  Condition:Pick an empty cell on tiles   LXY of a random empty cell : ( Expression:EmptyLX  ,  Expression:EmptyLY )     There has another way to pick an empty cell, see the section of  Examples  in  rex_chess .", 
+            "title": "Get empty cell"
+        }, 
+        {
+            "location": "/rex_board/index.html#pick-chess", 
+            "text": "", 
+            "title": "Pick chess"
+        }, 
+        {
+            "location": "/rex_board/index.html#pick-all-chess", 
+            "text": "Pick all chess  Condition:Pick all chess ,  Action:Pick all chess    Pick specific type of chess  Condition:Pick chess ,\u00a0 Action:Pick chess", 
+            "title": "Pick all chess"
+        }, 
+        {
+            "location": "/rex_board/index.html#pick-chess-according-to-logical-position", 
+            "text": "Pick a chess at specific LXYZ  Condition:Pick chess at Logic X,Y,Z ,\u00a0  Action:Pick chess at Logic X,Y,Z    Pick all chess at specific LX, LY, or LZ  Condition:Pick chess at LX ,\u00a0  Action:Pick chess at LX  Condition:Pick chess at LY ,\u00a0  Action:Pick chess at LY  Condition:Pick chess at LZ ,\u00a0  Action:Pick chess at LZ    Pick chess at specific LXY  Condition:Pick chess at Logic X,Y ,\u00a0  Action:Pick chess at Logic X,Y  Condition:Pick chess inside a square ,  Action:Pick chess inside a square", 
+            "title": "Pick chess according to logical position"
+        }, 
+        {
+            "location": "/rex_board/index.html#pick-chess-above-tiles", 
+            "text": "Pick chess above based tile.  Condition:Pick chess above tile ,\u00a0  Action:Pick chess above tile  Condition:Pick chess above tile UID ,  Action:Pick chess above tile UID  Parameter  UID  number, for single chess   JSON string, for multiple chess. For example,  [300,301,302,303]   from  instance group plugin 's  Expression:GroupToString", 
+            "title": "Pick chess above tiles"
+        }, 
+        {
+            "location": "/rex_board/index.html#pick-neighbor-chess", 
+            "text": "Sample capx   Condition:Pick neighbor chess ,\u00a0 Action:Pick neighbor chess  Parameter  Direction  (-1) : all directions  Direction code: expressions of layout object ( rex_board_squareTx , or  rex_board_hexTx )      Expression:DIR2UID , get the UID of neighbor chess by origin chess and direction  Condition:Are neighbors (UID) , returns true if two chess are neighbor.", 
+            "title": "Pick neighbor chess"
+        }, 
+        {
+            "location": "/rex_board/index.html#physical-or-logical-position", 
+            "text": "graph LR\nUID --  | (Expression:UID2PX, br  Expression:UID2PY) | PXY\nUID --  | (Expression:UID2LX, br  Expression:UID2LY, br  Expression:UID2LZ) | LXYZ\nLXYZ --  | Expression:LXYZ2UID | UID\nLXYZ --  | (Expression:LXYZ2PX, br  Expression:LXYZ2PY) | PXY\nPXY --  | (Expression:PXY2LX, br  Expression:PXY2LY) | LXYZ", 
+            "title": "Physical or logical position"
+        }, 
+        {
+            "location": "/rex_board/index.html#logical-position-and-chess-uid", 
+            "text": "UID   LX, LY, LZ  Expression:UID2LX    Expression:UID2LY    Expression:UID2LZ    LXYZ   UID  Expression:LXYZ2UID", 
+            "title": "Logical position and chess UID"
+        }, 
+        {
+            "location": "/rex_board/index.html#z-index", 
+            "text": "UID, LZ   UID  Expression:LZ2UID , get the chess at a z-index above a chess. i.e. the same logical (x,y) but different z-index.    LXY/UID   amount of chess at LXY  Expression:LXY2ZCn ,  Expression:UID2ZCnt", 
+            "title": "Z-index"
+        }, 
+        {
+            "location": "/rex_board/index.html#get-physical-position", 
+            "text": "LXY/LXYZ/UID   PX, PY  Expression:LXY2PX  Expression:LXY2PY    Expression:LXYZ2PX  Expression:LXYZ2PY  Expression:UID2PX  Expression:UID2PY    PXY   Align PX, Align PY  Expression:PXY2NearestPX  Expression:PXY2NearestPY    Condition:Point is in board , returns true if the physical position is inside board.", 
+            "title": "Get physical position"
+        }, 
+        {
+            "location": "/rex_board/index.html#physical-position-to-logical-position", 
+            "text": "PXY   LX, LY  Expression:PXY2LX  Expression:PXY2LY", 
+            "title": "Physical position to logical position"
+        }, 
+        {
+            "location": "/rex_board/index.html#wrap", 
+            "text": "Sample capx   Set property  Wrap  to  Yes , or  Action:Set wrap mode  The leftmost tile will become the neighbor of rightmost tile", 
+            "title": "Wrap"
+        }, 
+        {
+            "location": "/rex_board/index.html#string-symbol-chess", 
+            "text": "Sample capx \nA chess is an instance, or replaced by a  unique string symbol  to reduce the amount of instances.   Call  Action:Add chess by UID  to add a string symbol into this board.     Warning  Don't uses symbol string which composed by number characters ( \"0\" - \"9\" ) only, these kinds of string will be used in C2 engine for UID table of instances.    Although string symbol is not a real instance, it still could use these expressions  Get LXYZ by (  Expression:UID2LX  ,  Expression:UID2LY  ,  Expression:UID2LZ  )  Get string symbol at LXYZ by  Expression:LXYZ2UID , or  Expression:LZ2UID  Get ideal PXY by (  Expression:UID2PX ,  Expression:UID2PY  )  Get string symbol at PXYby  Expression:PXY2UID", 
+            "title": "String symbol chess"
+        }, 
+        {
+            "location": "/rex_board/index.html#infinity-board", 
+            "text": "Sample capx  Set property  Infinity  to  Yes   There is no boundary (board width or board height), chess could be placed at any logic position.  Wrap  mode is ignored  Some actions or conditions are not supported like  Action:Fill tiles .", 
+            "title": "Infinity board"
+        }, 
+        {
+            "location": "/rex_board/index.html#save-load", 
+            "text": "It supports official saving   loading feature.", 
+            "title": "Save &amp; load"
+        }, 
+        {
+            "location": "/rex_board_squaretx/index.html", 
+            "text": "Introduction\n\n\nThis plugin provides orthogonal or isometric. or staggered physical layout for \nrex_board\n plugin.\n\n\nIcon: \nIcons8\n\n\nLinks\n\n\n\n\nPlugin\n\n\n\n\nDependence\n\n\nNone\n\n\nUsage\n\n\nConnect to board\n\n\nAssign this object as the parameter in \nAction:Setup layout\n in \nrex_board\n plugin, to configure this board to be an orthogonal or isometric board. \n\n\nLayout\n\n\nThe layout type is set at \nOrientation\n in properties table, or sets by \nAction:Set orientation\n, or \nAction:Set orientation by number\n.\n\n\nPosition of each cell\n\n\nIn properties table, (\nX at (0,0)\n, \nY at (0,0)\n) is the physical position of logical (0,0). \nWidth\n and \nHeight\n is the size of cell. Or uses \nAction:Set position offset\n, \nAction:Set cell size\n to set these properties.\n\n\n\n\nDirections\n\n\nProperty \nDirections\n is used to define the directions of neighbors. It will affect the result which related on the information of neighbors, like move-able area and moving path searching in \nrex_slg_movement plugin\n, wander result in \nrex_grid_move behavior\n.\n\n\n\n\nSets to \n4 directions\n would define the neighbors only at \n\n\nright side\n\n\ndown side\n\n\nleft side\n\n\nup side\n\n\n\n\n\n\nSet to \n8 directions\n would define the neighbors at \n\n\nright side\n\n\ndown side\n\n\nleft side\n\n\nup side\n\n\nright-down side\n\n\nleft-down side\n\n\nleft-up side\n\n\nright-up side\n\n\n\n\n\n\n\n\nThis property could be changed by \nAction:Set directions\n at run-time.\n\n\nDirection code\n\n\nThese expressions are the code of directions.\n\n\n\n\nExpression:DIRRIGHT\n : 0\n\n\nExpression:DIRDOWN\n : 1\n\n\nExpression:DIRLEFT\n : 2\n\n\nExpression:DIRUP\n : 3\n\n\nExpression:DIRRIGHTDOWN\n : 4\n\n\nExpression:DIRLEFTDOWN\n : 5\n\n\nExpression:DIRLEFTUP\n : 6\n\n\nExpression:DIRRIGHTUP\n : 7\n\n\n\n\nThese could be used used in \nCondition:Pick neighbor chess\n, or \nAction:Pick neighbor chess\n in \nrex_board\n plugin.\n\n\n\n\nTransfer physical position from logical position\n\n\nGet physical position from logical position by ( \nExpression:LXY2PX\n , \nExpression:LXY2PY\n ).", 
+            "title": "SquareTx"
+        }, 
+        {
+            "location": "/rex_board_squaretx/index.html#introduction", 
+            "text": "This plugin provides orthogonal or isometric. or staggered physical layout for  rex_board  plugin.  Icon:  Icons8", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/rex_board_squaretx/index.html#links", 
+            "text": "Plugin", 
+            "title": "Links"
+        }, 
+        {
+            "location": "/rex_board_squaretx/index.html#dependence", 
+            "text": "None", 
+            "title": "Dependence"
+        }, 
+        {
+            "location": "/rex_board_squaretx/index.html#usage", 
+            "text": "", 
+            "title": "Usage"
+        }, 
+        {
+            "location": "/rex_board_squaretx/index.html#connect-to-board", 
+            "text": "Assign this object as the parameter in  Action:Setup layout  in  rex_board  plugin, to configure this board to be an orthogonal or isometric board.", 
+            "title": "Connect to board"
+        }, 
+        {
+            "location": "/rex_board_squaretx/index.html#layout", 
+            "text": "The layout type is set at  Orientation  in properties table, or sets by  Action:Set orientation , or  Action:Set orientation by number .", 
+            "title": "Layout"
+        }, 
+        {
+            "location": "/rex_board_squaretx/index.html#position-of-each-cell", 
+            "text": "In properties table, ( X at (0,0) ,  Y at (0,0) ) is the physical position of logical (0,0).  Width  and  Height  is the size of cell. Or uses  Action:Set position offset ,  Action:Set cell size  to set these properties.", 
+            "title": "Position of each cell"
+        }, 
+        {
+            "location": "/rex_board_squaretx/index.html#directions", 
+            "text": "Property  Directions  is used to define the directions of neighbors. It will affect the result which related on the information of neighbors, like move-able area and moving path searching in  rex_slg_movement plugin , wander result in  rex_grid_move behavior .   Sets to  4 directions  would define the neighbors only at   right side  down side  left side  up side    Set to  8 directions  would define the neighbors at   right side  down side  left side  up side  right-down side  left-down side  left-up side  right-up side     This property could be changed by  Action:Set directions  at run-time.", 
+            "title": "Directions"
+        }, 
+        {
+            "location": "/rex_board_squaretx/index.html#direction-code", 
+            "text": "These expressions are the code of directions.   Expression:DIRRIGHT  : 0  Expression:DIRDOWN  : 1  Expression:DIRLEFT  : 2  Expression:DIRUP  : 3  Expression:DIRRIGHTDOWN  : 4  Expression:DIRLEFTDOWN  : 5  Expression:DIRLEFTUP  : 6  Expression:DIRRIGHTUP  : 7   These could be used used in  Condition:Pick neighbor chess , or  Action:Pick neighbor chess  in  rex_board  plugin.", 
+            "title": "Direction code"
+        }, 
+        {
+            "location": "/rex_board_squaretx/index.html#transfer-physical-position-from-logical-position", 
+            "text": "Get physical position from logical position by (  Expression:LXY2PX  ,  Expression:LXY2PY  ).", 
+            "title": "Transfer physical position from logical position"
+        }, 
+        {
+            "location": "/rex_board_hextx/index.html", 
+            "text": "Introduction\n\n\nThis plugin provides hexagonal physical layout for \nrex_board\n plugin.\n\n\nIcon: \nIcons8\n\n\nLinks\n\n\n\n\nPlugin\n\n\n\n\nDependence\n\n\nNone\n\n\nUsage\n\n\nConnect to board\n\n\nAssign this object as the parameter in \nAction:Setup layout\n in \nrex_board\n plugin, to configure this board to be an orthogonal or isometric board. \n\n\nLayout\n\n\nThere are 4 kinds of layout mode set by properties \nAxis\n and \nIndent\n,\n\n\n\n\nLeft-Right\n\n\nLeft-Right + Indent first\n\n\nUp-Down\n\n\nUp-Down + Indent first\n\n\n\n\nOr sets by \nAction:Set layout\n, \nAction:Set layout by number\n.\n\n\nPosition of each cell\n\n\nIn properties table, (\nX at (0,0)\n, \nY at (0,0)\n) is the physical position of logical (0,0). \nWidth\n and \nHeight\n is the size of cell. Or uses \nAction:Set position offset\n, \nAction:Set cell size\n to set these properties.\n\n\n\n\nDirection\n\n\nThese expressions are the code of direction.\n\n\n\n\nLeft-Right axis\n\n\nExpression:DIRLRRIGHT\n : 0\n\n\nExpression:DIRLRDOWNRIGHT\n : 1\n\n\nExpression:DIRLRDOWNLEFT\n : 2\n\n\nExpression:DIRLRLEFT\n : 3\n\n\nExpression:DIRLRUPLEFT\n : 4\n\n\nExpression:DIRLRUPRIGHT\n : 5\n\n\n\n\n\n\nUp-Down axis\n\n\nExpression:DIRUDDOWNRIGHT\n : 0\n\n\nExpression:DIRUDDOWN\n : 1\n\n\nExpression:DIRUDDOWNLEFT\n : 2\n\n\nExpression:DIRUDUPLEFT\n : 3\n\n\nExpression:DIRUDUP\n : 4\n\n\nExpression:DIRUDUPRIGHT\n : 5\n\n\n\n\n\n\n\n\nThese could be used used in \nCondition:Pick neighbor chess\n, or \nAction:Pick neighbor chess\n in \nrex_board\n plugin.\n\n\n\n\nTransfer physical position from logical position\n\n\nGet physical position from logical position by ( \nExpression:LXY2PX\n , \nExpression:LXY2PY\n ).", 
+            "title": "HexTx"
+        }, 
+        {
+            "location": "/rex_board_hextx/index.html#introduction", 
+            "text": "This plugin provides hexagonal physical layout for  rex_board  plugin.  Icon:  Icons8", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/rex_board_hextx/index.html#links", 
+            "text": "Plugin", 
+            "title": "Links"
+        }, 
+        {
+            "location": "/rex_board_hextx/index.html#dependence", 
+            "text": "None", 
+            "title": "Dependence"
+        }, 
+        {
+            "location": "/rex_board_hextx/index.html#usage", 
+            "text": "", 
+            "title": "Usage"
+        }, 
+        {
+            "location": "/rex_board_hextx/index.html#connect-to-board", 
+            "text": "Assign this object as the parameter in  Action:Setup layout  in  rex_board  plugin, to configure this board to be an orthogonal or isometric board.", 
+            "title": "Connect to board"
+        }, 
+        {
+            "location": "/rex_board_hextx/index.html#layout", 
+            "text": "There are 4 kinds of layout mode set by properties  Axis  and  Indent ,   Left-Right  Left-Right + Indent first  Up-Down  Up-Down + Indent first   Or sets by  Action:Set layout ,  Action:Set layout by number .", 
+            "title": "Layout"
+        }, 
+        {
+            "location": "/rex_board_hextx/index.html#position-of-each-cell", 
+            "text": "In properties table, ( X at (0,0) ,  Y at (0,0) ) is the physical position of logical (0,0).  Width  and  Height  is the size of cell. Or uses  Action:Set position offset ,  Action:Set cell size  to set these properties.", 
+            "title": "Position of each cell"
+        }, 
+        {
+            "location": "/rex_board_hextx/index.html#direction", 
+            "text": "These expressions are the code of direction.   Left-Right axis  Expression:DIRLRRIGHT  : 0  Expression:DIRLRDOWNRIGHT  : 1  Expression:DIRLRDOWNLEFT  : 2  Expression:DIRLRLEFT  : 3  Expression:DIRLRUPLEFT  : 4  Expression:DIRLRUPRIGHT  : 5    Up-Down axis  Expression:DIRUDDOWNRIGHT  : 0  Expression:DIRUDDOWN  : 1  Expression:DIRUDDOWNLEFT  : 2  Expression:DIRUDUPLEFT  : 3  Expression:DIRUDUP  : 4  Expression:DIRUDUPRIGHT  : 5     These could be used used in  Condition:Pick neighbor chess , or  Action:Pick neighbor chess  in  rex_board  plugin.", 
+            "title": "Direction"
+        }, 
+        {
+            "location": "/rex_board_hextx/index.html#transfer-physical-position-from-logical-position", 
+            "text": "Get physical position from logical position by (  Expression:LXY2PX  ,  Expression:LXY2PY  ).", 
+            "title": "Transfer physical position from logical position"
+        }, 
+        {
+            "location": "/rex_ngio_authentication/index.html", 
+            "text": "Introduction\n\n\nAuthentication provided by \nNewgrounds.io\n. It is also a base plugin for other rex_ngio_xxxx plugins.\n\n\nLinks\n\n\n\n\nPlugin\n\n\n\n\nDependence\n\n\nNone\n\n\nGet started\n\n\nUsage\n\n\nApp id and AES key\n\n\n\n\nApp id : dashboard \nAPI Tools\n, \nApp Information\n section\n\n\nAES key : dashboard \nEncryption Settings\n, \nAES-128\n section\n\n\n\n\nLogoin\n\n\ngraph TB\n\nActLogin[\nAction:Login\n] --\n ActionIsSuccess\n\nsubgraph Callback\nActionIsSuccess{Action\nbr\nis success} --\n |Yes| CondOnSuccess[\nCondition:On login\n]\nActionIsSuccess --\n |No\nbr\nLogin error| CondOnError[\nCondition:On login error\n]\nCondOnSuccess --\n ExpResult[\nExpression:UserName\nbr\nExpression:UserID\nbr\nExpression:UserIconURL\n]\nActionIsSuccess --\n |No\nbr\nLogin Cancel| CondOnCancel[\nCondition:On login cancel\n]\nend\n\n\n\nSample capx\n\n\n\n\nLogin\n\n\nAction:Login\n\n\n\n\n\n\nCallback\n\n\nSuccess : \nCondition:On login\n\n\nExpression:UserName\n\n\nExpression:UserID\n\n\nExpression:UserIconURL\n\n\nLoad icon into \nimage element\n\n\nIcon can \nNot\n load into official sprite\n\n\n\n\n\n\n\n\n\n\nError : \nCondition:On login error\n\n\nCancel :  \nCondition:On login cancel\n\n\n\n\n\n\n\n\nLogging out\n\n\ngraph TB\n\nActLogin[\nAction:Logging out\n] --\n CondOnLoggingout[\nCondition:On logged out\n]\n\nsubgraph Callback\nCondOnLoggingout\nend\n\n\n\n\n\nLogging out\n\n\nAction:Logging out\n\n\n\n\n\n\nCallback\n\n\nCondition:On logged out\n\n\n\n\n\n\n\n\nDebug\n\n\n\n\nSet property \nDebug\n to \nYes\n\n\n\n\n\n\nDebug panel\n\n\nUser name, UserID of current user will be shown at debug panel.", 
+            "title": "Authentication"
+        }, 
+        {
+            "location": "/rex_ngio_authentication/index.html#introduction", 
+            "text": "Authentication provided by  Newgrounds.io . It is also a base plugin for other rex_ngio_xxxx plugins.", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/rex_ngio_authentication/index.html#links", 
+            "text": "Plugin", 
+            "title": "Links"
+        }, 
+        {
+            "location": "/rex_ngio_authentication/index.html#dependence", 
+            "text": "None", 
+            "title": "Dependence"
+        }, 
+        {
+            "location": "/rex_ngio_authentication/index.html#get-started", 
+            "text": "", 
+            "title": "Get started"
+        }, 
+        {
+            "location": "/rex_ngio_authentication/index.html#usage", 
+            "text": "", 
+            "title": "Usage"
+        }, 
+        {
+            "location": "/rex_ngio_authentication/index.html#app-id-and-aes-key", 
+            "text": "App id : dashboard  API Tools ,  App Information  section  AES key : dashboard  Encryption Settings ,  AES-128  section", 
+            "title": "App id and AES key"
+        }, 
+        {
+            "location": "/rex_ngio_authentication/index.html#logoin", 
+            "text": "graph TB\n\nActLogin[ Action:Login ] --  ActionIsSuccess\n\nsubgraph Callback\nActionIsSuccess{Action br is success} --  |Yes| CondOnSuccess[ Condition:On login ]\nActionIsSuccess --  |No br Login error| CondOnError[ Condition:On login error ]\nCondOnSuccess --  ExpResult[ Expression:UserName br Expression:UserID br Expression:UserIconURL ]\nActionIsSuccess --  |No br Login Cancel| CondOnCancel[ Condition:On login cancel ]\nend  Sample capx   Login  Action:Login    Callback  Success :  Condition:On login  Expression:UserName  Expression:UserID  Expression:UserIconURL  Load icon into  image element  Icon can  Not  load into official sprite      Error :  Condition:On login error  Cancel :   Condition:On login cancel", 
+            "title": "Logoin"
+        }, 
+        {
+            "location": "/rex_ngio_authentication/index.html#logging-out", 
+            "text": "graph TB\n\nActLogin[ Action:Logging out ] --  CondOnLoggingout[ Condition:On logged out ]\n\nsubgraph Callback\nCondOnLoggingout\nend   Logging out  Action:Logging out    Callback  Condition:On logged out", 
+            "title": "Logging out"
+        }, 
+        {
+            "location": "/rex_ngio_authentication/index.html#debug", 
+            "text": "Set property  Debug  to  Yes", 
+            "title": "Debug"
+        }, 
+        {
+            "location": "/rex_ngio_authentication/index.html#debug-panel", 
+            "text": "User name, UserID of current user will be shown at debug panel.", 
+            "title": "Debug panel"
+        }, 
+        {
+            "location": "/rex_ngio_scoreboard/index.html", 
+            "text": "Introduction\n\n\nHandles loading and posting of high scores and scoreboards.\n\n\nLinks\n\n\n\n\nPlugin\n\n\n\n\nDependence\n\n\n\n\nrex_ngio_authentication\n\n\n\n\nUsage\n\n\nPrepare\n\n\nPut\u00a0\nrex_ngio_authentication\n into project, and set property \nApp id\n and \nAES key\n.\n\n\nManage boards\n\n\nMange boards in dashboard, \nAPI Tools\n, \nScoreboards\n.\n\n\nGet boards\n\n\ngraph TB\n\nAction[\nAction:Get boards\n] --\n ActionIsSuccess\n\nsubgraph Callback\nActionIsSuccess{Action\nbr\nis success} --\n |Yes| CondOnSuccess[\nCondition:On get boards\nbr\n \nbr\nExpression:BoardsAsJSON\n]\nActionIsSuccess --\n |No| CondOnError[\nCondition:On get boards error\n]\nCondOnSuccess --- CondForEachMedal[\nCondition:For each board\nbr\n \nbr\nExpression:CurBoardName\nbr\nExpression:CurBoardID\n]\nCondOnError --- ExpError[\nExpression:ErrorMessage\n]\n\nend\n\n\n\nSample capx\n\n\n\n\nAction:Get boards\n\n\nCallback\n\n\nSuccess : \nCondition:On get boards\n\n\nExpression:BoardsAsJSON\n\n\nExpression:BoardsCount\n\n\nCondition:For each board\n\n\nExpression:CurBoardName\n\n\nExpression:CurBoardID\n\n\nExpression:LoopIndex\n, index in this for each loop\n\n\n\n\n\n\nGet board by index\n\n\nExpression:Index2BoardName( index )\n\n\nExpression:Index2BoardID( index )\n\n\n\n\n\n\n\n\n\n\nError : \nCondition:On get boards error\n\n\nExpression:ErrorMessage\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPost score\n\n\ngraph TB\n\nSetBoardID[\nProperty ID\nbr\nAction:Set board ID\n] --\n Action\nAction[\nAction:Post score\n] --\n ActionIsSuccess\n\nsubgraph Callback\nActionIsSuccess{Action\nbr\nis success} --\n |Yes| CondOnSuccess[\nCondition:On post score\n]\nActionIsSuccess --\n |No| CondOnError[\nCondition:On post score error\n]\nCondOnError --- ExpError[\nExpression:ErrorMessage\n]\nend\n\n\n\nSample capx\n\n\n\n\nSet board ID\n\n\nProperty \nID\n, or\n\n\nAction:Set board ID\n\n\nExpression:BoardID\n\n\n\n\n\n\nAction:Post score\n\n\nTag\n for querying scores (optional)\n\n\nProperty \nTag\n\n\nAction:Set tag\n\n\nExpression:Tag\n\n\n\n\n\n\n\n\n\n\nCallback\n\n\nSuccess : \nCondition:On post score\n\n\nError : \nCondition:On post score error\n\n\nExpression:ErrorMessage\n\n\n\n\n\n\n\n\n\n\n\n\nGet score\n\n\ngraph TB\n\nSetBoardID[\nProperty ID\nbr\nAction:Set board ID\n] --\n Action0\nAction0[\nStart index\nbr\n----\nbr\nAction:Request in a range\n] --\n ActionIsSuccess\n\nSetBoardID --\n Action1\nAction1[\nPages\nbr\n----\nbr\nAction:Turn to page\nbr\nAction:Update current page\nbr\nAction:Turn to next page\nbr\nAction:Turn to previous page\nbr\n----\nbr\nExpression:PageIndex\nbr\nProperty Lines\n] --\n ActionIsSuccess\n\nsubgraph Callback\nActionIsSuccess{Action\nbr\nis success} --\n |Yes| CondOnSuccess[\nCondition:On get scores\nbr\n \nbr\n \nbr\nExpression:ScoresAsJSON\n]\nActionIsSuccess --\n |No| CondOnError[\nCondition:On get scores error\n]\nCondOnSuccess --- CondForEachScore[\nCondition:For each score\nbr\n \nbr\nExpression:CurUserName\nbr\nExpression:CurUserID\nbr\nExpression:CurFormattedValue\nbr\nExpression:CurValue\n]\nCondOnError --- ExpError[\nExpression:ErrorMessage\n]\nend\n\n\n\n\n\nSet board ID\n\n\nProperty \nID\n, or\n\n\nAction:Set board ID\n\n\nExpression:BoardID\n\n\n\n\n\n\nRequest scores\n\n\nBy start index\n\n\nAction:Request in a range\n\n\n\n\n\n\nPage by page\n\n\nAction:Turn to page\n\n\nAction:Update current page\n\n\nAction:Turn to next page\n\n\nAction:Turn to previous page\n\n\nPage properties:\n\n\nExpression:PageIndex\n, current page index\n\n\nProperty \nLines\n : lines of each page\n\n\n\n\n\n\n\n\n\n\nPeriod\n, time-frame (optional)\n\n\nProperty \nPeriod\n\n\nAction:Set period\n\n\nAction:Set period by code\n\n\nD\n : current day\n\n\nW\n : current week\n\n\nM\n : current month\n\n\nY\n : current year\n\n\nA\n : all-time\n\n\n\n\n\n\nExpression:Period\n\n\n\n\n\n\nTag\n for querying scores (optional)\n\n\nProperty \nTag\n\n\nAction:Set tag\n\n\nExpression:Tag\n\n\n\n\n\n\n\n\n\n\nCallback\n\n\nSuccess : \nCondition:On get scores\n\n\nExpression:ScoresAsJSON\n\n\nExpression:ScoresCount\n\n\nExpression:StartIndex\n\n\nCondition:For each score\n\n\nExpression:CurUserName\n\n\nExpression:CurUserID\n\n\nExpression:CurFormattedValue\n\n\nxpression:CurValue\n\n\nExpression:LoopIndex\n, index in this for each loop\n\n\n\n\n\n\nGet score by index of current received scores\n\n\nExpression:Index2UserName( index )\n\n\nExpression:Index2UserID( index )\n\n\nExpression:Index2FormattedValue( index )\n\n\nExpression:Index2Value( index )\n\n\n\n\n\n\n\n\n\n\nError : \nCondition:On get scores error\n\n\nExpression:ErrorMessage", 
+            "title": "Scoreboard"
+        }, 
+        {
+            "location": "/rex_ngio_scoreboard/index.html#introduction", 
+            "text": "Handles loading and posting of high scores and scoreboards.", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/rex_ngio_scoreboard/index.html#links", 
+            "text": "Plugin", 
+            "title": "Links"
+        }, 
+        {
+            "location": "/rex_ngio_scoreboard/index.html#dependence", 
+            "text": "rex_ngio_authentication", 
+            "title": "Dependence"
+        }, 
+        {
+            "location": "/rex_ngio_scoreboard/index.html#usage", 
+            "text": "", 
+            "title": "Usage"
+        }, 
+        {
+            "location": "/rex_ngio_scoreboard/index.html#prepare", 
+            "text": "Put\u00a0 rex_ngio_authentication  into project, and set property  App id  and  AES key .", 
+            "title": "Prepare"
+        }, 
+        {
+            "location": "/rex_ngio_scoreboard/index.html#manage-boards", 
+            "text": "Mange boards in dashboard,  API Tools ,  Scoreboards .", 
+            "title": "Manage boards"
+        }, 
+        {
+            "location": "/rex_ngio_scoreboard/index.html#get-boards", 
+            "text": "graph TB\n\nAction[ Action:Get boards ] --  ActionIsSuccess\n\nsubgraph Callback\nActionIsSuccess{Action br is success} --  |Yes| CondOnSuccess[ Condition:On get boards br   br Expression:BoardsAsJSON ]\nActionIsSuccess --  |No| CondOnError[ Condition:On get boards error ]\nCondOnSuccess --- CondForEachMedal[ Condition:For each board br   br Expression:CurBoardName br Expression:CurBoardID ]\nCondOnError --- ExpError[ Expression:ErrorMessage ]\n\nend  Sample capx   Action:Get boards  Callback  Success :  Condition:On get boards  Expression:BoardsAsJSON  Expression:BoardsCount  Condition:For each board  Expression:CurBoardName  Expression:CurBoardID  Expression:LoopIndex , index in this for each loop    Get board by index  Expression:Index2BoardName( index )  Expression:Index2BoardID( index )      Error :  Condition:On get boards error  Expression:ErrorMessage", 
+            "title": "Get boards"
+        }, 
+        {
+            "location": "/rex_ngio_scoreboard/index.html#post-score", 
+            "text": "graph TB\n\nSetBoardID[ Property ID br Action:Set board ID ] --  Action\nAction[ Action:Post score ] --  ActionIsSuccess\n\nsubgraph Callback\nActionIsSuccess{Action br is success} --  |Yes| CondOnSuccess[ Condition:On post score ]\nActionIsSuccess --  |No| CondOnError[ Condition:On post score error ]\nCondOnError --- ExpError[ Expression:ErrorMessage ]\nend  Sample capx   Set board ID  Property  ID , or  Action:Set board ID  Expression:BoardID    Action:Post score  Tag  for querying scores (optional)  Property  Tag  Action:Set tag  Expression:Tag      Callback  Success :  Condition:On post score  Error :  Condition:On post score error  Expression:ErrorMessage", 
+            "title": "Post score"
+        }, 
+        {
+            "location": "/rex_ngio_scoreboard/index.html#get-score", 
+            "text": "graph TB\n\nSetBoardID[ Property ID br Action:Set board ID ] --  Action0\nAction0[ Start index br ---- br Action:Request in a range ] --  ActionIsSuccess\n\nSetBoardID --  Action1\nAction1[ Pages br ---- br Action:Turn to page br Action:Update current page br Action:Turn to next page br Action:Turn to previous page br ---- br Expression:PageIndex br Property Lines ] --  ActionIsSuccess\n\nsubgraph Callback\nActionIsSuccess{Action br is success} --  |Yes| CondOnSuccess[ Condition:On get scores br   br   br Expression:ScoresAsJSON ]\nActionIsSuccess --  |No| CondOnError[ Condition:On get scores error ]\nCondOnSuccess --- CondForEachScore[ Condition:For each score br   br Expression:CurUserName br Expression:CurUserID br Expression:CurFormattedValue br Expression:CurValue ]\nCondOnError --- ExpError[ Expression:ErrorMessage ]\nend   Set board ID  Property  ID , or  Action:Set board ID  Expression:BoardID    Request scores  By start index  Action:Request in a range    Page by page  Action:Turn to page  Action:Update current page  Action:Turn to next page  Action:Turn to previous page  Page properties:  Expression:PageIndex , current page index  Property  Lines  : lines of each page      Period , time-frame (optional)  Property  Period  Action:Set period  Action:Set period by code  D  : current day  W  : current week  M  : current month  Y  : current year  A  : all-time    Expression:Period    Tag  for querying scores (optional)  Property  Tag  Action:Set tag  Expression:Tag      Callback  Success :  Condition:On get scores  Expression:ScoresAsJSON  Expression:ScoresCount  Expression:StartIndex  Condition:For each score  Expression:CurUserName  Expression:CurUserID  Expression:CurFormattedValue  xpression:CurValue  Expression:LoopIndex , index in this for each loop    Get score by index of current received scores  Expression:Index2UserName( index )  Expression:Index2UserID( index )  Expression:Index2FormattedValue( index )  Expression:Index2Value( index )      Error :  Condition:On get scores error  Expression:ErrorMessage", 
+            "title": "Get score"
+        }, 
+        {
+            "location": "/rex_ngio_medal/index.html", 
+            "text": "Introduction\n\n\nHandles loading and unlocking of medals.\n\n\nLinks\n\n\n\n\nPlugin\n\n\n\n\nDependence\n\n\n\n\nrex_ngio_authentication\n\n\n\n\nUsage\n\n\nSample capx\n\n\nPrepare\n\n\nPut\u00a0\nrex_ngio_authentication\n into project, and set property \nApp id\n and \nAES key\n.\n\n\nManage medals\n\n\nMange medals in dashboard, \nAPI Tools\n, \nMedals\n.\n\n\nGet list\n\n\ngraph TB\n\nAction[\nAction:Get list\n] --\n ActionIsSuccess\n\nsubgraph Callback\nActionIsSuccess{Action\nbr\nis success} --\n |Yes| CondOnSuccess[\nCondition:On get medals list\nbr\n \nbr\nExpression:MedalsAsJSON\nbr\nExpression:MedalsCount\n]\nActionIsSuccess --\n |No| CondOnError[\nCondition:On get medals list error\n]\nCondOnSuccess --- CondForEachMedal[\nCondition:For each medal\nbr\n \nbr\nExpression:CurMedalName\nbr\nExpression:CurMedalID\nbr\nExpression:CurMedalIcon\nbr\nExpression:CurMedalDifficulty\nbr\nExpression:CurMedalDescription\nbr\nExpression:CurMedalValue\nbr\nExpression:CurMedalIsSecret\nbr\nExpression:CurMedalIsUnlocked\nbr\n \nbr\nCondition:Is secret\nbr\nCondition:Is unlocked\nbr\nCondition:Compare difficulty\n]\nCondOnError --- ExpError[\nExpression:ErrorMessage\n]\n\nend\n\n\n\n\n\nAction:Get list\n\n\nCallback\n\n\nSuccess : \nCondition:On get medals list error\n\n\nExpression:MedalsAsJSON\n\n\nExpression:MedalsCount\n\n\nCondition:For each medal\n\n\nExpression:CurMedalName\n\n\nExpression:CurMedalID\n\n\nExpression:CurMedalIcon\n\n\nLoad icon into \nimage element\n\n\nIcon can \nNot\n load into official sprite\n\n\n\n\n\n\nExpression:CurMedalDifficulty\n\n\nExpression:CurMedalDescription\n\n\nExpression:CurMedalValue\n\n\nExpression:CurMedalIsSecret\n, returns \n1\n if this medal is secret\n\n\nExpression:CurMedalIsUnlocked\n, returns \n1\n if this medal is unlocked\n\n\nCondition:Is secret\n\n\nCondition:Is unlocked\n\n\nCondition:Compare difficulty\n\n\nExpression:LoopIndex\n, index in this for each loop\n\n\n\n\n\n\nGet medal by index\n\n\nExpression:Index2MedalName( index )\n\n\nExpression:Index2MedalID( index )\n\n\nExpression:Index2MedalIcon( index )\n\n\nLoad icon into \nimage element\n\n\nIcon can \nNot\n load into official sprite\n\n\n\n\n\n\nExpression:Index2MedalDifficulty( index )\n\n\nExpression:Index2MedalDescription( index )\n\n\nExpression:Index2MedalValue( index )\n\n\nExpression:Index2MedalIsSecret( index )\n, returns \n1\n if this medal is secret\n\n\nExpression:Index2MedalIsUnlocked( index )\n, returns \n1\n if this medal is unlocked\n\n\nCondition:Is secret\n\n\nCondition:Is unlocked\n\n\nCondition:Compare difficulty\n\n\n\n\n\n\n\n\n\n\nError : \nCondition:On get medals list error\n\n\nExpression:ErrorMessage\n\n\n\n\n\n\n\n\n\n\n\n\nUnlock\n\n\ngraph TB\n\nAction[\nAction:Unlock\n] --\n ActionIsSuccess\n\nsubgraph Callback\nActionIsSuccess{Action\nbr\nis success} --\n |Yes| CondOnSuccess[\nCondition:On unlock medal\n]\nActionIsSuccess --\n |No| CondOnError[\nCondition:On unlock medal error\n]\nCondOnSuccess --- ExpResult[\nExpression:LastUnlockedMedalID\n]\nCondOnError --- ExpError[\nExpression:ErrorMessage\n]\nend\n\n\n\n\n\nAction:Unlock\n\n\nCallback\n\n\nSuccess : \nCondition:On unlock medal\n\n\nExpression:LastUnlockedMedalID\n\n\n\n\n\n\nError : \nCondition:On unlock medal error\n\n\nExpression:ErrorMessage", 
+            "title": "Medal"
+        }, 
+        {
+            "location": "/rex_ngio_medal/index.html#introduction", 
+            "text": "Handles loading and unlocking of medals.", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/rex_ngio_medal/index.html#links", 
+            "text": "Plugin", 
+            "title": "Links"
+        }, 
+        {
+            "location": "/rex_ngio_medal/index.html#dependence", 
+            "text": "rex_ngio_authentication", 
+            "title": "Dependence"
+        }, 
+        {
+            "location": "/rex_ngio_medal/index.html#usage", 
+            "text": "Sample capx", 
+            "title": "Usage"
+        }, 
+        {
+            "location": "/rex_ngio_medal/index.html#prepare", 
+            "text": "Put\u00a0 rex_ngio_authentication  into project, and set property  App id  and  AES key .", 
+            "title": "Prepare"
+        }, 
+        {
+            "location": "/rex_ngio_medal/index.html#manage-medals", 
+            "text": "Mange medals in dashboard,  API Tools ,  Medals .", 
+            "title": "Manage medals"
+        }, 
+        {
+            "location": "/rex_ngio_medal/index.html#get-list", 
+            "text": "graph TB\n\nAction[ Action:Get list ] --  ActionIsSuccess\n\nsubgraph Callback\nActionIsSuccess{Action br is success} --  |Yes| CondOnSuccess[ Condition:On get medals list br   br Expression:MedalsAsJSON br Expression:MedalsCount ]\nActionIsSuccess --  |No| CondOnError[ Condition:On get medals list error ]\nCondOnSuccess --- CondForEachMedal[ Condition:For each medal br   br Expression:CurMedalName br Expression:CurMedalID br Expression:CurMedalIcon br Expression:CurMedalDifficulty br Expression:CurMedalDescription br Expression:CurMedalValue br Expression:CurMedalIsSecret br Expression:CurMedalIsUnlocked br   br Condition:Is secret br Condition:Is unlocked br Condition:Compare difficulty ]\nCondOnError --- ExpError[ Expression:ErrorMessage ]\n\nend   Action:Get list  Callback  Success :  Condition:On get medals list error  Expression:MedalsAsJSON  Expression:MedalsCount  Condition:For each medal  Expression:CurMedalName  Expression:CurMedalID  Expression:CurMedalIcon  Load icon into  image element  Icon can  Not  load into official sprite    Expression:CurMedalDifficulty  Expression:CurMedalDescription  Expression:CurMedalValue  Expression:CurMedalIsSecret , returns  1  if this medal is secret  Expression:CurMedalIsUnlocked , returns  1  if this medal is unlocked  Condition:Is secret  Condition:Is unlocked  Condition:Compare difficulty  Expression:LoopIndex , index in this for each loop    Get medal by index  Expression:Index2MedalName( index )  Expression:Index2MedalID( index )  Expression:Index2MedalIcon( index )  Load icon into  image element  Icon can  Not  load into official sprite    Expression:Index2MedalDifficulty( index )  Expression:Index2MedalDescription( index )  Expression:Index2MedalValue( index )  Expression:Index2MedalIsSecret( index ) , returns  1  if this medal is secret  Expression:Index2MedalIsUnlocked( index ) , returns  1  if this medal is unlocked  Condition:Is secret  Condition:Is unlocked  Condition:Compare difficulty      Error :  Condition:On get medals list error  Expression:ErrorMessage", 
+            "title": "Get list"
+        }, 
+        {
+            "location": "/rex_ngio_medal/index.html#unlock", 
+            "text": "graph TB\n\nAction[ Action:Unlock ] --  ActionIsSuccess\n\nsubgraph Callback\nActionIsSuccess{Action br is success} --  |Yes| CondOnSuccess[ Condition:On unlock medal ]\nActionIsSuccess --  |No| CondOnError[ Condition:On unlock medal error ]\nCondOnSuccess --- ExpResult[ Expression:LastUnlockedMedalID ]\nCondOnError --- ExpError[ Expression:ErrorMessage ]\nend   Action:Unlock  Callback  Success :  Condition:On unlock medal  Expression:LastUnlockedMedalID    Error :  Condition:On unlock medal error  Expression:ErrorMessage", 
+            "title": "Unlock"
+        }, 
+        {
+            "location": "/rex_ngio_gateway/index.html", 
+            "text": "Introduction\n\n\nProvides information about the gateway server.\n\n\nLinks\n\n\n\n\nPlugin\n\n\n\n\nDependence\n\n\n\n\nrex_ngio_authentication\n\n\n\n\nUsage\n\n\nSample capx\n\n\nPrepare\n\n\nPut\u00a0\nrex_ngio_authentication\n into project, and set property \nApp id\n and \nAES key\n.\n\n\nGet date-time\n\n\ngraph TB\n\nAction[\nAction:Get date time\n] --\n ActionIsSuccess\n\nsubgraph Callback\nActionIsSuccess{Action\nbr\nis success} --\n |Yes| CondOnSuccess[\nCondition:On get date time\n]\nActionIsSuccess --\n |No| CondOnError[\nCondition:On get date time error\n]\nCondOnSuccess --- ExpResult[\nExpression:Datetime\n]\nCondOnError --- ExpError[\nExpression:ErrorMessage\n]\nend\n\n\n\n\n\nAction:Get date time\n\n\nCallback\n\n\nSuccess : \nCondition:On get date time\n\n\nExpression:Datetime\n\n\n\n\n\n\nError : \nCondition:On login error\n\n\nExpression:ErrorMessage\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGet version\n\n\ngraph TB\n\nAction[\nAction:Get version\n] --\n ActionIsSuccess\n\nsubgraph Callback\nActionIsSuccess{Action\nbr\nis success} --\n |Yes| CondOnSuccess[\nCondition:On get version\n]\nActionIsSuccess --\n |No| CondOnError[\nCondition:On get version error\n]\nCondOnSuccess --- ExpResult[\nExpression:Version\n]\nCondOnError --- ExpError[\nExpression:ErrorMessage\n]\nend\n\n\n\n\n\nAction:Get version\n\n\nCallback\n\n\nSuccess : \nCondition:On get version\n\n\nExpression:Version\n\n\n\n\n\n\nError : \nCondition:On get version error\n\n\nExpression:ErrorMessage\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPing\n\n\ngraph TB\n\nAction[\nAction:Ping\n] --\n ActionIsSuccess\n\nsubgraph Callback\nActionIsSuccess{Action\nbr\nis success} --\n |Yes| CondOnSuccess[\nCondition:On pong\n]\nActionIsSuccess --\n |No| CondOnError[\nCondition:On pong error\n]\nCondOnError --- ExpError[\nExpression:ErrorMessage\n]\nend\n\n\n\n\n\nAction:Ping\n\n\nCallback\n\n\nSuccess : \nCondition:On pong\n\n\nError : \nCondition:On pong error\n\n\nExpression:ErrorMessage", 
+            "title": "Gateway"
+        }, 
+        {
+            "location": "/rex_ngio_gateway/index.html#introduction", 
+            "text": "Provides information about the gateway server.", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/rex_ngio_gateway/index.html#links", 
+            "text": "Plugin", 
+            "title": "Links"
+        }, 
+        {
+            "location": "/rex_ngio_gateway/index.html#dependence", 
+            "text": "rex_ngio_authentication", 
+            "title": "Dependence"
+        }, 
+        {
+            "location": "/rex_ngio_gateway/index.html#usage", 
+            "text": "Sample capx", 
+            "title": "Usage"
+        }, 
+        {
+            "location": "/rex_ngio_gateway/index.html#prepare", 
+            "text": "Put\u00a0 rex_ngio_authentication  into project, and set property  App id  and  AES key .", 
+            "title": "Prepare"
+        }, 
+        {
+            "location": "/rex_ngio_gateway/index.html#get-date-time", 
+            "text": "graph TB\n\nAction[ Action:Get date time ] --  ActionIsSuccess\n\nsubgraph Callback\nActionIsSuccess{Action br is success} --  |Yes| CondOnSuccess[ Condition:On get date time ]\nActionIsSuccess --  |No| CondOnError[ Condition:On get date time error ]\nCondOnSuccess --- ExpResult[ Expression:Datetime ]\nCondOnError --- ExpError[ Expression:ErrorMessage ]\nend   Action:Get date time  Callback  Success :  Condition:On get date time  Expression:Datetime    Error :  Condition:On login error  Expression:ErrorMessage", 
+            "title": "Get date-time"
+        }, 
+        {
+            "location": "/rex_ngio_gateway/index.html#get-version", 
+            "text": "graph TB\n\nAction[ Action:Get version ] --  ActionIsSuccess\n\nsubgraph Callback\nActionIsSuccess{Action br is success} --  |Yes| CondOnSuccess[ Condition:On get version ]\nActionIsSuccess --  |No| CondOnError[ Condition:On get version error ]\nCondOnSuccess --- ExpResult[ Expression:Version ]\nCondOnError --- ExpError[ Expression:ErrorMessage ]\nend   Action:Get version  Callback  Success :  Condition:On get version  Expression:Version    Error :  Condition:On get version error  Expression:ErrorMessage", 
+            "title": "Get version"
+        }, 
+        {
+            "location": "/rex_ngio_gateway/index.html#ping", 
+            "text": "graph TB\n\nAction[ Action:Ping ] --  ActionIsSuccess\n\nsubgraph Callback\nActionIsSuccess{Action br is success} --  |Yes| CondOnSuccess[ Condition:On pong ]\nActionIsSuccess --  |No| CondOnError[ Condition:On pong error ]\nCondOnError --- ExpError[ Expression:ErrorMessage ]\nend   Action:Ping  Callback  Success :  Condition:On pong  Error :  Condition:On pong error  Expression:ErrorMessage", 
+            "title": "Ping"
+        }, 
+        {
+            "location": "/rex_ngio_loader/index.html", 
+            "text": "Introduction\n\n\nHandles loading various URLs and tracking referral stats.\n\n\nLinks\n\n\n\n\nPlugin\n\n\n\n\nDependence\n\n\n\n\nrex_ngio_authentication\n\n\n\n\nUsage\n\n\nSample capx\n\n\nPrepare\n\n\nPut\u00a0\nrex_ngio_authentication\n into project, and set property \nApp id\n and \nAES key\n.\n\n\nHost\n\n\nSet the domain URL of this app in property \nHost\n.\n\n\nOpen or get url of page\n\n\ngraph TB\n\nAction[\nAction:Load Newground page\nbr\nAction:Load more game\nbr\nAction:Load author page\nbr\nAction:Load official page\nbr\nAction:Load referral\n] --\n ActionIsSuccess\n\nsubgraph Callback\nActionIsSuccess{Action\nbr\nis success} --\n |Yes| CondOnSuccess[\nCondition:On get url\n]\nActionIsSuccess --\n |No| CondOnError[\nCondition:On get url error\n]\nCondOnSuccess --- ExpResult[\nExpression:LastURL\n]\nCondOnError --- ExpError[\nExpression:ErrorMessage\n]\nend\n\n\n\n\n\nopen page or get url of page\n\n\nAction:Load Newground page\n\n\nAction:Load more game\n\n\nAction:Load author page\n\n\nAction:Load official page\n\n\nAction:Load referral\n\n\n\n\n\n\nParameter \nOperation\n\n\nOpen\n : open a page in a new tab if success\n\n\nGet url\n :\n\n\nSuccess : \nCondition:On get url\n\n\nExpression:LastURL\n\n\n\n\n\n\nError : \nCondition:On get url error\n\n\nExpression:ErrorMessage\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nReferral\n\n\nManage \nReferral\n in dashboard \nAPI Tools\n, \nReferrals and Events\n.", 
+            "title": "Get url of page"
+        }, 
+        {
+            "location": "/rex_ngio_loader/index.html#introduction", 
+            "text": "Handles loading various URLs and tracking referral stats.", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/rex_ngio_loader/index.html#links", 
+            "text": "Plugin", 
+            "title": "Links"
+        }, 
+        {
+            "location": "/rex_ngio_loader/index.html#dependence", 
+            "text": "rex_ngio_authentication", 
+            "title": "Dependence"
+        }, 
+        {
+            "location": "/rex_ngio_loader/index.html#usage", 
+            "text": "Sample capx", 
+            "title": "Usage"
+        }, 
+        {
+            "location": "/rex_ngio_loader/index.html#prepare", 
+            "text": "Put\u00a0 rex_ngio_authentication  into project, and set property  App id  and  AES key .", 
+            "title": "Prepare"
+        }, 
+        {
+            "location": "/rex_ngio_loader/index.html#host", 
+            "text": "Set the domain URL of this app in property  Host .", 
+            "title": "Host"
+        }, 
+        {
+            "location": "/rex_ngio_loader/index.html#open-or-get-url-of-page", 
+            "text": "graph TB\n\nAction[ Action:Load Newground page br Action:Load more game br Action:Load author page br Action:Load official page br Action:Load referral ] --  ActionIsSuccess\n\nsubgraph Callback\nActionIsSuccess{Action br is success} --  |Yes| CondOnSuccess[ Condition:On get url ]\nActionIsSuccess --  |No| CondOnError[ Condition:On get url error ]\nCondOnSuccess --- ExpResult[ Expression:LastURL ]\nCondOnError --- ExpError[ Expression:ErrorMessage ]\nend   open page or get url of page  Action:Load Newground page  Action:Load more game  Action:Load author page  Action:Load official page  Action:Load referral    Parameter  Operation  Open  : open a page in a new tab if success  Get url  :  Success :  Condition:On get url  Expression:LastURL    Error :  Condition:On get url error  Expression:ErrorMessage", 
+            "title": "Open or get url of page"
+        }, 
+        {
+            "location": "/rex_ngio_loader/index.html#referral", 
+            "text": "Manage  Referral  in dashboard  API Tools ,  Referrals and Events .", 
+            "title": "Referral"
+        }, 
+        {
+            "location": "/rex_ngio_event/index.html", 
+            "text": "Introduction\n\n\nHandles logging of custom events.\n\n\nLinks\n\n\n\n\nPlugin\n\n\n\n\nDependence\n\n\n\n\nrex_ngio_authentication\n\n\n\n\nUsage\n\n\nSample capx\n\n\nPrepare\n\n\nPut\u00a0\nrex_ngio_authentication\n into project, and set property \nApp id\n and \nAES key\n.\n\n\nManage events\n\n\nManage events in dashboard, \nAPI Tools\n, \nReferrals and Event\n.\n\n\nLog event\n\n\ngraph TB\n\nAction[\nAction:Log event\n] --\n ActionIsSuccess\n\nsubgraph Callback\nActionIsSuccess{Action\nbr\nis success} --\n |Yes| CondOnSuccess[\nCondition:On log event\n]\nActionIsSuccess --\n |No| CondOnError[\nCondition:On log event error\n]\nCondOnSuccess --- ExpResult[\nExpression:EventName\n]\nCondOnError --- ExpError[\nExpression:ErrorMessage\n]\nend\n\n\n\n\n\nAction:Log event\n\n\nCallback\n\n\nSuccess : \nCondition:On log event\n\n\nExpression:EventName\n\n\n\n\n\n\nError : \nCondition:On log event error\n\n\nExpression:ErrorMessage\n\n\n\n\n\n\n\n\n\n\n\n\nStatistics of events\n\n\nStatistics of events will be shown in dashboard \nProject Dashboard\n -\n \nStatistics for xxx\n.", 
+            "title": "Log events"
+        }, 
+        {
+            "location": "/rex_ngio_event/index.html#introduction", 
+            "text": "Handles logging of custom events.", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/rex_ngio_event/index.html#links", 
+            "text": "Plugin", 
+            "title": "Links"
+        }, 
+        {
+            "location": "/rex_ngio_event/index.html#dependence", 
+            "text": "rex_ngio_authentication", 
+            "title": "Dependence"
+        }, 
+        {
+            "location": "/rex_ngio_event/index.html#usage", 
+            "text": "Sample capx", 
+            "title": "Usage"
+        }, 
+        {
+            "location": "/rex_ngio_event/index.html#prepare", 
+            "text": "Put\u00a0 rex_ngio_authentication  into project, and set property  App id  and  AES key .", 
+            "title": "Prepare"
+        }, 
+        {
+            "location": "/rex_ngio_event/index.html#manage-events", 
+            "text": "Manage events in dashboard,  API Tools ,  Referrals and Event .", 
+            "title": "Manage events"
+        }, 
+        {
+            "location": "/rex_ngio_event/index.html#log-event", 
+            "text": "graph TB\n\nAction[ Action:Log event ] --  ActionIsSuccess\n\nsubgraph Callback\nActionIsSuccess{Action br is success} --  |Yes| CondOnSuccess[ Condition:On log event ]\nActionIsSuccess --  |No| CondOnError[ Condition:On log event error ]\nCondOnSuccess --- ExpResult[ Expression:EventName ]\nCondOnError --- ExpError[ Expression:ErrorMessage ]\nend   Action:Log event  Callback  Success :  Condition:On log event  Expression:EventName    Error :  Condition:On log event error  Expression:ErrorMessage", 
+            "title": "Log event"
+        }, 
+        {
+            "location": "/rex_ngio_event/index.html#statistics-of-events", 
+            "text": "Statistics of events will be shown in dashboard  Project Dashboard  -   Statistics for xxx .", 
+            "title": "Statistics of events"
+        }, 
+        {
+            "location": "/rex_nickname/index.html", 
+            "text": "Introduction\n\n\nThis plugin could be replaced by \nsystem action: create object by name\n, \nsystem condition: pick last created\n.\n\n\n\n\nIntroduction\n\n\nCreate instance by string.\n\n\nIcon: \nIcons8\n\n\nLinks\n\n\n\n\nPlugin\n\n\n\n\nDependence\n\n\nNone\n\n\nUsage\n\n\nCreate instance\n\n\ngraph TB\n\nActAssignNickname[\nAction:Assign nickname\n] --\n ActCreate[\nAction:Create instance\nbr\nAction:Create instance into family\n]\n\nActCreate --- ExpResult[\nExpression:LastCreatedInstUID\n]\n\n\n\n\n\nAction:Assign nickname\n, to add an alias name of an object type\n\n\nCreate instance\n\n\nAction:Create instance\n  (\nSample capx\n)\n\n\nConfigure instance under its \ncondition:on created\n  (\nSample capx\n)\n\n\nSet properties (x, y, angle, opacity,...) of instance by \nrex_uid2prop\n with \nExpression:LastCreatedInstUID\n  (\nSample capx\n)\n\n\n\n\n\n\nAction:Create instance into family\n  (\nSample capx\n)\n\n\nConfigure instance by SOL of family object\n\n\n\n\n\n\n\n\n\n\n\n\nPick instance by nickname\n\n\n\n\nMatching name string exactly  (\nSample capx\n)\n\n\nCondition:Pick instances\n\n\nAction:Pick all instances\n\n\n\n\n\n\nMatching sub-string  (\nSample capx\n)\n\n\nCondition:Pick  matched instances\n,\n\n\nAction:Pick matched instances\n\n\n\n\n\n\n\n\nDebug panel\n\n\nAll alias names and its mapped object type name will be shown on debug panel.", 
+            "title": "Nickname plugin"
+        }, 
+        {
+            "location": "/rex_nickname/index.html#introduction", 
+            "text": "This plugin could be replaced by  system action: create object by name ,  system condition: pick last created .", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/rex_nickname/index.html#introduction_1", 
+            "text": "Create instance by string.  Icon:  Icons8", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/rex_nickname/index.html#links", 
+            "text": "Plugin", 
+            "title": "Links"
+        }, 
+        {
+            "location": "/rex_nickname/index.html#dependence", 
+            "text": "None", 
+            "title": "Dependence"
+        }, 
+        {
+            "location": "/rex_nickname/index.html#usage", 
+            "text": "", 
+            "title": "Usage"
+        }, 
+        {
+            "location": "/rex_nickname/index.html#create-instance", 
+            "text": "graph TB\n\nActAssignNickname[ Action:Assign nickname ] --  ActCreate[ Action:Create instance br Action:Create instance into family ]\n\nActCreate --- ExpResult[ Expression:LastCreatedInstUID ]   Action:Assign nickname , to add an alias name of an object type  Create instance  Action:Create instance   ( Sample capx )  Configure instance under its  condition:on created   ( Sample capx )  Set properties (x, y, angle, opacity,...) of instance by  rex_uid2prop  with  Expression:LastCreatedInstUID   ( Sample capx )    Action:Create instance into family   ( Sample capx )  Configure instance by SOL of family object", 
+            "title": "Create instance"
+        }, 
+        {
+            "location": "/rex_nickname/index.html#pick-instance-by-nickname", 
+            "text": "Matching name string exactly  ( Sample capx )  Condition:Pick instances  Action:Pick all instances    Matching sub-string  ( Sample capx )  Condition:Pick  matched instances ,  Action:Pick matched instances", 
+            "title": "Pick instance by nickname"
+        }, 
+        {
+            "location": "/rex_nickname/index.html#debug-panel", 
+            "text": "All alias names and its mapped object type name will be shown on debug panel.", 
+            "title": "Debug panel"
+        }, 
+        {
+            "location": "/rex_bnickname/index.html", 
+            "text": "Introduction\n\n\nThis plugin could be replaced by \nsystem action: create object by name\n, \nsystem condition: pick last created\n.\n\n\nIntroduction\n\n\nAssign a nickname of this object.\n\n\nIcon: \nIcons8\n\n\nLinks\n\n\n\n\nPlugin\n\n\n\n\nDependence\n\n\n\n\nrex_nickname\n\n\n\n\nUsage\n\n\ngraph TB\n\nOnCreateInstance\nOnCreateInstance[\nOn instance created\n] --\n PropertyMode{Property Mode}\nPropertyMode --\n |Manual| AssignNickname[\nAssign nickanme = property Nickname\n]\nAssignNickname --\n ActCreate[\nNickname action:Create instance\nbr\nNickname action:Create instance into family\n]\n\nPropertyMode --\n |SID| AssignSID[\nAssign nickanme = unique random number\n]\nAssignSID --\n ActCreate\n\nActCreate --- ExpResult[\nExpression:LastCreatedInstUID\n]\n\n\n\nSample capx\n\n\n\n\nAssign nickname, when instance created\n\n\nEqual to \nAction:Assign nickname\n in \nrex_nickname\n\n\nProperty \nMode\n\n\nManual\n : nickname = property \nNickname\n\n\nSID\n : nickname = an unique random number  (\nSample capx\n)\n\n\n\n\n\n\n\n\n\n\nCreate instance by action in \nrex_nickname\n\n\nAction:Create instance\n\n\nAction:Create instance into family", 
+            "title": "Nickname behavior"
+        }, 
+        {
+            "location": "/rex_bnickname/index.html#introduction", 
+            "text": "This plugin could be replaced by  system action: create object by name ,  system condition: pick last created .", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/rex_bnickname/index.html#introduction_1", 
+            "text": "Assign a nickname of this object.  Icon:  Icons8", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/rex_bnickname/index.html#links", 
+            "text": "Plugin", 
+            "title": "Links"
+        }, 
+        {
+            "location": "/rex_bnickname/index.html#dependence", 
+            "text": "rex_nickname", 
+            "title": "Dependence"
+        }, 
+        {
+            "location": "/rex_bnickname/index.html#usage", 
+            "text": "graph TB\n\nOnCreateInstance\nOnCreateInstance[ On instance created ] --  PropertyMode{Property Mode}\nPropertyMode --  |Manual| AssignNickname[ Assign nickanme = property Nickname ]\nAssignNickname --  ActCreate[ Nickname action:Create instance br Nickname action:Create instance into family ]\n\nPropertyMode --  |SID| AssignSID[ Assign nickanme = unique random number ]\nAssignSID --  ActCreate\n\nActCreate --- ExpResult[ Expression:LastCreatedInstUID ]  Sample capx   Assign nickname, when instance created  Equal to  Action:Assign nickname  in  rex_nickname  Property  Mode  Manual  : nickname = property  Nickname  SID  : nickname = an unique random number  ( Sample capx )      Create instance by action in  rex_nickname  Action:Create instance  Action:Create instance into family", 
+            "title": "Usage"
+        }, 
+        {
+            "location": "/list.index/index.html", 
+            "text": "behavior\n: \nrex_bhash\n  (JSON)\n\n\nplugin\n: \nrex_board\n\n\nplugin\n: \nrex_board_hextx\n\n\nplugin\n: \nrex_board_squaretx\n\n\nbehavior\n: \nrex_boids\n\n\nbehavior\n: \nrex_boundary\n\n\nbehavior\n: \nrex_button\n\n\nplugin\n: \nrex_comment\n\n\nplugin\n: \nrex_csv\n\n\nplugin\n: \nrex_csv2array\n\n\nplugin\n: \nrex_date\n\n\nbehavior\n: \nrex_fsm\n\n\nplugin\n: \nrex_gfsm\n\n\nplugin\n: \nrex_hash\n  (JSON)\n\n\nplugin\n: \nrex_jsshell\n\n\nbehavior\n: \nrex_moveTo\n\n\nplugin\n: \nrex_ngio_authentication\n\n\nplugin\n: \nrex_ngio_event\n\n\nplugin\n: \nrex_ngio_gateway\n\n\nplugin\n: \nrex_ngio_loader\n\n\nplugin\n: \nrex_ngio_medal\n\n\nplugin\n: \nrex_ngio_scoreboard\n\n\nplugin\n: \nrex_pause\n\n\nbehavior\n: \nrex_platform_moveto\n\n\nbehavior\n: \nrex_pushoutsolid\n\n\nbehavior\n: \nrex_rotateto\n\n\nbehavior\n: \nrex_text_scrolling\n\n\nplugin\n: \nrex_timeline\n\n\nplugin\n: \nrex_touchwrap\n\n\n\n\nDeprecated\n\n\n\n\nbehavior\n: \nrex_bnickname\n\n\nplugin\n: \nrex_nickname", 
+            "title": "All plugins"
+        }, 
+        {
+            "location": "/list.index/index.html#deprecated", 
+            "text": "behavior :  rex_bnickname  plugin :  rex_nickname", 
+            "title": "Deprecated"
+        }, 
+        {
+            "location": "/board.index/index.html", 
+            "text": "Core\n\n\nBoard\n\n\nSquareTx\n\n\nHexTx", 
+            "title": "Board"
+        }, 
+        {
+            "location": "/ngio.index/index.html", 
+            "text": "Authentication\n\n\nScoreboard\n\n\nMedal\n\n\nGateway\n\n\nGet url of page\n\n\nLog events", 
+            "title": "Newgrounds.io"
+        }
+    ]
+}
