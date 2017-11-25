@@ -1481,6 +1481,26 @@
             "title": "Statistics of events"
         }, 
         {
+            "location": "/list.index/index.html", 
+            "text": "behavior\n: \nrex_bhash\n  (JSON)\n\n\nplugin\n: \nrex_board\n\n\nplugin\n: \nrex_board_hextx\n\n\nplugin\n: \nrex_board_squaretx\n\n\nbehavior\n: \nrex_boids\n\n\nbehavior\n: \nrex_boundary\n\n\nbehavior\n: \nrex_button\n\n\nplugin\n: \nrex_comment\n\n\nplugin\n: \nrex_csv\n\n\nplugin\n: \nrex_csv2array\n\n\nplugin\n: \nrex_date\n\n\nbehavior\n: \nrex_fsm\n\n\nplugin\n: \nrex_gfsm\n\n\nplugin\n: \nrex_hash\n  (JSON)\n\n\nplugin\n: \nrex_jsshell\n\n\nbehavior\n: \nrex_moveTo\n\n\nplugin\n: \nrex_ngio_authentication\n\n\nplugin\n: \nrex_ngio_event\n\n\nplugin\n: \nrex_ngio_gateway\n\n\nplugin\n: \nrex_ngio_loader\n\n\nplugin\n: \nrex_ngio_medal\n\n\nplugin\n: \nrex_ngio_scoreboard\n\n\nplugin\n: \nrex_pause\n\n\nbehavior\n: \nrex_platform_moveto\n\n\nbehavior\n: \nrex_pushoutsolid\n\n\nbehavior\n: \nrex_rotateto\n\n\nbehavior\n: \nrex_text_scrolling\n\n\nplugin\n: \nrex_timeline\n\n\nplugin\n: \nrex_touchwrap\n\n\n\n\nDeprecated\n\n\n\n\nbehavior\n: \nrex_bnickname\n\n\nplugin\n: \nrex_nickname", 
+            "title": "All plugins"
+        }, 
+        {
+            "location": "/list.index/index.html#deprecated", 
+            "text": "behavior :  rex_bnickname  plugin :  rex_nickname", 
+            "title": "Deprecated"
+        }, 
+        {
+            "location": "/board.index/index.html", 
+            "text": "Core\n\n\nBoard\n\n\nSquareTx\n\n\nHexTx", 
+            "title": "Board"
+        }, 
+        {
+            "location": "/ngio.index/index.html", 
+            "text": "Authentication\n\n\nScoreboard\n\n\nMedal\n\n\nGateway\n\n\nGet url of page\n\n\nLog events", 
+            "title": "Newgrounds.io"
+        }, 
+        {
             "location": "/rex_nickname/index.html", 
             "text": "Introduction\n\n\nThis plugin could be replaced by \nsystem action: create object by name\n, \nsystem condition: pick last created\n.\n\n\n\n\nIntroduction\n\n\nCreate instance by string.\n\n\nIcon: \nIcons8\n\n\nLinks\n\n\n\n\nPlugin\n\n\n\n\nDependence\n\n\nNone\n\n\nUsage\n\n\nCreate instance\n\n\ngraph TB\n\nActAssignNickname[\nAction:Assign nickname\n] --\n ActCreate[\nAction:Create instance\nbr\nAction:Create instance into family\n]\n\nActCreate --- ExpResult[\nExpression:LastCreatedInstUID\n]\n\n\n\n\n\nAction:Assign nickname\n, to add an alias name of an object type\n\n\nCreate instance\n\n\nAction:Create instance\n  (\nSample capx\n)\n\n\nConfigure instance under its \ncondition:on created\n  (\nSample capx\n)\n\n\nSet properties (x, y, angle, opacity,...) of instance by \nrex_uid2prop\n with \nExpression:LastCreatedInstUID\n  (\nSample capx\n)\n\n\n\n\n\n\nAction:Create instance into family\n  (\nSample capx\n)\n\n\nConfigure instance by SOL of family object\n\n\n\n\n\n\n\n\n\n\n\n\nPick instance by nickname\n\n\n\n\nMatching name string exactly  (\nSample capx\n)\n\n\nCondition:Pick instances\n\n\nAction:Pick all instances\n\n\n\n\n\n\nMatching sub-string  (\nSample capx\n)\n\n\nCondition:Pick  matched instances\n,\n\n\nAction:Pick matched instances\n\n\n\n\n\n\n\n\nDebug panel\n\n\nAll alias names and its mapped object type name will be shown on debug panel.", 
             "title": "Nickname plugin"
@@ -1554,26 +1574,6 @@
             "location": "/rex_bnickname/index.html#usage", 
             "text": "graph TB\n\nOnCreateInstance\nOnCreateInstance[ On instance created ] --  PropertyMode{Property Mode}\nPropertyMode --  |Manual| AssignNickname[ Assign nickanme = property Nickname ]\nAssignNickname --  ActCreate[ Nickname action:Create instance br Nickname action:Create instance into family ]\n\nPropertyMode --  |SID| AssignSID[ Assign nickanme = unique random number ]\nAssignSID --  ActCreate\n\nActCreate --- ExpResult[ Expression:LastCreatedInstUID ]  Sample capx   Assign nickname, when instance created  Equal to  Action:Assign nickname  in  rex_nickname  Property  Mode  Manual  : nickname = property  Nickname  SID  : nickname = an unique random number  ( Sample capx )      Create instance by action in  rex_nickname  Action:Create instance  Action:Create instance into family", 
             "title": "Usage"
-        }, 
-        {
-            "location": "/list.index/index.html", 
-            "text": "behavior\n: \nrex_bhash\n  (JSON)\n\n\nplugin\n: \nrex_board\n\n\nplugin\n: \nrex_board_hextx\n\n\nplugin\n: \nrex_board_squaretx\n\n\nbehavior\n: \nrex_boids\n\n\nbehavior\n: \nrex_boundary\n\n\nbehavior\n: \nrex_button\n\n\nplugin\n: \nrex_comment\n\n\nplugin\n: \nrex_csv\n\n\nplugin\n: \nrex_csv2array\n\n\nplugin\n: \nrex_date\n\n\nbehavior\n: \nrex_fsm\n\n\nplugin\n: \nrex_gfsm\n\n\nplugin\n: \nrex_hash\n  (JSON)\n\n\nplugin\n: \nrex_jsshell\n\n\nbehavior\n: \nrex_moveTo\n\n\nplugin\n: \nrex_ngio_authentication\n\n\nplugin\n: \nrex_ngio_event\n\n\nplugin\n: \nrex_ngio_gateway\n\n\nplugin\n: \nrex_ngio_loader\n\n\nplugin\n: \nrex_ngio_medal\n\n\nplugin\n: \nrex_ngio_scoreboard\n\n\nplugin\n: \nrex_pause\n\n\nbehavior\n: \nrex_platform_moveto\n\n\nbehavior\n: \nrex_pushoutsolid\n\n\nbehavior\n: \nrex_rotateto\n\n\nbehavior\n: \nrex_text_scrolling\n\n\nplugin\n: \nrex_timeline\n\n\nplugin\n: \nrex_touchwrap\n\n\n\n\nDeprecated\n\n\n\n\nbehavior\n: \nrex_bnickname\n\n\nplugin\n: \nrex_nickname", 
-            "title": "All plugins"
-        }, 
-        {
-            "location": "/list.index/index.html#deprecated", 
-            "text": "behavior :  rex_bnickname  plugin :  rex_nickname", 
-            "title": "Deprecated"
-        }, 
-        {
-            "location": "/board.index/index.html", 
-            "text": "Core\n\n\nBoard\n\n\nSquareTx\n\n\nHexTx", 
-            "title": "Board"
-        }, 
-        {
-            "location": "/ngio.index/index.html", 
-            "text": "Authentication\n\n\nScoreboard\n\n\nMedal\n\n\nGateway\n\n\nGet url of page\n\n\nLog events", 
-            "title": "Newgrounds.io"
         }
     ]
 }
