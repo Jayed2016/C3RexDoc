@@ -40,3 +40,4 @@
 - [rex_timeline.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_timeline.c3addon)  
 - [rex_touchwrap.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_touchwrap.c3addon)  
 - [rex_zigzag.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_zigzag.c3addon)  
+- [rex_zSorter.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_zSorter.c3addon)  
