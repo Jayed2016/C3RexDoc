@@ -33,6 +33,7 @@
 - [rex_pushoutsolid.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_pushoutsolid.c3addon)  
 - [rex_randomgen.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_randomgen.c3addon)  
 - [rex_rotateto.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_rotateto.c3addon)  
+- [rex_scenario.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_scenario.c3addon)  
 - [rex_shakeMod.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_shakeMod.c3addon)  
 - [rex_simulate_keyevent.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_simulate_keyevent.c3addon)  
 - [rex_text_resize.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_text_resize.c3addon)  
