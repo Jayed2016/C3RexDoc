@@ -38,6 +38,7 @@
 - [rex_scenario.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_scenario.c3addon)  
 - [rex_shakeMod.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_shakeMod.c3addon)  
 - [rex_simulate_keyevent.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_simulate_keyevent.c3addon)  
+- [rex_slg_movement.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_slg_movement.c3addon)  
 - [rex_text_resize.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_text_resize.c3addon)  
 - [rex_text_scrolling.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_text_scrolling.c3addon)  
 - [rex_text_typing.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_text_typing.c3addon)  
