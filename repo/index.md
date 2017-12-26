@@ -14,6 +14,7 @@
 - [rex_firebase_authentication.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_firebase_authentication.c3addon)  
 - [rex_fsm.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_fsm.c3addon)  
 - [rex_gfsm.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_gfsm.c3addon)  
+- [rex_ginstgroup.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_ginstgroup.c3addon)  
 - [rex_grid_move.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_grid_move.c3addon)  
 - [rex_hash.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_hash.c3addon)  
 - [rex_jsshell.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_jsshell.c3addon)  
