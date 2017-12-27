@@ -8,7 +8,7 @@ serverRoot = "https://rexrainbow.github.io/C3RexDoc/repo/"
 names = glob.glob(op.join(myPath, "*.c3addon"))
 for idx, p in enumerate(names):
     name = op.split(p)[1]
-    l = "{idx}. ![{name}]({server}{iconName} =50x50) [{name}]({server}{name})  \n".format(
+    l = "{idx}. ![{name}]({server}{iconName} = 50x50) [{name}]({server}{name})  \n".format(
         idx=idx+1, 
         name=name,         
         server=serverRoot,
