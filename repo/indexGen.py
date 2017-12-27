@@ -14,7 +14,7 @@ mdF.write(l)
 names = glob.glob(op.join(myPath, "*.c3addon"))
 for idx, p in enumerate(names):
     name = op.split(p)[1]
-    l = """|{idx}|<img src="{server}{iconName}" width="50" heigh="50">|[{name}]({server}{name})|""".format(
+    l = """|{idx}|<img src="{server}{iconName}" width="50" heigh="50">|[{name}]({server}{name})|\n""".format(
         idx=idx+1, 
         name=name,         
         server=serverRoot,
