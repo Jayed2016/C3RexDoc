@@ -18,6 +18,7 @@
 - [rex_grid_move.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_grid_move.c3addon)  
 - [rex_hash.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_hash.c3addon)  
 - [rex_jsshell.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_jsshell.c3addon)  
+- [rex_LJpotential.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_LJpotential.c3addon)  
 - [rex_moveto.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_moveto.c3addon)  
 - [rex_ngio_authentication.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_ngio_authentication.c3addon)  
 - [rex_ngio_event.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_ngio_event.c3addon)  
