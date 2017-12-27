@@ -2,6 +2,7 @@ import sys, os, json, time
 import os.path as op
 from zipfile import ZipFile as __zipFile
 from zipfile import ZIP_DEFLATED
+from shutil import copyfile
 
 
 def zipFolder(source_folder, out_file_path):
@@ -19,8 +20,7 @@ def zipFolder(source_folder, out_file_path):
     for source, target in zip(source_list, target_list):
         zout.write(source, target)
     zout.close()
-    
-    
+
 def main():
     outFolder = r"D:\Construct 3\my_data\C3RexDoc\repo"
     
@@ -33,6 +33,7 @@ def main():
         
         print category + ":" + pluginName
         zipFolder(arg, op.join(outFolder , pluginName+".c3addon"))
+        copyfile(op.join(arg, "icon.png"), op.join(outFolder,pluginName+".png"))
 
     import indexGen       
 
