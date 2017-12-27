@@ -5,8 +5,15 @@ myPath = op.dirname(op.realpath(__file__))
 mdF = open(op.join(myPath, "index.md"), "w")
 serverRoot = "https://rexrainbow.github.io/C3RexDoc/repo/"
 
-for f in glob.glob(op.join(myPath, "*.c3addon")):
-  name = op.split(f)[1]
-  mdF.write("- [{name}]({server}{name})  \n".format(name=name, server=serverRoot))
+names = glob.glob(op.join(myPath, "*.c3addon"))
+for idx, p in enumerate(names):
+    name = op.split(p)[1]
+    l = "{idx}. [{name}]({server}{name})  \n".format(
+        idx=idx+1, 
+        name=name, 
+        server=serverRoot
+        )
+
+    mdF.write(l)
 
 mdF.close()
