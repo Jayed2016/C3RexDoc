@@ -7,7 +7,7 @@ serverRoot = "https://rexrainbow.github.io/C3RexDoc/repo/"
 
 l = """\
 |Index|Icon|Addon name|
-|-----|----|----------|\
+|-----|----|----------|
 """
 mdF.write(l)
 

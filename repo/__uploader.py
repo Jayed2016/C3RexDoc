@@ -35,7 +35,7 @@ def main():
         zipFolder(arg, op.join(outFolder , pluginName+".c3addon"))
         copyfile(op.join(arg, "icon.png"), op.join(outFolder,pluginName+".png"))
 
-    import indexGen       
+    execfile('indexGen.py')
 
 # -----------------------------------------------------------------------------  
 try:

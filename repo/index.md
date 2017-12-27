@@ -1,5 +1,6 @@
 |Index|Icon|Addon name|
-|-----|----|----------||1|<img src="https://rexrainbow.github.io/C3RexDoc/repo/rex_bHash.png" width="50" heigh="50">|[rex_bHash.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_bHash.c3addon)|
+|-----|----|----------|
+|1|<img src="https://rexrainbow.github.io/C3RexDoc/repo/rex_bHash.png" width="50" heigh="50">|[rex_bHash.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_bHash.c3addon)|
 |2|<img src="https://rexrainbow.github.io/C3RexDoc/repo/rex_bnickname.png" width="50" heigh="50">|[rex_bnickname.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_bnickname.c3addon)|
 |3|<img src="https://rexrainbow.github.io/C3RexDoc/repo/rex_board.png" width="50" heigh="50">|[rex_board.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_board.c3addon)|
 |4|<img src="https://rexrainbow.github.io/C3RexDoc/repo/rex_board_hexTx.png" width="50" heigh="50">|[rex_board_hexTx.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_board_hexTx.c3addon)|
