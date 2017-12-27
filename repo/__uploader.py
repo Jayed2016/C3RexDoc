@@ -33,9 +33,9 @@ def main():
         
         print category + ":" + pluginName
         zipFolder(arg, op.join(outFolder , pluginName+".c3addon"))
-        copyfile(op.join(arg, "icon.png"), op.join(outFolder,pluginName+".png"))
+        copyfile(op.join(arg, "icon.png"), op.join(outFolder,pluginName+".png")
 
-    execfile('indexGen.py')
+    import indexGen       
 
 # -----------------------------------------------------------------------------  
 try:
