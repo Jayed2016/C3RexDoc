@@ -6,16 +6,15 @@ mdF = open(op.join(myPath, "index.md"), "w")
 serverRoot = "https://rexrainbow.github.io/C3RexDoc/repo/"
 
 l = """\
-|Index|Icon|Download|
-|-----|----|--------|
+|Icon|Download|
+|----|--------|
 """
 mdF.write(l)
 
 names = glob.glob(op.join(myPath, "*.c3addon"))
-for idx, p in enumerate(names):
+for p in names:
     name = op.split(p)[1]
-    l = """|{idx}|<img src="{server}{iconName}" width="40" heigh="40">|[{name}]({server}{name})|\n""".format(
-        idx=idx+1, 
+    l = """|<img src="{server}{iconName}" width="40" heigh="40">|[{name}]({server}{name})|\n""".format(
         name=name,         
         server=serverRoot,
         iconName=name.replace("c3addon", "png")
@@ -23,7 +22,11 @@ for idx, p in enumerate(names):
 
     mdF.write(l)
 
-l = """\n  \n  [Icon](https://icons8.com/)"""
+l = """  \n{idx} addons  \n""".format(
+    idx=len(names)
+)
+mdF.write(l)
+l = """  \n[Icon](https://icons8.com/)"""
 mdF.write(l)
 
 mdF.close()
