@@ -1,5 +1,5 @@
-|Index|Icon|Addon name|
-|-----|----|----------|
+|Index|Icon|Download|
+|-----|----|--------|
 |1|<img src="https://rexrainbow.github.io/C3RexDoc/repo/rex_bHash.png" width="40" heigh="40">|[rex_bHash.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_bHash.c3addon)|
 |2|<img src="https://rexrainbow.github.io/C3RexDoc/repo/rex_bnickname.png" width="40" heigh="40">|[rex_bnickname.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_bnickname.c3addon)|
 |3|<img src="https://rexrainbow.github.io/C3RexDoc/repo/rex_board.png" width="40" heigh="40">|[rex_board.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_board.c3addon)|

@@ -6,8 +6,8 @@ mdF = open(op.join(myPath, "index.md"), "w")
 serverRoot = "https://rexrainbow.github.io/C3RexDoc/repo/"
 
 l = """\
-|Index|Icon|Addon name|
-|-----|----|----------|
+|Index|Icon|Download|
+|-----|----|--------|
 """
 mdF.write(l)
 
