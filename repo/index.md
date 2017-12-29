@@ -49,10 +49,11 @@
 |<img src="https://rexrainbow.github.io/C3RexDoc/repo/rex_text_typing.png" width="40" heigh="40">|[rex_text_typing.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_text_typing.c3addon)|
 |<img src="https://rexrainbow.github.io/C3RexDoc/repo/rex_tilt2ArrowKey.png" width="40" heigh="40">|[rex_tilt2ArrowKey.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_tilt2ArrowKey.c3addon)|
 |<img src="https://rexrainbow.github.io/C3RexDoc/repo/rex_timeline.png" width="40" heigh="40">|[rex_timeline.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_timeline.c3addon)|
+|<img src="https://rexrainbow.github.io/C3RexDoc/repo/rex_time_awayL.png" width="40" heigh="40">|[rex_time_awayL.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_time_awayL.c3addon)|
 |<img src="https://rexrainbow.github.io/C3RexDoc/repo/rex_touchwrap.png" width="40" heigh="40">|[rex_touchwrap.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_touchwrap.c3addon)|
 |<img src="https://rexrainbow.github.io/C3RexDoc/repo/rex_zigzag.png" width="40" heigh="40">|[rex_zigzag.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_zigzag.c3addon)|
 |<img src="https://rexrainbow.github.io/C3RexDoc/repo/rex_zSorter.png" width="40" heigh="40">|[rex_zSorter.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_zSorter.c3addon)|
   
-52 addons  
+53 addons  
   
 [Icon](https://icons8.com/)
