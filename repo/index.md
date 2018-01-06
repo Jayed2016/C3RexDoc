@@ -23,6 +23,7 @@
 |<img src="https://rexrainbow.github.io/C3RexDoc/repo/rex_jsshell.png" width="40" heigh="40">|[rex_jsshell.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_jsshell.c3addon)|
 |<img src="https://rexrainbow.github.io/C3RexDoc/repo/rex_listCtrl.png" width="40" heigh="40">|[rex_listCtrl.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_listCtrl.c3addon)|
 |<img src="https://rexrainbow.github.io/C3RexDoc/repo/rex_LJpotential.png" width="40" heigh="40">|[rex_LJpotential.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_LJpotential.c3addon)|
+|<img src="https://rexrainbow.github.io/C3RexDoc/repo/rex_lzstring.png" width="40" heigh="40">|[rex_lzstring.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_lzstring.c3addon)|
 |<img src="https://rexrainbow.github.io/C3RexDoc/repo/rex_moveto.png" width="40" heigh="40">|[rex_moveto.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_moveto.c3addon)|
 |<img src="https://rexrainbow.github.io/C3RexDoc/repo/rex_ngio_authentication.png" width="40" heigh="40">|[rex_ngio_authentication.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_ngio_authentication.c3addon)|
 |<img src="https://rexrainbow.github.io/C3RexDoc/repo/rex_ngio_event.png" width="40" heigh="40">|[rex_ngio_event.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_ngio_event.c3addon)|
@@ -55,6 +56,6 @@
 |<img src="https://rexrainbow.github.io/C3RexDoc/repo/rex_zigzag.png" width="40" heigh="40">|[rex_zigzag.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_zigzag.c3addon)|
 |<img src="https://rexrainbow.github.io/C3RexDoc/repo/rex_zSorter.png" width="40" heigh="40">|[rex_zSorter.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_zSorter.c3addon)|
   
-54 addons  
+55 addons  
   
 [Icon](https://icons8.com/)
