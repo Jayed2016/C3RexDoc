@@ -18,9 +18,12 @@
 |<img src="https://rexrainbow.github.io/C3RexDoc/repo/rex_fsm.png" width="40" heigh="40">|[rex_fsm.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_fsm.c3addon)|
 |<img src="https://rexrainbow.github.io/C3RexDoc/repo/rex_gfsm.png" width="40" heigh="40">|[rex_gfsm.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_gfsm.c3addon)|
 |<img src="https://rexrainbow.github.io/C3RexDoc/repo/rex_ginstgroup.png" width="40" heigh="40">|[rex_ginstgroup.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_ginstgroup.c3addon)|
+|<img src="https://rexrainbow.github.io/C3RexDoc/repo/rex_glayouter.png" width="40" heigh="40">|[rex_glayouter.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_glayouter.c3addon)|
 |<img src="https://rexrainbow.github.io/C3RexDoc/repo/rex_grid_move.png" width="40" heigh="40">|[rex_grid_move.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_grid_move.c3addon)|
 |<img src="https://rexrainbow.github.io/C3RexDoc/repo/rex_hash.png" width="40" heigh="40">|[rex_hash.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_hash.c3addon)|
 |<img src="https://rexrainbow.github.io/C3RexDoc/repo/rex_jsshell.png" width="40" heigh="40">|[rex_jsshell.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_jsshell.c3addon)|
+|<img src="https://rexrainbow.github.io/C3RexDoc/repo/rex_layouter_cyclic.png" width="40" heigh="40">|[rex_layouter_cyclic.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_layouter_cyclic.c3addon)|
+|<img src="https://rexrainbow.github.io/C3RexDoc/repo/rex_layouter_linear.png" width="40" heigh="40">|[rex_layouter_linear.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_layouter_linear.c3addon)|
 |<img src="https://rexrainbow.github.io/C3RexDoc/repo/rex_listCtrl.png" width="40" heigh="40">|[rex_listCtrl.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_listCtrl.c3addon)|
 |<img src="https://rexrainbow.github.io/C3RexDoc/repo/rex_LJpotential.png" width="40" heigh="40">|[rex_LJpotential.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_LJpotential.c3addon)|
 |<img src="https://rexrainbow.github.io/C3RexDoc/repo/rex_lzstring.png" width="40" heigh="40">|[rex_lzstring.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_lzstring.c3addon)|
@@ -57,6 +60,6 @@
 |<img src="https://rexrainbow.github.io/C3RexDoc/repo/rex_zigzag.png" width="40" heigh="40">|[rex_zigzag.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_zigzag.c3addon)|
 |<img src="https://rexrainbow.github.io/C3RexDoc/repo/rex_zSorter.png" width="40" heigh="40">|[rex_zSorter.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_zSorter.c3addon)|
   
-56 addons  
+59 addons  
   
 [Icon](https://icons8.com/)
