@@ -49,6 +49,7 @@
 |<img src="https://rexrainbow.github.io/C3RexDoc/repo/rex_shakeMod.png" width="40" heigh="40">|[rex_shakeMod.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_shakeMod.c3addon)|
 |<img src="https://rexrainbow.github.io/C3RexDoc/repo/rex_simulate_keyevent.png" width="40" heigh="40">|[rex_simulate_keyevent.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_simulate_keyevent.c3addon)|
 |<img src="https://rexrainbow.github.io/C3RexDoc/repo/rex_slg_movement.png" width="40" heigh="40">|[rex_slg_movement.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_slg_movement.c3addon)|
+|<img src="https://rexrainbow.github.io/C3RexDoc/repo/rex_TagText.png" width="40" heigh="40">|[rex_TagText.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_TagText.c3addon)|
 |<img src="https://rexrainbow.github.io/C3RexDoc/repo/rex_text_resize.png" width="40" heigh="40">|[rex_text_resize.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_text_resize.c3addon)|
 |<img src="https://rexrainbow.github.io/C3RexDoc/repo/rex_text_scrolling.png" width="40" heigh="40">|[rex_text_scrolling.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_text_scrolling.c3addon)|
 |<img src="https://rexrainbow.github.io/C3RexDoc/repo/rex_text_typing.png" width="40" heigh="40">|[rex_text_typing.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_text_typing.c3addon)|
@@ -60,6 +61,6 @@
 |<img src="https://rexrainbow.github.io/C3RexDoc/repo/rex_zigzag.png" width="40" heigh="40">|[rex_zigzag.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_zigzag.c3addon)|
 |<img src="https://rexrainbow.github.io/C3RexDoc/repo/rex_zSorter.png" width="40" heigh="40">|[rex_zSorter.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_zSorter.c3addon)|
   
-59 addons  
+60 addons  
   
 [Icon](https://icons8.com/)
