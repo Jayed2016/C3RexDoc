@@ -1,5 +1,6 @@
 |Icon|Download|
 |----|--------|
+|<img src="https://rexrainbow.github.io/C3RexDoc/repo/rex_bbcodeText.png" width="40" heigh="40">|[rex_bbcodeText.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_bbcodeText.c3addon)|
 |<img src="https://rexrainbow.github.io/C3RexDoc/repo/rex_bHash.png" width="40" heigh="40">|[rex_bHash.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_bHash.c3addon)|
 |<img src="https://rexrainbow.github.io/C3RexDoc/repo/rex_bnickname.png" width="40" heigh="40">|[rex_bnickname.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_bnickname.c3addon)|
 |<img src="https://rexrainbow.github.io/C3RexDoc/repo/rex_board.png" width="40" heigh="40">|[rex_board.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_board.c3addon)|
@@ -61,6 +62,6 @@
 |<img src="https://rexrainbow.github.io/C3RexDoc/repo/rex_zigzag.png" width="40" heigh="40">|[rex_zigzag.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_zigzag.c3addon)|
 |<img src="https://rexrainbow.github.io/C3RexDoc/repo/rex_zSorter.png" width="40" heigh="40">|[rex_zSorter.c3addon](https://rexrainbow.github.io/C3RexDoc/repo/rex_zSorter.c3addon)|
   
-60 addons  
+61 addons  
   
 [Icon](https://icons8.com/)
